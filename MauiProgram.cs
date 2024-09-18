@@ -13,6 +13,8 @@ namespace campusCare
                 {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
+                    fonts.AddFont("Bungee-Regular.ttf", "Bungee");
+                    fonts.AddFont("Ubuntu-Bold.ttf", "Ubuntu");
                 });
 
 #if DEBUG

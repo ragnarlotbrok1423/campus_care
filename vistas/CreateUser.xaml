@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="campusCare.vistas.CreateUser"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="CreateUser"
+    BackgroundColor="White"
+    Shell.NavBarIsVisible="False">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <AbsoluteLayout Grid.Row="0">
+            <Image
+                AbsoluteLayout.LayoutBounds="0, 0, 1, AutoSize"
+                AbsoluteLayout.LayoutFlags="WidthProportional"
+                Aspect="AspectFit"
+                Source="banner.svg" />
+
+            <Image
+                AbsoluteLayout.LayoutBounds="0, 20, 1, AutoSize"
+                AbsoluteLayout.LayoutFlags="WidthProportional"
+                Aspect="AspectFit"
+                Source="logo.svg" />
+            <Label
+                AbsoluteLayout.LayoutBounds="70, 120, 1, AutoSize"
+                AbsoluteLayout.LayoutFlags="WidthProportional"
+                FontFamily="Bungee"
+                FontSize="20"
+                Text="Registrar Paciente"
+                TextColor="#00ffea" />
+
+        </AbsoluteLayout>
+        <ScrollView Grid.Row="1">
+            <Grid
+                Grid.Row="1"
+                Margin="10,10,10,0"
+                RowSpacing="20">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+                <Label
+                    Grid.Row="0"
+                    FontFamily="Bungee"
+                    FontSize="20"
+                    HorizontalOptions="Center"
+                    Text="Rellene todos los Campos"
+                    TextColor="#07016C"
+                    VerticalOptions="Center" />
+                <Grid
+                    Grid.Row="1"
+                    Margin="30,0,30,0"
+                    ColumnSpacing="20">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="5*" />
+                        <ColumnDefinition Width="5*" />
+                    </Grid.ColumnDefinitions>
+                    <Label
+                        Grid.Row="0"
+                        Grid.Column="0"
+                        Margin="0,0,0,10"
+                        FontFamily="Ubuntu"
+                        FontSize="20"
+                        Text="Nombre"
+                        TextColor="#07016C"
+                        VerticalOptions="Center" />
+                    <Frame
+                        Grid.Row="1"
+                        Grid.Column="0"
+                        Padding="2"
+                        BorderColor="#07016C"
+                        HasShadow="True">
+                        <Entry
+                            Grid.Row="1"
+                            Grid.Column="0"
+                            FontFamily="Ubuntu"
+                            Placeholder="Nombre"
+                            PlaceholderColor="#7C74FF"
+                            Text="{Binding NuevoPaciente.Nombre}"
+                            TextColor="#07016C" />
+                    </Frame>
+                    <Label
+                        Grid.Row="0"
+                        Grid.Column="1"
+                        Margin="0,0,0,10"
+                        FontFamily="Ubuntu"
+                        FontSize="20"
+                        HorizontalOptions="End"
+                        Text="Apellido"
+                        TextColor="#07016C"
+                        VerticalTextAlignment="End" />
+                    <Frame
+                        Grid.Row="1"
+                        Grid.Column="1"
+                        Padding="2"
+                        BorderColor="#07016C"
+                        HasShadow="True">
+                        <Entry
+                            FontFamily="Ubuntu"
+                            Placeholder="Apellido"
+                            PlaceholderColor="#7C74FF"
+                            Text="{Binding NuevoPaciente.Apellido}"
+                            TextColor="#07016C" />
+                    </Frame>
+
+
+                </Grid>
+                <Grid Grid.Row="2" Margin="30,0,30,0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Label
+                        Grid.Row="0"
+                        Margin="0,0,0,10"
+                        FontFamily="Ubuntu"
+                        FontSize="20"
+                        Text="Correo"
+                        TextColor="#07016C"
+                        VerticalOptions="Center" />
+                    <Frame
+                        Grid.Row="1"
+                        Padding="2"
+                        BorderColor="#07016C"
+                        HasShadow="True">
+                        <Entry
+                            FontFamily="Ubuntu"
+                            Placeholder="Correo"
+                            PlaceholderColor="#7C74FF"
+                            Text="{Binding NuevoPaciente.Correo}"
+                            TextColor="#07016C" />
+                    </Frame>
+                </Grid>
+                <Grid Grid.Row="3" Margin="30,0,30,0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Label
+                        Grid.Row="0"
+                        Margin="0,0,0,10"
+                        FontFamily="Ubuntu"
+                        FontSize="20"
+                        Text="Cédula"
+                        TextColor="#07016C"
+                        VerticalOptions="Center" />
+                    <Frame
+                        Grid.Row="1"
+                        Padding="2"
+                        BorderColor="#07016C"
+                        HasShadow="True">
+                        <Entry
+                            FontFamily="Ubuntu"
+                            Placeholder="Cédula"
+                            PlaceholderColor="#7C74FF"
+                            Text="{Binding NuevoPaciente.Cedula}"
+                            TextColor="#07016C" />
+                    </Frame>
+                </Grid>
+                <Grid Grid.Row="4" Margin="30,0,30,0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Label
+                        Grid.Row="0"
+                        Margin="0,0,0,10"
+                        FontFamily="Ubuntu"
+                        FontSize="20"
+                        Text="Nombre de usuario"
+                        TextColor="#07016C"
+                        VerticalOptions="Center" />
+                    <Frame
+                        Grid.Row="1"
+                        Padding="2"
+                        BorderColor="#07016C"
+                        HasShadow="True">
+                        <Entry
+                            FontFamily="Ubuntu"
+                            Placeholder="Nombre de usuario"
+                            PlaceholderColor="#7C74FF"
+                            Text="{Binding NuevoPaciente.NombreUsuario}"
+                            TextColor="#07016C" />
+
+                    </Frame>
+                </Grid>
+                <Grid Grid.Row="5" Margin="30,0,30,0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Label
+                        Grid.Row="0"
+                        Margin="0,0,0,10"
+                        FontFamily="Ubuntu"
+                        FontSize="20"
+                        Text="Contraseña"
+                        TextColor="#07016C"
+                        VerticalOptions="Center" />
+                    <Frame
+                        Grid.Row="1"
+                        Padding="2"
+                        BorderColor="#07016C"
+                        HasShadow="True">
+                        <Entry
+                            FontFamily="Ubuntu"
+                            IsPassword="True"
+                            Placeholder="Contraseña"
+                            PlaceholderColor="#7C74FF"
+                            Text="{Binding NuevoPaciente.Contraseña}"
+                            TextColor="#07016C" />
+                    </Frame>
+                </Grid>
+                <Grid Grid.Row="6" Margin="30,0,30,0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Label
+                        Grid.Row="0"
+                        Margin="0,0,0,10"
+                        FontFamily="Ubuntu"
+                        FontSize="20"
+                        Text="Alergias"
+                        TextColor="#07016C"
+                        VerticalOptions="Center" />
+                    <Frame
+                        Grid.Row="1"
+                        Padding="2"
+                        BorderColor="#07016C"
+                        HasShadow="True">
+                        <Entry
+                            FontFamily="Ubuntu"
+                            Placeholder="Alergias"
+                            PlaceholderColor="#7C74FF"
+                            Text="{Binding NuevoPaciente.Alergia}"
+                            TextColor="#07016C" />
+                    </Frame>
+                </Grid>
+                <Grid Grid.Row="7" Margin="30,0,30,0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Label
+                        Grid.Row="0"
+                        Margin="0,0,0,10"
+                        FontFamily="Ubuntu"
+                        FontSize="20"
+                        Text="Número Secundario"
+                        TextColor="#07016C"
+                        VerticalOptions="Center" />
+                    <Frame
+                        Grid.Row="1"
+                        Padding="2"
+                        BorderColor="#07016C"
+                        HasShadow="True">
+                        <Entry
+                            FontFamily="Ubuntu"
+                            Placeholder="Número Secundario"
+                            PlaceholderColor="#7C74FF"
+                            Text="{Binding NuevoPaciente.NumeroSecundario}"
+                            TextColor="#07016C" />
+                    </Frame>
+                </Grid>
+
+                <Grid Grid.Row="8" Margin="30,0,30,0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Label
+                        Grid.Row="0"
+                        Margin="0,0,0,10"
+                        FontFamily="Ubuntu"
+                        FontSize="20"
+                        Text="Tipaje"
+                        TextColor="#07016C"
+                        VerticalOptions="Center" />
+                    <Frame
+                        Grid.Row="1"
+                        Padding="2"
+                        BorderColor="#07016C"
+                        HasShadow="True">
+                        <Picker
+                            Title="Tipaje"
+                            FontFamily="Ubuntu"
+                            ItemDisplayBinding="{Binding DisplayText}"
+                            ItemsSource="{Binding Tipajes}"
+                            SelectedItem="{Binding SelectedTipaje}"
+                            TextColor="#07016C" />
+
+                    </Frame>
+                </Grid>
+
+
+            </Grid>
+
+        </ScrollView>
+        <Grid
+            Grid.Row="2"
+            Margin="10,20,10,20"
+            ColumnSpacing="20">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="5*" />
+                <ColumnDefinition Width="5*" />
+            </Grid.ColumnDefinitions>
+            <Button
+                Grid.Column="0"
+                Padding="0,0,0,5"
+                BackgroundColor="#07016C"
+                Command="{Binding CrearUsuarioCommand}"
+                FontFamily="Bungee"
+                FontSize="20"
+                Text="Crear Usuario"
+                TextColor="#00FFEA" />
+            <Button
+                Grid.Column="1"
+                Padding="0"
+                BackgroundColor="#07016C"
+                Clicked="Regresar"
+                FontFamily="Bungee"
+                FontSize="20"
+                Text="Cancelar"
+                TextColor="#00FFEA" />
+        </Grid>
+
+    </Grid>
+
+
+</ContentPage> 
