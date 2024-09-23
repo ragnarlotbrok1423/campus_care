@@ -5,17 +5,25 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:campusCare"
     xmlns:vistas="clr-namespace:campusCare.vistas"
-    Shell.FlyoutBehavior="Disabled"
-    Title="campusCare">
+    Title="campusCare"
+    Shell.FlyoutBehavior="Disabled">
 
+    <ShellContent
+        Title="Login"
+        ContentTemplate="{DataTemplate vistas:Login}"
+        Route="Login" />
+
+    <ShellContent
+        Title="HomePacient"
+        ContentTemplate="{DataTemplate vistas:HomePacient}"
+        Route="HomePacient" />
     <ShellContent
         Title="CRUDpaciente"
         ContentTemplate="{DataTemplate vistas:CRUDpacientes}"
         Route="CRUDpaciente" />
-    <ShellContent 
+    <ShellContent
         Title="CreateUser"
         ContentTemplate="{DataTemplate vistas:CreateUser}"
-        Route="CreateUser"
-        />
+        Route="CreateUser" />
 
 </Shell>

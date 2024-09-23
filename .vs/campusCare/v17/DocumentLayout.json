@@ -3,60 +3,55 @@
   "WorkspaceRootPath": "C:\\Users\\erick\\Downloads\\campusCareRepository\\campus_care\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{721CEF64-CEE2-45CF-B2EB-851FB24DECA3}|campusCare.csproj|c:\\users\\erick\\downloads\\campuscarerepository\\campus_care\\modelos\\createpacientedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{721CEF64-CEE2-45CF-B2EB-851FB24DECA3}|campusCare.csproj|solutionrelative:modelos\\createpacientedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{721CEF64-CEE2-45CF-B2EB-851FB24DECA3}|campusCare.csproj|c:\\users\\erick\\downloads\\campuscarerepository\\campus_care\\vistas\\homepacient.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{721CEF64-CEE2-45CF-B2EB-851FB24DECA3}|campusCare.csproj|solutionrelative:vistas\\homepacient.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\erick\\.nuget\\packages\\microsoft.maui.resizetizer\\8.0.40\\buildTransitive\\Microsoft.Maui.Resizetizer.After.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{721CEF64-CEE2-45CF-B2EB-851FB24DECA3}|campusCare.csproj|c:\\users\\erick\\downloads\\campuscarerepository\\campus_care\\vistas\\login.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{721CEF64-CEE2-45CF-B2EB-851FB24DECA3}|campusCare.csproj|solutionrelative:vistas\\login.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{721CEF64-CEE2-45CF-B2EB-851FB24DECA3}|campusCare.csproj|c:\\users\\erick\\downloads\\campuscarerepository\\campus_care\\vistasmodelos\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{721CEF64-CEE2-45CF-B2EB-851FB24DECA3}|campusCare.csproj|solutionrelative:vistasmodelos\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{721CEF64-CEE2-45CF-B2EB-851FB24DECA3}|campusCare.csproj|c:\\users\\erick\\downloads\\campuscarerepository\\campus_care\\vistas\\login.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{721CEF64-CEE2-45CF-B2EB-851FB24DECA3}|campusCare.csproj|solutionrelative:vistas\\login.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{721CEF64-CEE2-45CF-B2EB-851FB24DECA3}|campusCare.csproj|c:\\users\\erick\\downloads\\campuscarerepository\\campus_care\\modelos\\loginpacients.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{721CEF64-CEE2-45CF-B2EB-851FB24DECA3}|campusCare.csproj|solutionrelative:modelos\\loginpacients.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{721CEF64-CEE2-45CF-B2EB-851FB24DECA3}|campusCare.csproj|c:\\users\\erick\\downloads\\campuscarerepository\\campus_care\\modelos\\updatepaciente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{721CEF64-CEE2-45CF-B2EB-851FB24DECA3}|campusCare.csproj|solutionrelative:modelos\\updatepaciente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{721CEF64-CEE2-45CF-B2EB-851FB24DECA3}|campusCare.csproj|c:\\users\\erick\\downloads\\campuscarerepository\\campus_care\\vistasmodelos\\createuserviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{721CEF64-CEE2-45CF-B2EB-851FB24DECA3}|campusCare.csproj|solutionrelative:vistasmodelos\\createuserviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{721CEF64-CEE2-45CF-B2EB-851FB24DECA3}|campusCare.csproj|c:\\users\\erick\\downloads\\campuscarerepository\\campus_care\\vistas\\createuser.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{721CEF64-CEE2-45CF-B2EB-851FB24DECA3}|campusCare.csproj|solutionrelative:vistas\\createuser.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{721CEF64-CEE2-45CF-B2EB-851FB24DECA3}|campusCare.csproj|c:\\users\\erick\\downloads\\campuscarerepository\\campus_care\\vistasmodelos\\usuariosviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{721CEF64-CEE2-45CF-B2EB-851FB24DECA3}|campusCare.csproj|solutionrelative:vistasmodelos\\usuariosviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{721CEF64-CEE2-45CF-B2EB-851FB24DECA3}|campusCare.csproj|c:\\users\\erick\\downloads\\campuscarerepository\\campus_care\\vistas\\crudpacientes.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{721CEF64-CEE2-45CF-B2EB-851FB24DECA3}|campusCare.csproj|solutionrelative:vistas\\crudpacientes.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{721CEF64-CEE2-45CF-B2EB-851FB24DECA3}|campusCare.csproj|c:\\users\\erick\\downloads\\campuscarerepository\\campus_care\\appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{721CEF64-CEE2-45CF-B2EB-851FB24DECA3}|campusCare.csproj|solutionrelative:appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{721CEF64-CEE2-45CF-B2EB-851FB24DECA3}|campusCare.csproj|c:\\users\\erick\\downloads\\campuscarerepository\\campus_care\\vistas\\crudpacientes.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{721CEF64-CEE2-45CF-B2EB-851FB24DECA3}|campusCare.csproj|solutionrelative:vistas\\crudpacientes.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{721CEF64-CEE2-45CF-B2EB-851FB24DECA3}|campusCare.csproj|c:\\users\\erick\\downloads\\campuscarerepository\\campus_care\\modelos\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{721CEF64-CEE2-45CF-B2EB-851FB24DECA3}|campusCare.csproj|solutionrelative:modelos\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{721CEF64-CEE2-45CF-B2EB-851FB24DECA3}|campusCare.csproj|c:\\users\\erick\\downloads\\campuscarerepository\\campus_care\\vistasmodelos\\createuserviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{721CEF64-CEE2-45CF-B2EB-851FB24DECA3}|campusCare.csproj|solutionrelative:vistasmodelos\\createuserviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{721CEF64-CEE2-45CF-B2EB-851FB24DECA3}|campusCare.csproj|c:\\users\\erick\\downloads\\campuscarerepository\\campus_care\\vistas\\createuser.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{721CEF64-CEE2-45CF-B2EB-851FB24DECA3}|campusCare.csproj|solutionrelative:vistas\\createuser.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{721CEF64-CEE2-45CF-B2EB-851FB24DECA3}|campusCare.csproj|c:\\users\\erick\\downloads\\campuscarerepository\\campus_care\\resources\\images\\delete.svg||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{721CEF64-CEE2-45CF-B2EB-851FB24DECA3}|campusCare.csproj|solutionrelative:resources\\images\\delete.svg||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+      "AbsoluteMoniker": "D:0:0:{721CEF64-CEE2-45CF-B2EB-851FB24DECA3}|campusCare.csproj|c:\\users\\erick\\downloads\\campuscarerepository\\campus_care\\vistas\\crudpacientes.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{721CEF64-CEE2-45CF-B2EB-851FB24DECA3}|campusCare.csproj|solutionrelative:vistas\\crudpacientes.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{721CEF64-CEE2-45CF-B2EB-851FB24DECA3}|campusCare.csproj|c:\\users\\erick\\downloads\\campuscarerepository\\campus_care\\resources\\images\\edit.svg||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{721CEF64-CEE2-45CF-B2EB-851FB24DECA3}|campusCare.csproj|solutionrelative:resources\\images\\edit.svg||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+      "AbsoluteMoniker": "D:0:0:{721CEF64-CEE2-45CF-B2EB-851FB24DECA3}|campusCare.csproj|c:\\users\\erick\\downloads\\campuscarerepository\\campus_care\\modelos\\createpacientedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{721CEF64-CEE2-45CF-B2EB-851FB24DECA3}|campusCare.csproj|solutionrelative:modelos\\createpacientedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{721CEF64-CEE2-45CF-B2EB-851FB24DECA3}|campusCare.csproj|c:\\users\\erick\\downloads\\campuscarerepository\\campus_care\\campuscare.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{721CEF64-CEE2-45CF-B2EB-851FB24DECA3}|campusCare.csproj|solutionrelative:campuscare.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{721CEF64-CEE2-45CF-B2EB-851FB24DECA3}|campusCare.csproj|c:\\users\\erick\\downloads\\campuscarerepository\\campus_care\\platforms\\android\\mainactivity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{721CEF64-CEE2-45CF-B2EB-851FB24DECA3}|campusCare.csproj|solutionrelative:platforms\\android\\mainactivity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{721CEF64-CEE2-45CF-B2EB-851FB24DECA3}|campusCare.csproj|c:\\users\\erick\\downloads\\campuscarerepository\\campus_care\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{721CEF64-CEE2-45CF-B2EB-851FB24DECA3}|campusCare.csproj|solutionrelative:appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -66,105 +61,128 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "AppShell.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\erick\\Downloads\\campusCareRepository\\campus_care\\AppShell.xaml.cs",
-              "RelativeDocumentMoniker": "AppShell.xaml.cs",
-              "ToolTip": "C:\\Users\\erick\\Downloads\\campusCareRepository\\campus_care\\AppShell.xaml.cs",
-              "RelativeToolTip": "AppShell.xaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-18T20:37:16.546Z"
+              "DocumentIndex": 1,
+              "Title": "Microsoft.Maui.Resizetizer.After.targets",
+              "DocumentMoniker": "C:\\Users\\erick\\.nuget\\packages\\microsoft.maui.resizetizer\\8.0.40\\buildTransitive\\Microsoft.Maui.Resizetizer.After.targets",
+              "RelativeDocumentMoniker": "..\\..\\..\\.nuget\\packages\\microsoft.maui.resizetizer\\8.0.40\\buildTransitive\\Microsoft.Maui.Resizetizer.After.targets",
+              "ToolTip": "C:\\Users\\erick\\.nuget\\packages\\microsoft.maui.resizetizer\\8.0.40\\buildTransitive\\Microsoft.Maui.Resizetizer.After.targets",
+              "RelativeToolTip": "..\\..\\..\\.nuget\\packages\\microsoft.maui.resizetizer\\8.0.40\\buildTransitive\\Microsoft.Maui.Resizetizer.After.targets",
+              "ViewState": "AQIAADACAAAAAAAAAAAowG8CAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2024-09-22T23:46:09.318Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "UpdatePaciente.cs",
               "DocumentMoniker": "C:\\Users\\erick\\Downloads\\campusCareRepository\\campus_care\\modelos\\UpdatePaciente.cs",
               "RelativeDocumentMoniker": "modelos\\UpdatePaciente.cs",
               "ToolTip": "C:\\Users\\erick\\Downloads\\campusCareRepository\\campus_care\\modelos\\UpdatePaciente.cs",
               "RelativeToolTip": "modelos\\UpdatePaciente.cs",
-              "ViewState": "AQIAAB0AAAAAAAAAAAAAAAsAAAAzAAAA",
+              "ViewState": "AQIAAAoAAAAAAAAAAAA1wAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-18T17:49:22.65Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-22T21:19:36.636Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
-              "Title": "delete.svg",
-              "DocumentMoniker": "C:\\Users\\erick\\Downloads\\campusCareRepository\\campus_care\\Resources\\Images\\delete.svg",
-              "RelativeDocumentMoniker": "Resources\\Images\\delete.svg",
-              "ToolTip": "C:\\Users\\erick\\Downloads\\campusCareRepository\\campus_care\\Resources\\Images\\delete.svg",
-              "RelativeToolTip": "Resources\\Images\\delete.svg",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAOAAAA",
-              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKTSURBVDhPjVNLSFRRGP7unTsz9w75uOaMZlMNpo1aFFJRodRGN7UwatMiKgga3JgVRBSNSA8RooUFLRycCCpc9ITIFi0EW\u002BhCW/gONYUcxplsQL13nKv3dM6ZGV\u002BE9N37c\u002B455/\u002B\u002B/7s/5whYA7/fP5L63BSCIDxvbGxsAiEktZQEE6Brm6K1tXWS5TU0NNQyjsiZKQgCBgBChQ2Q\u002BfswpytgDLmg9zihD9XBNJfhcrlstPoeqlVPRS6uCBDy1broLnN29PkxPeaFFmpC79gOdEu9sB8KQRt\u002Bz/NUVbUGAoGpJIfc5j2gZIuv3fam/sCNGrdjGLGwE23hR\u002BiMeBCKAbXlOTgfr0VW9QfqD4iEZ5BIJNAWDI5yB75X0tXqwrc1JZk90MKVUEq/4UplFc4W5UKwiHjaO4tx90NWiYfT5cQuj4dRITLrZfn9104XtOD3\u002BE4z7/BrqIoKZ4YM37E8XNifA4vdiuCIApPzWY9Wmy9h6UfOpd13t89FstEceyF2PJlAfNHkm6y6xSbxcTASpyuMyFT4NoeI6PV6mzEvvIy0oO\u002BXPVGULaMs186jVLVil0zzF\u002BI4ki\u002BnqjP\u002BGgemrp0Z\u002BHn8T0d0nyrOTky\u002B8x0tNoxE0iZrcSqXz5lAcroCcXkeBcGpyzcnowRTDk9xoDuEmbkE5vRlfB6cRcWzIXibv\u002BNTf5ST0y7SEBa6MGIaOFje2VUnZSgPTFECMZM9YCeLde6cdwvuVLlXrVMFWXGAHqRRaUlDezyEic6tlbFBbW/oS8nHbf0RDZIooDDLipPeTJwozIJJH4EIoG/y1/6Fe/5bj6lFousa0WjoWjoWiLYhGNidWHcXDNhOsVGWFSg0ZCUdDigbIo11Zv73Oq8C\u002BAsr5V2IWWNA0gAAAABJRU5ErkJggg==",
-              "WhenOpened": "2024-09-18T16:34:03.027Z"
+              "Title": "CRUDpacientes.xaml",
+              "DocumentMoniker": "C:\\Users\\erick\\Downloads\\campusCareRepository\\campus_care\\vistas\\CRUDpacientes.xaml",
+              "RelativeDocumentMoniker": "vistas\\CRUDpacientes.xaml",
+              "ToolTip": "C:\\Users\\erick\\Downloads\\campusCareRepository\\campus_care\\vistas\\CRUDpacientes.xaml",
+              "RelativeToolTip": "vistas\\CRUDpacientes.xaml",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-09-22T20:52:22.733Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Login.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\erick\\Downloads\\campusCareRepository\\campus_care\\vistas\\Login.xaml.cs",
+              "RelativeDocumentMoniker": "vistas\\Login.xaml.cs",
+              "ToolTip": "C:\\Users\\erick\\Downloads\\campusCareRepository\\campus_care\\vistas\\Login.xaml.cs",
+              "RelativeToolTip": "vistas\\Login.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-22T06:05:43.799Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
-              "Title": "edit.svg",
-              "DocumentMoniker": "C:\\Users\\erick\\Downloads\\campusCareRepository\\campus_care\\Resources\\Images\\edit.svg",
-              "RelativeDocumentMoniker": "Resources\\Images\\edit.svg",
-              "ToolTip": "C:\\Users\\erick\\Downloads\\campusCareRepository\\campus_care\\Resources\\Images\\edit.svg",
-              "RelativeToolTip": "Resources\\Images\\edit.svg",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKTSURBVDhPjVNLSFRRGP7unTsz9w75uOaMZlMNpo1aFFJRodRGN7UwatMiKgga3JgVRBSNSA8RooUFLRycCCpc9ITIFi0EW\u002BhCW/gONYUcxplsQL13nKv3dM6ZGV\u002BE9N37c\u002B455/\u002B\u002B/7s/5whYA7/fP5L63BSCIDxvbGxsAiEktZQEE6Brm6K1tXWS5TU0NNQyjsiZKQgCBgBChQ2Q\u002BfswpytgDLmg9zihD9XBNJfhcrlstPoeqlVPRS6uCBDy1broLnN29PkxPeaFFmpC79gOdEu9sB8KQRt\u002Bz/NUVbUGAoGpJIfc5j2gZIuv3fam/sCNGrdjGLGwE23hR\u002BiMeBCKAbXlOTgfr0VW9QfqD4iEZ5BIJNAWDI5yB75X0tXqwrc1JZk90MKVUEq/4UplFc4W5UKwiHjaO4tx90NWiYfT5cQuj4dRITLrZfn9104XtOD3\u002BE4z7/BrqIoKZ4YM37E8XNifA4vdiuCIApPzWY9Wmy9h6UfOpd13t89FstEceyF2PJlAfNHkm6y6xSbxcTASpyuMyFT4NoeI6PV6mzEvvIy0oO\u002BXPVGULaMs186jVLVil0zzF\u002BI4ki\u002BnqjP\u002BGgemrp0Z\u002BHn8T0d0nyrOTky\u002B8x0tNoxE0iZrcSqXz5lAcroCcXkeBcGpyzcnowRTDk9xoDuEmbkE5vRlfB6cRcWzIXibv\u002BNTf5ST0y7SEBa6MGIaOFje2VUnZSgPTFECMZM9YCeLde6cdwvuVLlXrVMFWXGAHqRRaUlDezyEic6tlbFBbW/oS8nHbf0RDZIooDDLipPeTJwozIJJH4EIoG/y1/6Fe/5bj6lFousa0WjoWjoWiLYhGNidWHcXDNhOsVGWFSg0ZCUdDigbIo11Zv73Oq8C\u002BAsr5V2IWWNA0gAAAABJRU5ErkJggg==",
-              "WhenOpened": "2024-09-18T16:33:51.668Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "CRUDpacientes.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\erick\\Downloads\\campusCareRepository\\campus_care\\vistas\\CRUDpacientes.xaml.cs",
-              "RelativeDocumentMoniker": "vistas\\CRUDpacientes.xaml.cs",
-              "ToolTip": "C:\\Users\\erick\\Downloads\\campusCareRepository\\campus_care\\vistas\\CRUDpacientes.xaml.cs",
-              "RelativeToolTip": "vistas\\CRUDpacientes.xaml.cs",
-              "ViewState": "AQIAAAcAAAAAAAAAAAAgwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-18T09:36:02.351Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "CreateUser.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\erick\\Downloads\\campusCareRepository\\campus_care\\vistas\\CreateUser.xaml.cs",
-              "RelativeDocumentMoniker": "vistas\\CreateUser.xaml.cs",
-              "ToolTip": "C:\\Users\\erick\\Downloads\\campusCareRepository\\campus_care\\vistas\\CreateUser.xaml.cs",
-              "RelativeToolTip": "vistas\\CreateUser.xaml.cs",
-              "ViewState": "AQIAABUAAAAAAAAAAAAiwCkAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-11T21:40:08.258Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CreateUserViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\erick\\Downloads\\campusCareRepository\\campus_care\\vistasModelos\\CreateUserViewModel.cs",
-              "RelativeDocumentMoniker": "vistasModelos\\CreateUserViewModel.cs",
-              "ToolTip": "C:\\Users\\erick\\Downloads\\campusCareRepository\\campus_care\\vistasModelos\\CreateUserViewModel.cs",
-              "RelativeToolTip": "vistasModelos\\CreateUserViewModel.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAAAgwBgAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-11T21:19:08.094Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "CreatePacienteDTO.cs",
               "DocumentMoniker": "C:\\Users\\erick\\Downloads\\campusCareRepository\\campus_care\\modelos\\CreatePacienteDTO.cs",
               "RelativeDocumentMoniker": "modelos\\CreatePacienteDTO.cs",
               "ToolTip": "C:\\Users\\erick\\Downloads\\campusCareRepository\\campus_care\\modelos\\CreatePacienteDTO.cs",
               "RelativeToolTip": "modelos\\CreatePacienteDTO.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAA5wBkAAAAvAAAA",
+              "ViewState": "AQIAAAoAAAAAAAAAAAA1wBUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-11T21:17:34.586Z",
+              "WhenOpened": "2024-09-22T06:01:48.924Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "LoginPacients.cs",
+              "DocumentMoniker": "C:\\Users\\erick\\Downloads\\campusCareRepository\\campus_care\\modelos\\LoginPacients.cs",
+              "RelativeDocumentMoniker": "modelos\\LoginPacients.cs",
+              "ToolTip": "C:\\Users\\erick\\Downloads\\campusCareRepository\\campus_care\\modelos\\LoginPacients.cs",
+              "RelativeToolTip": "modelos\\LoginPacients.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAqwBAAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-22T04:39:26.247Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UsuariosViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\erick\\Downloads\\campusCareRepository\\campus_care\\vistasModelos\\UsuariosViewModel.cs",
+              "RelativeDocumentMoniker": "vistasModelos\\UsuariosViewModel.cs",
+              "ToolTip": "C:\\Users\\erick\\Downloads\\campusCareRepository\\campus_care\\vistasModelos\\UsuariosViewModel.cs",
+              "RelativeToolTip": "vistasModelos\\UsuariosViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-22T04:17:01.927Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "LoginViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\erick\\Downloads\\campusCareRepository\\campus_care\\vistasModelos\\LoginViewModel.cs",
+              "RelativeDocumentMoniker": "vistasModelos\\LoginViewModel.cs",
+              "ToolTip": "C:\\Users\\erick\\Downloads\\campusCareRepository\\campus_care\\vistasModelos\\LoginViewModel.cs",
+              "RelativeToolTip": "vistasModelos\\LoginViewModel.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAEEAAAByAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-22T04:16:45.026Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HomePacient.xaml",
+              "DocumentMoniker": "C:\\Users\\erick\\Downloads\\campusCareRepository\\campus_care\\vistas\\HomePacient.xaml",
+              "RelativeDocumentMoniker": "vistas\\HomePacient.xaml",
+              "ToolTip": "C:\\Users\\erick\\Downloads\\campusCareRepository\\campus_care\\vistas\\HomePacient.xaml",
+              "RelativeToolTip": "vistas\\HomePacient.xaml",
+              "ViewState": "AQIAAKIAAAAAAAAAAAAAAKcAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-09-22T03:50:27.914Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AppShell.xaml",
+              "DocumentMoniker": "C:\\Users\\erick\\Downloads\\campusCareRepository\\campus_care\\AppShell.xaml",
+              "RelativeDocumentMoniker": "AppShell.xaml",
+              "ToolTip": "C:\\Users\\erick\\Downloads\\campusCareRepository\\campus_care\\AppShell.xaml",
+              "RelativeToolTip": "AppShell.xaml",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAABAAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-09-22T03:19:37.188Z"
             },
             {
               "$type": "Document",
@@ -174,69 +192,33 @@
               "RelativeDocumentMoniker": "vistas\\CreateUser.xaml",
               "ToolTip": "C:\\Users\\erick\\Downloads\\campusCareRepository\\campus_care\\vistas\\CreateUser.xaml",
               "RelativeToolTip": "vistas\\CreateUser.xaml",
-              "ViewState": "AQIAAD0AAAAAAAAAAAAAAEcBAAAuAAAA",
+              "ViewState": "AQIAAD4BAAAAAAAAAAAAAEkBAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-09-11T18:59:06.792Z"
+              "WhenOpened": "2024-09-22T01:18:48.008Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "UsuariosViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\erick\\Downloads\\campusCareRepository\\campus_care\\vistasModelos\\UsuariosViewModel.cs",
-              "RelativeDocumentMoniker": "vistasModelos\\UsuariosViewModel.cs",
-              "ToolTip": "C:\\Users\\erick\\Downloads\\campusCareRepository\\campus_care\\vistasModelos\\UsuariosViewModel.cs",
-              "RelativeToolTip": "vistasModelos\\UsuariosViewModel.cs",
-              "ViewState": "AQIAABkAAAAAAAAAAAAywCkAAAAPAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-11T14:53:40.69Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "CRUDpacientes.xaml",
-              "DocumentMoniker": "C:\\Users\\erick\\Downloads\\campusCareRepository\\campus_care\\vistas\\CRUDpacientes.xaml",
-              "RelativeDocumentMoniker": "vistas\\CRUDpacientes.xaml",
-              "ToolTip": "C:\\Users\\erick\\Downloads\\campusCareRepository\\campus_care\\vistas\\CRUDpacientes.xaml",
-              "RelativeToolTip": "vistas\\CRUDpacientes.xaml",
-              "ViewState": "AQIAACgAAAAAAAAAAAAswC4AAAAvAAAA",
+              "DocumentIndex": 2,
+              "Title": "Login.xaml",
+              "DocumentMoniker": "C:\\Users\\erick\\Downloads\\campusCareRepository\\campus_care\\vistas\\Login.xaml",
+              "RelativeDocumentMoniker": "vistas\\Login.xaml",
+              "ToolTip": "C:\\Users\\erick\\Downloads\\campusCareRepository\\campus_care\\vistas\\Login.xaml",
+              "RelativeToolTip": "vistas\\Login.xaml",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAACMAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-09-10T18:03:50.395Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "MainActivity.cs",
-              "DocumentMoniker": "C:\\Users\\erick\\Downloads\\campusCareRepository\\campus_care\\Platforms\\Android\\MainActivity.cs",
-              "RelativeDocumentMoniker": "Platforms\\Android\\MainActivity.cs",
-              "ToolTip": "C:\\Users\\erick\\Downloads\\campusCareRepository\\campus_care\\Platforms\\Android\\MainActivity.cs",
-              "RelativeToolTip": "Platforms\\Android\\MainActivity.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-10T00:44:56.984Z"
+              "WhenOpened": "2024-09-22T01:16:34.173Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "UserDTO.cs",
-              "DocumentMoniker": "C:\\Users\\erick\\Downloads\\campusCareRepository\\campus_care\\modelos\\UserDTO.cs",
-              "RelativeDocumentMoniker": "modelos\\UserDTO.cs",
-              "ToolTip": "C:\\Users\\erick\\Downloads\\campusCareRepository\\campus_care\\modelos\\UserDTO.cs",
-              "RelativeToolTip": "modelos\\UserDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAqAAAA",
+              "Title": "CreateUserViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\erick\\Downloads\\campusCareRepository\\campus_care\\vistasModelos\\CreateUserViewModel.cs",
+              "RelativeDocumentMoniker": "vistasModelos\\CreateUserViewModel.cs",
+              "ToolTip": "C:\\Users\\erick\\Downloads\\campusCareRepository\\campus_care\\vistasModelos\\CreateUserViewModel.cs",
+              "RelativeToolTip": "vistasModelos\\CreateUserViewModel.cs",
+              "ViewState": "AQIAADcAAAAAAAAAAAAIwD4AAAAPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-09T19:43:51.137Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "campusCare.csproj",
-              "DocumentMoniker": "C:\\Users\\erick\\Downloads\\campusCareRepository\\campus_care\\campusCare.csproj",
-              "RelativeDocumentMoniker": "campusCare.csproj",
-              "ToolTip": "C:\\Users\\erick\\Downloads\\campusCareRepository\\campus_care\\campusCare.csproj",
-              "RelativeToolTip": "campusCare.csproj",
-              "ViewState": "AQIAABUAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-09-09T19:34:52.095Z"
+              "WhenOpened": "2024-09-22T00:53:44.242Z"
             }
           ]
         }
