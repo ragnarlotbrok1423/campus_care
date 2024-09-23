@@ -12,6 +12,10 @@
         Title="Login"
         ContentTemplate="{DataTemplate vistas:Login}"
         Route="Login" />
+    <ShellContent
+        Title="HistoryPacient"
+        ContentTemplate="{DataTemplate vistas:HistoryPacient}"
+        Route="HistoryPacient" />
 
     <ShellContent
         Title="HomePacient"

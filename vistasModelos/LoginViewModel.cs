@@ -3,11 +3,13 @@ using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Net.Http.Json;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
+
 
 namespace campusCare.vistasModelos
 {
@@ -51,8 +53,11 @@ namespace campusCare.vistasModelos
             {
                 var responseContent = await response.Content.ReadAsStringAsync();
                 int IdUsuario = int.Parse(responseContent);
+                Preferences.Set("IdUsuario", IdUsuario);
+                Debug.WriteLine($"Valor de userId: {IdUsuario}");
 
                 await Shell.Current.GoToAsync("///HomePacient");
+
             }
             else if (response.StatusCode == System.Net.HttpStatusCode.Unauthorized)
             {

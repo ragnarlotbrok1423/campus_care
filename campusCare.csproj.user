@@ -16,6 +16,9 @@
     <MauiXaml Update="vistas\CRUDpacientes.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
+    <MauiXaml Update="vistas\HistoryPacient.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
     <MauiXaml Update="vistas\HomePacient.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>

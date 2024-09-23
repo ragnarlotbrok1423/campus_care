@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="campusCare.vistas.HistoryPacient"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:campusCare.vistasModelos"
+    Title="HistoryPacient"
+    BackgroundColor="White"
+    Shell.NavBarIsVisible="False">
+    <ContentPage.BindingContext>
+        <local:HistorialMedicoViewModel />
+    </ContentPage.BindingContext>
+
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <DataTemplate x:Key="HistoryTemplate">
+                <Frame
+                    BackgroundColor="#136AED"
+                    BorderColor="Transparent"
+                    Margin="0,0,0,10"
+                    CornerRadius="10">
+                    <Grid RowSpacing="10">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                        <Grid Grid.Row="0" ColumnSpacing="10">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="auto" />
+                                <ColumnDefinition Width="auto" />
+                                <ColumnDefinition Width="auto" />
+                            </Grid.ColumnDefinitions>
+                            <Image Grid.Column="0" Source="calendar2.svg" />
+                            <Label
+                                Grid.Column="1"
+                                FontAttributes="Bold"
+                                FontFamily="Ubuntu"
+                                FontSize="18"
+                                Text="Fecha:"
+                                TextColor="White" />
+                            <Label
+                                Grid.Column="2"
+                                FontAttributes="Bold"
+                                FontFamily="Ubuntu"
+                                FontSize="18"
+                                Text="{Binding Fecha}"
+                                TextColor="White" />
+                        </Grid>
+                        <Grid Grid.Row="1" ColumnSpacing="10">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="auto" />
+                                <ColumnDefinition Width="auto" />
+                                <ColumnDefinition Width="auto" />
+                            </Grid.ColumnDefinitions>
+                            <Image Grid.Column="0" Source="description.svg" />
+                            <Label
+                                Grid.Column="1"
+                                FontAttributes="Bold"
+                                FontFamily="Ubuntu"
+                                FontSize="18"
+                                Text="Motivo:"
+                                TextColor="White" />
+                            <Label
+                                Grid.Column="2"
+                                FontAttributes="Bold"
+                                FontFamily="Ubuntu"
+                                FontSize="18"
+                                Text="{Binding TipoConsulta.TipoConsulta}"
+                                TextColor="White" />
+                        </Grid>
+                        <Grid Grid.Row="2" ColumnSpacing="10">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="auto" />
+                                <ColumnDefinition Width="auto" />
+                                <ColumnDefinition Width="auto" />
+                            </Grid.ColumnDefinitions>
+                            <Image Grid.Column="0" Source="doctor.svg" />
+                            <Label
+                                Grid.Column="1"
+                                FontAttributes="Bold"
+                                FontFamily="Ubuntu"
+                                FontSize="18"
+                                Text="Doctor:"
+                                TextColor="White" />
+                            <Label
+                                Grid.Column="2"
+                                FontAttributes="Bold"
+                                FontFamily="Ubuntu"
+                                FontSize="18"
+                                Text="{Binding Doctores.NombreCompleto}"
+                                TextColor="White" />
+                        </Grid>
+
+                    </Grid>
+                </Frame>
+            </DataTemplate>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+
+        </Grid.RowDefinitions>
+        <AbsoluteLayout Grid.Row="0">
+            <Image
+                AbsoluteLayout.LayoutBounds="0, 0, 1, AutoSize"
+                AbsoluteLayout.LayoutFlags="WidthProportional"
+                Aspect="AspectFit"
+                Source="banner.svg" />
+
+            <Image
+                AbsoluteLayout.LayoutBounds="0, 20, 1, AutoSize"
+                AbsoluteLayout.LayoutFlags="WidthProportional"
+                Aspect="AspectFit"
+                Source="logo.svg" />
+            <Label
+                AbsoluteLayout.LayoutBounds="80, 120, 1, AutoSize"
+                AbsoluteLayout.LayoutFlags="WidthProportional"
+                FontFamily="Bungee"
+                FontSize="20"
+                Text="Historial Médico"
+                TextColor="#00ffea" />
+
+        </AbsoluteLayout>
+        <Button
+            Grid.Row="1"
+            Margin="0,20,0,0"
+            Background="Transparent"
+            Clicked="home"
+            FontAttributes="Bold"
+            FontFamily="Ubuntu"
+            FontSize="20"
+            HorizontalOptions="Start"
+            Text="Volver"
+            TextColor="#136AED" />
+        <Label
+            Grid.Row="2"
+            FontFamily="Bungee"
+            FontSize="20"
+            HorizontalOptions="Center"
+            Text="Historial del Paciente"
+            TextColor="#07016C" />
+
+        <!-- <Frame
+            Grid.Row="3"
+            Margin="30,0,30,0"
+            Background="#139EED"
+            BorderColor="Transparent"
+            CornerRadius="15">
+            <Grid RowSpacing="20">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0" ColumnSpacing="20">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto" />
+                        <ColumnDefinition Width="auto" />
+                    </Grid.ColumnDefinitions>
+                    <Label
+                        Grid.Column="0"
+                        FontFamily="Ubuntu"
+                        FontSize="20"
+                        Text="Nombre:"
+                        TextColor="White" />
+                    <Label
+                        Grid.Column="1"
+                        FontFamily="Ubuntu"
+                        FontSize="20"
+                        Text="{Binding Historial[0].Pacientes.Nombre}"
+                        TextColor="White" />
+                </Grid>
+                <Grid Grid.Row="1" ColumnSpacing="20">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto" />
+                        <ColumnDefinition Width="auto" />
+                    </Grid.ColumnDefinitions>
+                    <Label
+                        Grid.Column="0"
+                        FontFamily="Ubuntu"
+                        FontSize="20"
+                        Text="Cédula:"
+                        TextColor="White" />
+                    <Label
+                        Grid.Column="1"
+                        FontFamily="Ubuntu"
+                        FontSize="20"
+                        Text="{Binding Historial[0].Pacientes.Cedula}"
+                        TextColor="White" />
+                </Grid>
+            </Grid>
+        </Frame>-->
+        <Label
+            Grid.Row="4"
+            Margin="20,20,0,0"
+            FontAttributes="Bold"
+            FontFamily="Ubuntu"
+            FontSize="20"
+            Text="Citas"
+            TextColor="#07016C" />
+        <ScrollView Grid.Row="5" Margin="30,20,30,0">
+            <CollectionView ItemTemplate="{StaticResource HistoryTemplate}" ItemsSource="{Binding Historial}" />
+        </ScrollView>
+        <Button
+            Grid.Row="6"
+            Margin="0,20,0,20"
+            Background="#07016C"
+            CornerRadius="50"
+            Padding="30,0,30,0"
+            FontFamily="Bungee"
+            FontSize="20"
+            Command="{Binding LoadHistorialCommand}"
+            HorizontalOptions="Center"
+            Text="Refrescar Historial"
+            TextColor="#00FFEA" />
+
+
+
+    </Grid>
+</ContentPage>

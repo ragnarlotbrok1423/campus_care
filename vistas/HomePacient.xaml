@@ -5,7 +5,11 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     Title="HomePacient"
     BackgroundColor="White"
+    xmlns:vm="clr-namespace:campusCare.vistasModelos"
     Shell.NavBarIsVisible="False">
+    <ContentPage.BindingContext>
+        <vm:HomePacientsViewModel/>
+    </ContentPage.BindingContext>
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
@@ -110,7 +114,8 @@
                 CornerRadius="15">
                 <Frame.GestureRecognizers>
                     <!--  Esto es para poder colarle un command  -->
-                    <TapGestureRecognizer />
+
+                    <TapGestureRecognizer Command="{Binding historyViewCommand}" />
 
                 </Frame.GestureRecognizers>
                 <Grid
