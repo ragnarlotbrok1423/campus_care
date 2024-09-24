@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="campusCare.vistas.Login"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="Login"
+    BackgroundColor="White"
+    Shell.NavBarIsVisible="False">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <AbsoluteLayout Grid.Row="0">
+            <Image
+                AbsoluteLayout.LayoutBounds="0, 0, 1, AutoSize"
+                AbsoluteLayout.LayoutFlags="WidthProportional"
+                Aspect="AspectFit"
+                Source="banner.svg" />
+
+            <Image
+                AbsoluteLayout.LayoutBounds="0, 20, 1, AutoSize"
+                AbsoluteLayout.LayoutFlags="WidthProportional"
+                Aspect="AspectFit"
+                Source="logo.svg" />
+            <Label
+                AbsoluteLayout.LayoutBounds="145, 120, 1, AutoSize"
+                AbsoluteLayout.LayoutFlags="WidthProportional"
+                FontFamily="Bungee"
+                FontSize="20"
+                Text="Login"
+                TextColor="#00ffea" />
+
+        </AbsoluteLayout>
+        <!--esta es la seccion del formulario-->
+        <Grid Grid.Row="1" VerticalOptions="Center" >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <!--Entry para usuario-->
+            <Grid Grid.Row="0" Margin="50,30,50,0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Label
+                    Grid.Row="0"
+                    Margin="0,0,0,10"
+                    FontFamily="Ubuntu"
+                    FontSize="20"
+                    Text="Nombre de Usuario"
+                    TextColor="#07016C"
+                    VerticalOptions="Center" />
+                <Frame
+                    Grid.Row="1"
+                    Padding="2"
+                    BorderColor="#07016C"
+                    HasShadow="True">
+                    <Entry
+                        FontFamily="Ubuntu"
+                        Placeholder="Nombre de Usuario"
+                        PlaceholderColor="#7C74FF"
+                        Text="{Binding NombreUsuario}"
+                        TextColor="#07016C" />
+                </Frame>
+            </Grid>
+            <!--Entry para password-->
+            <Grid Grid.Row="1" Margin="50,30,50,0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Label
+                    Grid.Row="0"
+                    Margin="0,0,0,10"
+                    FontFamily="Ubuntu"
+                    FontSize="20"
+                    Text="Contraseña"
+                    TextColor="#07016C"
+                    VerticalOptions="Center" />
+                <Frame
+                    Grid.Row="1"
+                    Padding="2"
+                    BorderColor="#07016C"
+                    HasShadow="True">
+                    <Entry
+                        FontFamily="Ubuntu"
+                        Placeholder="Contraseña"
+                        PlaceholderColor="#7C74FF"
+                        Text="{Binding Contraseña}"
+                        TextColor="#07016C" />
+                </Frame>
+            </Grid>
+
+        </Grid>
+        <!--Boton de login-->
+        <Button Grid.Row="2" 
+                VerticalOptions="End"
+                Margin="50,0,50,30"
+                Padding="0"
+                BackgroundColor="#73FA93"
+                Text="Iniciar Sesión"
+                TextColor="#07016C"
+                FontFamily="Bungee"
+                Command="{Binding LoginCommand}"
+                FontSize="20"
+                />
+    </Grid>
+</ContentPage>

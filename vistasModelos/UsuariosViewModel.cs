@@ -12,7 +12,7 @@ namespace campusCare.vistasModelos
 {
     public class ApiResponse<T>
     {
-        [JsonPropertyName("$values")] // Aquí se mapea la propiedad al nombre del JSON
+        [JsonPropertyName("$values")]
         public T[] Values { get; set; } = Array.Empty<T>();
     }
 

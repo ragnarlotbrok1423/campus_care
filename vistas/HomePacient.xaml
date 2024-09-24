@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="campusCare.vistas.HomePacient"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="HomePacient"
+    BackgroundColor="White"
+    xmlns:vm="clr-namespace:campusCare.vistasModelos"
+    Shell.NavBarIsVisible="False">
+    <ContentPage.BindingContext>
+        <vm:HomePacientsViewModel/>
+    </ContentPage.BindingContext>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <!--  Header  -->
+        <AbsoluteLayout Grid.Row="0">
+            <Image
+                AbsoluteLayout.LayoutBounds="0, 0, 1, AutoSize"
+                AbsoluteLayout.LayoutFlags="WidthProportional"
+                Aspect="AspectFit"
+                Source="banner.svg" />
+
+            <Image
+                AbsoluteLayout.LayoutBounds="0, 20, 1, AutoSize"
+                AbsoluteLayout.LayoutFlags="WidthProportional"
+                Aspect="AspectFit"
+                Source="logo.svg" />
+            <Label
+                AbsoluteLayout.LayoutBounds="90, 120, 1, AutoSize"
+                AbsoluteLayout.LayoutFlags="WidthProportional"
+                FontFamily="Bungee"
+                FontSize="20"
+                Text="Menú Principal"
+                TextColor="#00ffea" />
+
+        </AbsoluteLayout>
+        <Grid
+            Grid.Row="1"
+            Margin="30,20,30,0"
+            ColumnSpacing="10"
+            HorizontalOptions="Center">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto" />
+                <ColumnDefinition Width="auto" />
+            </Grid.ColumnDefinitions>
+            <Label
+                Grid.Column="0"
+                FontFamily="Bungee"
+                FontSize="18"
+                Text="Bienvenido"
+                TextColor="#07016C" />
+            <Label
+                Grid.Column="1"
+                FontFamily="Bungee"
+                FontSize="18"
+                Text="Erick Gonzalez"
+                TextColor="#139EED" />
+        </Grid>
+        <Label
+            Grid.Row="2"
+            Margin="30,10,0,0"
+            FontFamily="Ubuntu"
+            FontSize="18"
+            Text="Tus Datos"
+            TextColor="#07016C" />
+        <Grid
+            Grid.Row="3"
+            Margin="0,20,0,0"
+            ColumnSpacing="10"
+            HorizontalOptions="Center">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.35*" />
+                <ColumnDefinition Width="0.35*" />
+                <ColumnDefinition Width="0.35*" />
+            </Grid.ColumnDefinitions>
+            <Frame
+                Grid.Column="0"
+                Padding="0"
+                BorderColor="Transparent"
+                CornerRadius="15">
+                <Frame.GestureRecognizers>
+                    <!--  Esto es para poder colarle un command  -->
+                    <TapGestureRecognizer />
+
+                </Frame.GestureRecognizers>
+                <Grid
+                    Padding="20"
+                    BackgroundColor="#139EED"
+                    RowSpacing="5">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Image Source="pill.svg" />
+                    <Label
+                        Grid.Row="1"
+                        FontFamily="Ubuntu"
+                        FontSize="15"
+                        Text="Recetas"
+                        TextColor="White" />
+                </Grid>
+            </Frame>
+            <Frame
+                Grid.Column="1"
+                Padding="0"
+                BorderColor="Transparent"
+                CornerRadius="15">
+                <Frame.GestureRecognizers>
+                    <!--  Esto es para poder colarle un command  -->
+
+                    <TapGestureRecognizer Command="{Binding historyViewCommand}" />
+
+                </Frame.GestureRecognizers>
+                <Grid
+                    Padding="30,20,30,20"
+                    BackgroundColor="#136AED"
+                    RowSpacing="5">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Image Source="maletin.svg" />
+                    <Label
+                        Grid.Row="1"
+                        FontFamily="Ubuntu"
+                        FontSize="15"
+                        Text="Citas"
+                        TextColor="White" />
+                </Grid>
+            </Frame>
+            <Frame
+                Grid.Column="2"
+                Padding="0"
+                BorderColor="Transparent"
+                CornerRadius="15">
+                <Frame.GestureRecognizers>
+                    <!--  Esto es para poder colarle un command  -->
+                    <TapGestureRecognizer />
+
+                </Frame.GestureRecognizers>
+                <Grid
+                    Padding="20"
+                    BackgroundColor="#3325DC"
+                    RowSpacing="5">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Image Source="check.svg" />
+                    <Label
+                        Grid.Row="1"
+                        FontFamily="Ubuntu"
+                        FontSize="15"
+                        Text="Chekeos"
+                        TextColor="White" />
+                </Grid>
+            </Frame>
+        </Grid>
+        <Image
+            Grid.Row="4"
+            Margin="0,20,0,0"
+            Source="injectable_Card.svg" />
+
+        <Frame
+            Grid.Row="5"
+            Margin="20,0,20,10"
+            Padding="0"
+            BorderColor="Transparent"
+            BackgroundColor="#07016C"
+            VerticalOptions="End"
+            CornerRadius="50">
+            <Grid  HorizontalOptions="Center" ColumnSpacing="10" Padding="10,5,10,5">
+                <Grid.ColumnDefinitions >
+                    <ColumnDefinition Width="auto" />
+                    <ColumnDefinition Width="auto" />
+                    <ColumnDefinition Width="auto" />
+                    <ColumnDefinition Width="auto" />
+                    <ColumnDefinition Width="auto" />
+                </Grid.ColumnDefinitions>
+                <ImageButton
+                    Grid.Column="0"
+                    BackgroundColor="Transparent"
+                    Source="home.svg" />
+                <ImageButton
+                    Grid.Column="1"
+                    BackgroundColor="Transparent"
+                    Source="bell.svg" />
+                <ImageButton
+                    Grid.Column="2"
+                    BackgroundColor="Transparent"
+                    Source="calendar.svg" 
+                   Clicked="AgendarCita"
+                    Margin="20,0,20,0"
+                    />
+                <ImageButton
+                    Grid.Column="3"
+                    BackgroundColor="Transparent"
+                    Source="pill.svg" />
+                <ImageButton
+                    Grid.Column="4"
+                    BackgroundColor="Transparent"
+                    Source="user.svg" />
+            </Grid>
+        </Frame>
+    </Grid>
+</ContentPage>

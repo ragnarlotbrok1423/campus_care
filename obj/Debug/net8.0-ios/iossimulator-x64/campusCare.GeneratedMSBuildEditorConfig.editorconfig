@@ -46,6 +46,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = campusCare.Resources.Style
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
 
+[C:/Users/erick/Downloads/campusCareRepository/campus_care/vistas/AgendarCitas.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = campusCare.vistas.AgendarCitas.xaml
+build_metadata.AdditionalFiles.TargetPath = vistas\AgendarCitas.xaml
+build_metadata.AdditionalFiles.RelativePath = vistas\AgendarCitas.xaml
+
 [C:/Users/erick/Downloads/campusCareRepository/campus_care/vistas/CreateUser.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = campusCare.vistas.CreateUser.xaml
@@ -57,3 +63,21 @@ build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = campusCare.vistas.CRUDpacientes.xaml
 build_metadata.AdditionalFiles.TargetPath = vistas\CRUDpacientes.xaml
 build_metadata.AdditionalFiles.RelativePath = vistas\CRUDpacientes.xaml
+
+[C:/Users/erick/Downloads/campusCareRepository/campus_care/vistas/HistoryPacient.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = campusCare.vistas.HistoryPacient.xaml
+build_metadata.AdditionalFiles.TargetPath = vistas\HistoryPacient.xaml
+build_metadata.AdditionalFiles.RelativePath = vistas\HistoryPacient.xaml
+
+[C:/Users/erick/Downloads/campusCareRepository/campus_care/vistas/HomePacient.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = campusCare.vistas.HomePacient.xaml
+build_metadata.AdditionalFiles.TargetPath = vistas\HomePacient.xaml
+build_metadata.AdditionalFiles.RelativePath = vistas\HomePacient.xaml
+
+[C:/Users/erick/Downloads/campusCareRepository/campus_care/vistas/Login.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = campusCare.vistas.Login.xaml
+build_metadata.AdditionalFiles.TargetPath = vistas\Login.xaml
+build_metadata.AdditionalFiles.RelativePath = vistas\Login.xaml
