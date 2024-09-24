@@ -36,7 +36,7 @@ namespace campusCare.vistasModelos
             LoginCommand = new AsyncRelayCommand(ExecuteLoginCommand);
             _httpClient = new HttpClient
             {
-                BaseAddress = new Uri("https://80c5-190-141-25-187.ngrok-free.app/")
+                BaseAddress = new Uri(" https://3bd5-200-124-21-59.ngrok-free.app/")
             };
         }
 

@@ -196,6 +196,7 @@
                     Grid.Column="2"
                     BackgroundColor="Transparent"
                     Source="calendar.svg" 
+                   Clicked="AgendarCita"
                     Margin="20,0,20,0"
                     />
                 <ImageButton

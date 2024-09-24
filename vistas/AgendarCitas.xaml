@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="campusCare.vistas.AgendarCitas"
+             Shell.NavBarIsVisible="False"
+             Title="AgendarCitas">
+    <ScrollView BackgroundColor="White">
+        <StackLayout Spacing="20">
+            <!-- Header -->
+            <Grid BackgroundColor="#000080" HeightRequest="140" WidthRequest="600">
+                <Image Source="logo.png" HeightRequest="45" Margin="0,-69,0,0"/>
+                <Label Text="CAMPUS CARE" TextColor="White" FontSize="24" FontAttributes="Bold" Margin="0,10,0,0" HorizontalOptions="Center" VerticalOptions="Center" FontFamily="Bungee-regular"/>
+                <Label Text="CITAS" TextColor="#00FFFF" FontSize="18" HorizontalOptions="Center"  Margin="0,80,0,5" FontFamily="Bungee-Regular"/>
+            </Grid>
+
+            <!-- Contenido con fondo blanco -->
+            <Frame BackgroundColor="White" Padding="10" BorderColor="White">
+                <StackLayout Spacing="20">
+                    <Button Text="Volver" TextColor="#00FFFF" BackgroundColor="Transparent" HorizontalOptions="Start" FontFamily="Bungee-Regular" Clicked="home" />
+
+                    <!-- Date Selection -->
+                    <Label Text="Escoje la fecha de tu Cita" TextColor="#000080" FontSize="17"  FontFamily="Roboto-Black"/>
+                    <DatePicker BackgroundColor="#E6E6FA" TextColor="#000080" x:Name="CalendarioAgenda"/>
+                    <Label Text="Seleccione al medico" TextColor="#000080" FontSize="17"  FontFamily="Roboto-Black"/>
+                    <Picker x:Name="Doctorpicker" SelectedItem="Binding ItemSelected"
+                        Title="seleccione una opcion">
+                        <Picker.ItemsSource>
+                            <x:Array Type="{x:Type x:String}">
+                                <x:String>medina gonzalez - Ginocologo</x:String>
+                            </x:Array>
+                        </Picker.ItemsSource>
+                    </Picker>
+
+                    <Label Text="Seleccione el motivo de su cita" TextColor="#000080" FontSize="17"  FontFamily="Roboto-Black"/>
+                    <Picker x:Name="picker" SelectedItem="Binding ItemSelected"
+                        Title="seleccione una opcion">
+                        <Picker.ItemsSource>
+                            <x:Array Type="{x:Type x:String}">
+                                <x:String>Medicina General</x:String>
+                                <x:String>Especialidad</x:String>
+                                <x:String>Glucosa</x:String>
+                                <x:String>Toma de Presion</x:String>
+                            </x:Array>
+                        </Picker.ItemsSource>
+                    </Picker>
+
+                    <Button Text="Realizar Cita" Clicked="OnGuardarInfoClicked" BackgroundColor="#000080" TextColor="White" CornerRadius="20" />
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
