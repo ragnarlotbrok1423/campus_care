@@ -33,10 +33,11 @@ namespace campusCare.vistasModelos
 
         public LoginViewModel()
         {
+            ServerString server = new ServerString();
             LoginCommand = new AsyncRelayCommand(ExecuteLoginCommand);
             _httpClient = new HttpClient
             {
-                BaseAddress = new Uri(" https://3bd5-200-124-21-59.ngrok-free.app/")
+                BaseAddress = new Uri(server.cabecera)
             };
         }
 
@@ -53,10 +54,21 @@ namespace campusCare.vistasModelos
             {
                 var responseContent = await response.Content.ReadAsStringAsync();
                 int IdUsuario = int.Parse(responseContent);
+                string Nombre = responseContent;
                 Preferences.Set("IdUsuario", IdUsuario);
-                Debug.WriteLine($"Valor de userId: {IdUsuario}");
 
-                await Shell.Current.GoToAsync("///HomePacient");
+                Debug.WriteLine($"Valor de userId: {IdUsuario}");
+                if (IdUsuario == 4)
+                {
+                    await Shell.Current.GoToAsync("///CRUDpaciente");
+
+                }
+                else
+                {
+                    await Shell.Current.GoToAsync("///HomePacient");
+                }
+
+
 
             }
             else if (response.StatusCode == System.Net.HttpStatusCode.Unauthorized)

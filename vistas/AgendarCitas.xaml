@@ -23,7 +23,9 @@
                     <DatePicker BackgroundColor="#E6E6FA" TextColor="#000080" x:Name="CalendarioAgenda"/>
                     <Label Text="Seleccione al medico" TextColor="#000080" FontSize="17"  FontFamily="Roboto-Black"/>
                     <Picker x:Name="Doctorpicker" SelectedItem="Binding ItemSelected"
-                        Title="seleccione una opcion">
+                        Title="seleccione una opcion"
+                            TextColor="#000080"
+                            >
                         <Picker.ItemsSource>
                             <x:Array Type="{x:Type x:String}">
                                 <x:String>medina gonzalez - Ginocologo</x:String>
@@ -33,7 +35,9 @@
 
                     <Label Text="Seleccione el motivo de su cita" TextColor="#000080" FontSize="17"  FontFamily="Roboto-Black"/>
                     <Picker x:Name="picker" SelectedItem="Binding ItemSelected"
-                        Title="seleccione una opcion">
+                        Title="seleccione una opcion"
+                            TextColor="#000080"
+                            >
                         <Picker.ItemsSource>
                             <x:Array Type="{x:Type x:String}">
                                 <x:String>Medicina General</x:String>
@@ -41,6 +45,7 @@
                                 <x:String>Glucosa</x:String>
                                 <x:String>Toma de Presion</x:String>
                             </x:Array>
+                            
                         </Picker.ItemsSource>
                     </Picker>
 

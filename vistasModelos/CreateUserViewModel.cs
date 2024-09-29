@@ -45,10 +45,11 @@ namespace campusCare.vistasModelos
 
         public CreateUserViewModel()
         {
+            ServerString server = new ServerString();
             NuevoPaciente = new CreatePacienteDTO();
             _httpClient = new HttpClient
             {
-                BaseAddress = new Uri("https://c66d-200-124-21-55.ngrok-free.app/") // Cambia esta URL si es necesario
+                BaseAddress = new Uri(server.cabecera)
             };
 
             CrearUsuarioCommand = new AsyncRelayCommand(CrearUsuarioAsync);

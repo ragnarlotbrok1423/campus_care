@@ -7,40 +7,52 @@
     BackgroundColor="White"
     Shell.NavBarIsVisible="False">
 
+
+
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
-        <AbsoluteLayout Grid.Row="0">
+        <Grid Grid.Row="0" HeightRequest="200">
+            <!--  Banner  -->
             <Image
-                AbsoluteLayout.LayoutBounds="0, 0, 1, AutoSize"
-                AbsoluteLayout.LayoutFlags="WidthProportional"
-                Aspect="AspectFit"
-                Source="banner.svg" />
+                Grid.Row="0"
+                Aspect="Fill"
+               
+                HorizontalOptions="Center"
+                Source="banner.png"
+                VerticalOptions="Center" />
 
+            <!--  Logo superpuesto al banner  -->
             <Image
-                AbsoluteLayout.LayoutBounds="0, 20, 1, AutoSize"
-                AbsoluteLayout.LayoutFlags="WidthProportional"
-                Aspect="AspectFit"
-                Source="logo.svg" />
+                Grid.Row="0"
+                Margin="0,20,0,0"
+                Aspect="Center" 
+                HorizontalOptions="Center"
+                Source="logo.png"
+                VerticalOptions="Start" />
+
+            <!--  Texto "Login" superpuesto al banner  -->
             <Label
-                AbsoluteLayout.LayoutBounds="145, 120, 1, AutoSize"
-                AbsoluteLayout.LayoutFlags="WidthProportional"
+                Grid.Row="0"
+                Margin="0,0,0,20"
                 FontFamily="Bungee"
-                FontSize="20"
+                FontSize="30"
+                HorizontalOptions="Center"
                 Text="Login"
-                TextColor="#00ffea" />
+                TextColor="#00ffea"
+                VerticalOptions="End" />
 
-        </AbsoluteLayout>
-        <!--esta es la seccion del formulario-->
-        <Grid Grid.Row="1" VerticalOptions="Center" >
+        </Grid>
+        <!--  esta es la seccion del formulario  -->
+        <Grid Grid.Row="1" VerticalOptions="Center">
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto" />
                 <RowDefinition Height="Auto" />
             </Grid.RowDefinitions>
-            <!--Entry para usuario-->
+            <!--  Entry para usuario  -->
             <Grid Grid.Row="0" Margin="50,30,50,0">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto" />
@@ -57,9 +69,12 @@
                 <Frame
                     Grid.Row="1"
                     Padding="2"
+                    Background="White"
                     BorderColor="#07016C"
                     HasShadow="True">
+
                     <Entry
+                        Background="White"
                         FontFamily="Ubuntu"
                         Placeholder="Nombre de Usuario"
                         PlaceholderColor="#7C74FF"
@@ -67,7 +82,7 @@
                         TextColor="#07016C" />
                 </Frame>
             </Grid>
-            <!--Entry para password-->
+            <!--  Entry para password  -->
             <Grid Grid.Row="1" Margin="50,30,50,0">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto" />
@@ -84,29 +99,40 @@
                 <Frame
                     Grid.Row="1"
                     Padding="2"
+                    Background="White"
                     BorderColor="#07016C"
-                    HasShadow="True">
+                    HasShadow="True"
+                    
+                    
+                    >
                     <Entry
+                        Background="White"
                         FontFamily="Ubuntu"
                         Placeholder="Contraseña"
                         PlaceholderColor="#7C74FF"
+                        
                         Text="{Binding Contraseña}"
                         TextColor="#07016C" />
                 </Frame>
             </Grid>
 
         </Grid>
-        <!--Boton de login-->
-        <Button Grid.Row="2" 
-                VerticalOptions="End"
-                Margin="50,0,50,30"
-                Padding="0"
-                BackgroundColor="#73FA93"
-                Text="Iniciar Sesión"
-                TextColor="#07016C"
-                FontFamily="Bungee"
-                Command="{Binding LoginCommand}"
-                FontSize="20"
-                />
+        <!--  Boton de login  -->
+        <Button
+            Grid.Row="2"
+            Margin="50,0,50,30"
+            Padding="0"
+            BackgroundColor="#73FA93"
+            Command="{Binding LoginCommand}"
+            FontFamily="Bungee"
+            FontSize="20"
+            Text="Iniciar Sesión"
+            TextColor="#07016C"
+            VerticalOptions="End" />
     </Grid>
+
+
+
+
+
 </ContentPage>

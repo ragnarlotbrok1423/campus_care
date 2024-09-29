@@ -28,9 +28,10 @@ namespace campusCare.vistasModelos
 
         public HistorialMedicoViewModel()
         {
+            ServerString server = new ServerString();
             _httpClient = new HttpClient
             {
-                BaseAddress = new Uri(" https://3bd5-200-124-21-59.ngrok-free.app/")
+                BaseAddress = new Uri(server.cabecera)
             };
             LoadHistorialCommand = new AsyncRelayCommand(LoadHistorialAsync);
             LoadHistorialCommand.Execute(null);

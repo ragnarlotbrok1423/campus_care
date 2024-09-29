@@ -4,6 +4,8 @@ using System.Net.Http;
 using System.Net.Http.Json;
 using System;
 
+
+
 namespace campusCare.vistasModelos
 {
     class CitaMedicaService
@@ -16,9 +18,10 @@ namespace campusCare.vistasModelos
         }
         public async Task CreateAppointmentAsync(CitaRequest cita)
         {
+            ServerString server = new ServerString();
             try
             {
-                HttpRequestMessage message = new HttpRequestMessage(HttpMethod.Post, " https://3bd5-200-124-21-59.ngrok-free.app/api/CitasMedicas");
+                HttpRequestMessage message = new HttpRequestMessage(HttpMethod.Post, server.cabecera);
                 message.Content = JsonContent.Create<CitaRequest>(cita);
 
                 HttpResponseMessage response = await client.SendAsync(message);
