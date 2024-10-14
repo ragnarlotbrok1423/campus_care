@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="campusCare.vistas.DoctorLogin"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="DoctorLogin"
+    Background="White"
+    Shell.NavBarIsVisible="False">
+    <Grid>
+        <Grid IsVisible="{OnPlatform Android=false, WinUI=true}">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+
+            </Grid.ColumnDefinitions>
+            <!--  Columna 1  -->
+            <Grid Grid.Column="0" Margin="10">
+                <Grid.RowDefinitions>
+
+                    <RowDefinition Height="*" />
+
+                </Grid.RowDefinitions>
+                <Frame
+                    Grid.Row="0"
+                    Padding="29,31,42,0"
+                    Background="#07016C"
+                    BorderColor="Transparent"
+                    CornerRadius="25">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                        <Image
+                            Grid.Row="0"
+                            Margin="0,0,0,111"
+                            Source="logo_for_windows.png" />
+                        <Image Grid.Row="1" Source="doctor_vector.png" />
+                    </Grid>
+                </Frame>
+            </Grid>
+            <!--  Columna 2  -->
+            <Grid
+                Grid.Column="1"
+                Margin="10"
+                RowSpacing="10">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Label
+                    Grid.Row="0"
+                    Margin="0,24,0,0"
+                    FontFamily="Bungee"
+                    FontSize="48"
+                    HorizontalOptions="Center"
+                    Text="Login Doctores"
+                    TextColor="#07016C" />
+
+                <Label
+                    Grid.Row="1"
+                    FontAttributes="Bold"
+                    FontFamily="Ubuntu"
+                    FontSize="36"
+                    HorizontalOptions="Center"
+                    Text="una clínica al alcance  de tu mano"
+                    TextColor="#136AED" />
+                <!--  Botones para elegir el tipo de login  -->
+                <Grid
+                    Grid.Row="2"
+                    Margin="0,24,0,0"
+                    ColumnSpacing="10"
+                    HorizontalOptions="Center">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+                    <Button
+                        x:Name="pacientes"
+                        Grid.Column="0"
+                        Padding="9,5,9,5"
+                        BackgroundColor="#136AED"
+                        Clicked="pacientes_Clicked"
+                        CornerRadius="15"
+                        FontAttributes="Bold"
+                        FontFamily="Ubuntu"
+                        FontSize="32"
+                        Text="Pacientes"
+                        TextColor="White" />
+
+                    <Button
+                        x:Name="doctores"
+                        Grid.Column="1"
+                        Padding="9,5,9,5"
+                        BackgroundColor="#136AED"
+                        Clicked="doctores_Clicked"
+                        CornerRadius="15"
+                        FontAttributes="Bold"
+                        FontFamily="Ubuntu"
+                        FontSize="32"
+                        Text="Personal Médico"
+                        TextColor="White" />
+
+
+
+                </Grid>
+                <!--  Field para el nombre de usuario  -->
+                <Grid Grid.Row="3" Margin="34,59,34,0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Label
+                        Grid.Row="0"
+                        Margin="0,0,0,10"
+                        FontAttributes="Bold"
+                        FontFamily="Ubuntu"
+                        FontSize="32"
+                        HorizontalOptions="Center"
+                        Text="Cédula"
+                        TextColor="#07016C" />
+                    <Border
+                        Grid.Row="1"
+                        Stroke="#07016C"
+                        StrokeThickness="3"
+                        WidthRequest="552">
+                        <Border.StrokeShape>
+                            <RoundRectangle CornerRadius="15" />
+                        </Border.StrokeShape>
+                        <Entry
+                            Background="White"
+                            FontFamily="Ubuntu"
+                            FontSize="16"
+                            Placeholder="Cédula"
+                            PlaceholderColor="#7C74FF"
+                            Text="{Binding Cedula}"
+                            TextColor="#07016C" />
+                    </Border>
+                </Grid>
+                <!--  Field para la contraseña  -->
+                <Grid Grid.Row="4" Margin="34,36,34,0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Label
+                        Grid.Row="0"
+                        Margin="0,0,0,10"
+                        FontAttributes="Bold"
+                        FontFamily="Ubuntu"
+                        FontSize="32"
+                        HorizontalOptions="Center"
+                        Text="Contraseña"
+                        TextColor="#07016C" />
+                    <Border
+                        Grid.Row="1"
+                        Stroke="#07016C"
+                        StrokeThickness="3"
+                        WidthRequest="552">
+                        <Border.StrokeShape>
+                            <RoundRectangle CornerRadius="15" />
+                        </Border.StrokeShape>
+                        <Entry
+                            Background="White"
+                            FontFamily="Ubuntu"
+                            FontSize="16"
+                            IsPassword="True"
+                            Placeholder="Contraseña"
+                            PlaceholderColor="#7C74FF"
+                            Text="{Binding Contraseña}"
+                            TextColor="#07016C" />
+                    </Border>
+
+                </Grid>
+                <!--  Boton de login  -->
+                <Button
+                    Grid.Row="5"
+                    Margin="0,0,0,35"
+                    Background="#73FA93"
+                    Command="{Binding DoctorLoginCommand}"
+                    FontFamily="Bungee"
+                    FontSize="32"
+                    HeightRequest="70"
+                    HorizontalOptions="Center"
+                    Text="Iniciar Sesión"
+                    TextColor="#07016C"
+                    VerticalOptions="End" />
+            </Grid>
+
+        </Grid>
+    </Grid>
+</ContentPage>

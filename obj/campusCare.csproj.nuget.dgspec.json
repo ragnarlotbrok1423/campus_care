@@ -74,6 +74,10 @@
               "target": "Package",
               "version": "[8.2.2, )"
             },
+            "FFImageLoadingCompat.Maui": {
+              "target": "Package",
+              "version": "[0.1.1, )"
+            },
             "Microsoft.Extensions.Logging.Debug": {
               "target": "Package",
               "version": "[8.0.0, )"
@@ -100,9 +104,13 @@
               "target": "Package",
               "version": "[4.3.0, )"
             },
+            "UraniumUI": {
+              "target": "Package",
+              "version": "[2.10.2, )"
+            },
             "UraniumUI.Material": {
               "target": "Package",
-              "version": "[2.10.1, )"
+              "version": "[2.10.2, )"
             }
           },
           "imports": [
@@ -137,6 +145,10 @@
               "target": "Package",
               "version": "[8.2.2, )"
             },
+            "FFImageLoadingCompat.Maui": {
+              "target": "Package",
+              "version": "[0.1.1, )"
+            },
             "Microsoft.Extensions.Logging.Debug": {
               "target": "Package",
               "version": "[8.0.0, )"
@@ -163,9 +175,13 @@
               "target": "Package",
               "version": "[4.3.0, )"
             },
+            "UraniumUI": {
+              "target": "Package",
+              "version": "[2.10.2, )"
+            },
             "UraniumUI.Material": {
               "target": "Package",
-              "version": "[2.10.1, )"
+              "version": "[2.10.2, )"
             }
           },
           "imports": [
@@ -200,6 +216,10 @@
               "target": "Package",
               "version": "[8.2.2, )"
             },
+            "FFImageLoadingCompat.Maui": {
+              "target": "Package",
+              "version": "[0.1.1, )"
+            },
             "Microsoft.Extensions.Logging.Debug": {
               "target": "Package",
               "version": "[8.0.0, )"
@@ -226,9 +246,13 @@
               "target": "Package",
               "version": "[4.3.0, )"
             },
+            "UraniumUI": {
+              "target": "Package",
+              "version": "[2.10.2, )"
+            },
             "UraniumUI.Material": {
               "target": "Package",
-              "version": "[2.10.1, )"
+              "version": "[2.10.2, )"
             }
           },
           "imports": [
@@ -264,6 +288,10 @@
               "target": "Package",
               "version": "[8.2.2, )"
             },
+            "FFImageLoadingCompat.Maui": {
+              "target": "Package",
+              "version": "[0.1.1, )"
+            },
             "Microsoft.Extensions.Logging.Debug": {
               "target": "Package",
               "version": "[8.0.0, )"
@@ -284,9 +312,13 @@
               "target": "Package",
               "version": "[4.3.0, )"
             },
+            "UraniumUI": {
+              "target": "Package",
+              "version": "[2.10.2, )"
+            },
             "UraniumUI.Material": {
               "target": "Package",
-              "version": "[2.10.1, )"
+              "version": "[2.10.2, )"
             }
           },
           "imports": [

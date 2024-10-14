@@ -34,6 +34,52 @@
           "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
         }
       },
+      "FFImageLoadingCompat/0.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-android33.0/FFImageLoading.Compat.dll": {
+            "related": ".aar;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android33.0/FFImageLoading.Compat.dll": {
+            "related": ".aar;.xml"
+          }
+        }
+      },
+      "FFImageLoadingCompat.Maui/0.1.1": {
+        "type": "package",
+        "dependencies": {
+          "FFImageLoadingCompat": "0.1.1",
+          "FFImageLoadingCompat.Transformations": "0.1.1"
+        },
+        "compile": {
+          "lib/net7.0-android33.0/FFImageLoading.Compat.Maui.dll": {
+            "related": ".aar;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android33.0/FFImageLoading.Compat.Maui.dll": {
+            "related": ".aar;.xml"
+          }
+        }
+      },
+      "FFImageLoadingCompat.Transformations/0.1.1": {
+        "type": "package",
+        "dependencies": {
+          "FFImageLoadingCompat": "0.1.1"
+        },
+        "compile": {
+          "lib/net7.0-android33.0/FFImageLoading.Compat.Transformations.dll": {
+            "related": ".aar;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android33.0/FFImageLoading.Compat.Transformations.dll": {
+            "related": ".aar;.xml"
+          }
+        }
+      },
       "GoogleGson/2.10.1.4": {
         "type": "package",
         "compile": {
@@ -565,7 +611,7 @@
           "lib/MonoAndroid10/_._": {}
         }
       },
-      "UraniumUI/2.10.1": {
+      "UraniumUI/2.10.2": {
         "type": "package",
         "dependencies": {
           "InputKit.Maui": "4.4.7",
@@ -583,10 +629,10 @@
           }
         }
       },
-      "UraniumUI.Material/2.10.1": {
+      "UraniumUI.Material/2.10.2": {
         "type": "package",
         "dependencies": {
-          "UraniumUI": "2.10.1"
+          "UraniumUI": "2.10.2"
         },
         "compile": {
           "lib/net8.0-android34.0/UraniumUI.Material.dll": {
@@ -2395,6 +2441,52 @@
           "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
         }
       },
+      "FFImageLoadingCompat/0.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-android33.0/FFImageLoading.Compat.dll": {
+            "related": ".aar;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android33.0/FFImageLoading.Compat.dll": {
+            "related": ".aar;.xml"
+          }
+        }
+      },
+      "FFImageLoadingCompat.Maui/0.1.1": {
+        "type": "package",
+        "dependencies": {
+          "FFImageLoadingCompat": "0.1.1",
+          "FFImageLoadingCompat.Transformations": "0.1.1"
+        },
+        "compile": {
+          "lib/net7.0-android33.0/FFImageLoading.Compat.Maui.dll": {
+            "related": ".aar;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android33.0/FFImageLoading.Compat.Maui.dll": {
+            "related": ".aar;.xml"
+          }
+        }
+      },
+      "FFImageLoadingCompat.Transformations/0.1.1": {
+        "type": "package",
+        "dependencies": {
+          "FFImageLoadingCompat": "0.1.1"
+        },
+        "compile": {
+          "lib/net7.0-android33.0/FFImageLoading.Compat.Transformations.dll": {
+            "related": ".aar;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android33.0/FFImageLoading.Compat.Transformations.dll": {
+            "related": ".aar;.xml"
+          }
+        }
+      },
       "GoogleGson/2.10.1.4": {
         "type": "package",
         "compile": {
@@ -2911,7 +3003,7 @@
           "lib/MonoAndroid10/_._": {}
         }
       },
-      "UraniumUI/2.10.1": {
+      "UraniumUI/2.10.2": {
         "type": "package",
         "dependencies": {
           "InputKit.Maui": "4.4.7",
@@ -2929,10 +3021,10 @@
           }
         }
       },
-      "UraniumUI.Material/2.10.1": {
+      "UraniumUI.Material/2.10.2": {
         "type": "package",
         "dependencies": {
-          "UraniumUI": "2.10.1"
+          "UraniumUI": "2.10.2"
         },
         "compile": {
           "lib/net8.0-android34.0/UraniumUI.Material.dll": {
@@ -4741,6 +4833,52 @@
           "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
         }
       },
+      "FFImageLoadingCompat/0.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-android33.0/FFImageLoading.Compat.dll": {
+            "related": ".aar;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android33.0/FFImageLoading.Compat.dll": {
+            "related": ".aar;.xml"
+          }
+        }
+      },
+      "FFImageLoadingCompat.Maui/0.1.1": {
+        "type": "package",
+        "dependencies": {
+          "FFImageLoadingCompat": "0.1.1",
+          "FFImageLoadingCompat.Transformations": "0.1.1"
+        },
+        "compile": {
+          "lib/net7.0-android33.0/FFImageLoading.Compat.Maui.dll": {
+            "related": ".aar;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android33.0/FFImageLoading.Compat.Maui.dll": {
+            "related": ".aar;.xml"
+          }
+        }
+      },
+      "FFImageLoadingCompat.Transformations/0.1.1": {
+        "type": "package",
+        "dependencies": {
+          "FFImageLoadingCompat": "0.1.1"
+        },
+        "compile": {
+          "lib/net7.0-android33.0/FFImageLoading.Compat.Transformations.dll": {
+            "related": ".aar;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android33.0/FFImageLoading.Compat.Transformations.dll": {
+            "related": ".aar;.xml"
+          }
+        }
+      },
       "GoogleGson/2.10.1.4": {
         "type": "package",
         "compile": {
@@ -5257,7 +5395,7 @@
           "lib/MonoAndroid10/_._": {}
         }
       },
-      "UraniumUI/2.10.1": {
+      "UraniumUI/2.10.2": {
         "type": "package",
         "dependencies": {
           "InputKit.Maui": "4.4.7",
@@ -5275,10 +5413,10 @@
           }
         }
       },
-      "UraniumUI.Material/2.10.1": {
+      "UraniumUI.Material/2.10.2": {
         "type": "package",
         "dependencies": {
-          "UraniumUI": "2.10.1"
+          "UraniumUI": "2.10.2"
         },
         "compile": {
           "lib/net8.0-android34.0/UraniumUI.Material.dll": {
@@ -7087,6 +7225,52 @@
           "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
         }
       },
+      "FFImageLoadingCompat/0.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-android33.0/FFImageLoading.Compat.dll": {
+            "related": ".aar;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android33.0/FFImageLoading.Compat.dll": {
+            "related": ".aar;.xml"
+          }
+        }
+      },
+      "FFImageLoadingCompat.Maui/0.1.1": {
+        "type": "package",
+        "dependencies": {
+          "FFImageLoadingCompat": "0.1.1",
+          "FFImageLoadingCompat.Transformations": "0.1.1"
+        },
+        "compile": {
+          "lib/net7.0-android33.0/FFImageLoading.Compat.Maui.dll": {
+            "related": ".aar;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android33.0/FFImageLoading.Compat.Maui.dll": {
+            "related": ".aar;.xml"
+          }
+        }
+      },
+      "FFImageLoadingCompat.Transformations/0.1.1": {
+        "type": "package",
+        "dependencies": {
+          "FFImageLoadingCompat": "0.1.1"
+        },
+        "compile": {
+          "lib/net7.0-android33.0/FFImageLoading.Compat.Transformations.dll": {
+            "related": ".aar;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android33.0/FFImageLoading.Compat.Transformations.dll": {
+            "related": ".aar;.xml"
+          }
+        }
+      },
       "GoogleGson/2.10.1.4": {
         "type": "package",
         "compile": {
@@ -7603,7 +7787,7 @@
           "lib/MonoAndroid10/_._": {}
         }
       },
-      "UraniumUI/2.10.1": {
+      "UraniumUI/2.10.2": {
         "type": "package",
         "dependencies": {
           "InputKit.Maui": "4.4.7",
@@ -7621,10 +7805,10 @@
           }
         }
       },
-      "UraniumUI.Material/2.10.1": {
+      "UraniumUI.Material/2.10.2": {
         "type": "package",
         "dependencies": {
-          "UraniumUI": "2.10.1"
+          "UraniumUI": "2.10.2"
         },
         "compile": {
           "lib/net8.0-android34.0/UraniumUI.Material.dll": {
@@ -9433,6 +9617,52 @@
           "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
         }
       },
+      "FFImageLoadingCompat/0.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-android33.0/FFImageLoading.Compat.dll": {
+            "related": ".aar;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android33.0/FFImageLoading.Compat.dll": {
+            "related": ".aar;.xml"
+          }
+        }
+      },
+      "FFImageLoadingCompat.Maui/0.1.1": {
+        "type": "package",
+        "dependencies": {
+          "FFImageLoadingCompat": "0.1.1",
+          "FFImageLoadingCompat.Transformations": "0.1.1"
+        },
+        "compile": {
+          "lib/net7.0-android33.0/FFImageLoading.Compat.Maui.dll": {
+            "related": ".aar;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android33.0/FFImageLoading.Compat.Maui.dll": {
+            "related": ".aar;.xml"
+          }
+        }
+      },
+      "FFImageLoadingCompat.Transformations/0.1.1": {
+        "type": "package",
+        "dependencies": {
+          "FFImageLoadingCompat": "0.1.1"
+        },
+        "compile": {
+          "lib/net7.0-android33.0/FFImageLoading.Compat.Transformations.dll": {
+            "related": ".aar;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android33.0/FFImageLoading.Compat.Transformations.dll": {
+            "related": ".aar;.xml"
+          }
+        }
+      },
       "GoogleGson/2.10.1.4": {
         "type": "package",
         "compile": {
@@ -9949,7 +10179,7 @@
           "lib/MonoAndroid10/_._": {}
         }
       },
-      "UraniumUI/2.10.1": {
+      "UraniumUI/2.10.2": {
         "type": "package",
         "dependencies": {
           "InputKit.Maui": "4.4.7",
@@ -9967,10 +10197,10 @@
           }
         }
       },
-      "UraniumUI.Material/2.10.1": {
+      "UraniumUI.Material/2.10.2": {
         "type": "package",
         "dependencies": {
-          "UraniumUI": "2.10.1"
+          "UraniumUI": "2.10.2"
         },
         "compile": {
           "lib/net8.0-android34.0/UraniumUI.Material.dll": {
@@ -11779,6 +12009,52 @@
           "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
         }
       },
+      "FFImageLoadingCompat/0.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-android33.0/FFImageLoading.Compat.dll": {
+            "related": ".aar;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android33.0/FFImageLoading.Compat.dll": {
+            "related": ".aar;.xml"
+          }
+        }
+      },
+      "FFImageLoadingCompat.Maui/0.1.1": {
+        "type": "package",
+        "dependencies": {
+          "FFImageLoadingCompat": "0.1.1",
+          "FFImageLoadingCompat.Transformations": "0.1.1"
+        },
+        "compile": {
+          "lib/net7.0-android33.0/FFImageLoading.Compat.Maui.dll": {
+            "related": ".aar;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android33.0/FFImageLoading.Compat.Maui.dll": {
+            "related": ".aar;.xml"
+          }
+        }
+      },
+      "FFImageLoadingCompat.Transformations/0.1.1": {
+        "type": "package",
+        "dependencies": {
+          "FFImageLoadingCompat": "0.1.1"
+        },
+        "compile": {
+          "lib/net7.0-android33.0/FFImageLoading.Compat.Transformations.dll": {
+            "related": ".aar;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android33.0/FFImageLoading.Compat.Transformations.dll": {
+            "related": ".aar;.xml"
+          }
+        }
+      },
       "GoogleGson/2.10.1.4": {
         "type": "package",
         "compile": {
@@ -12292,7 +12568,7 @@
           "lib/MonoAndroid10/_._": {}
         }
       },
-      "UraniumUI/2.10.1": {
+      "UraniumUI/2.10.2": {
         "type": "package",
         "dependencies": {
           "InputKit.Maui": "4.4.7",
@@ -12310,10 +12586,10 @@
           }
         }
       },
-      "UraniumUI.Material/2.10.1": {
+      "UraniumUI.Material/2.10.2": {
         "type": "package",
         "dependencies": {
-          "UraniumUI": "2.10.1"
+          "UraniumUI": "2.10.2"
         },
         "compile": {
           "lib/net8.0-android34.0/UraniumUI.Material.dll": {
@@ -14122,6 +14398,52 @@
           "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
         }
       },
+      "FFImageLoadingCompat/0.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-android33.0/FFImageLoading.Compat.dll": {
+            "related": ".aar;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android33.0/FFImageLoading.Compat.dll": {
+            "related": ".aar;.xml"
+          }
+        }
+      },
+      "FFImageLoadingCompat.Maui/0.1.1": {
+        "type": "package",
+        "dependencies": {
+          "FFImageLoadingCompat": "0.1.1",
+          "FFImageLoadingCompat.Transformations": "0.1.1"
+        },
+        "compile": {
+          "lib/net7.0-android33.0/FFImageLoading.Compat.Maui.dll": {
+            "related": ".aar;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android33.0/FFImageLoading.Compat.Maui.dll": {
+            "related": ".aar;.xml"
+          }
+        }
+      },
+      "FFImageLoadingCompat.Transformations/0.1.1": {
+        "type": "package",
+        "dependencies": {
+          "FFImageLoadingCompat": "0.1.1"
+        },
+        "compile": {
+          "lib/net7.0-android33.0/FFImageLoading.Compat.Transformations.dll": {
+            "related": ".aar;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android33.0/FFImageLoading.Compat.Transformations.dll": {
+            "related": ".aar;.xml"
+          }
+        }
+      },
       "GoogleGson/2.10.1.4": {
         "type": "package",
         "compile": {
@@ -14635,7 +14957,7 @@
           "lib/MonoAndroid10/_._": {}
         }
       },
-      "UraniumUI/2.10.1": {
+      "UraniumUI/2.10.2": {
         "type": "package",
         "dependencies": {
           "InputKit.Maui": "4.4.7",
@@ -14653,10 +14975,10 @@
           }
         }
       },
-      "UraniumUI.Material/2.10.1": {
+      "UraniumUI.Material/2.10.2": {
         "type": "package",
         "dependencies": {
-          "UraniumUI": "2.10.1"
+          "UraniumUI": "2.10.2"
         },
         "compile": {
           "lib/net8.0-android34.0/UraniumUI.Material.dll": {
@@ -16465,6 +16787,52 @@
           "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
         }
       },
+      "FFImageLoadingCompat/0.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-android33.0/FFImageLoading.Compat.dll": {
+            "related": ".aar;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android33.0/FFImageLoading.Compat.dll": {
+            "related": ".aar;.xml"
+          }
+        }
+      },
+      "FFImageLoadingCompat.Maui/0.1.1": {
+        "type": "package",
+        "dependencies": {
+          "FFImageLoadingCompat": "0.1.1",
+          "FFImageLoadingCompat.Transformations": "0.1.1"
+        },
+        "compile": {
+          "lib/net7.0-android33.0/FFImageLoading.Compat.Maui.dll": {
+            "related": ".aar;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android33.0/FFImageLoading.Compat.Maui.dll": {
+            "related": ".aar;.xml"
+          }
+        }
+      },
+      "FFImageLoadingCompat.Transformations/0.1.1": {
+        "type": "package",
+        "dependencies": {
+          "FFImageLoadingCompat": "0.1.1"
+        },
+        "compile": {
+          "lib/net7.0-android33.0/FFImageLoading.Compat.Transformations.dll": {
+            "related": ".aar;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android33.0/FFImageLoading.Compat.Transformations.dll": {
+            "related": ".aar;.xml"
+          }
+        }
+      },
       "GoogleGson/2.10.1.4": {
         "type": "package",
         "compile": {
@@ -16978,7 +17346,7 @@
           "lib/MonoAndroid10/_._": {}
         }
       },
-      "UraniumUI/2.10.1": {
+      "UraniumUI/2.10.2": {
         "type": "package",
         "dependencies": {
           "InputKit.Maui": "4.4.7",
@@ -16996,10 +17364,10 @@
           }
         }
       },
-      "UraniumUI.Material/2.10.1": {
+      "UraniumUI.Material/2.10.2": {
         "type": "package",
         "dependencies": {
-          "UraniumUI": "2.10.1"
+          "UraniumUI": "2.10.2"
         },
         "compile": {
           "lib/net8.0-android34.0/UraniumUI.Material.dll": {
@@ -18808,6 +19176,40 @@
           "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
         }
       },
+      "FFImageLoadingCompat/0.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-ios16.1/FFImageLoading.Compat.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0-ios16.1/FFImageLoading.Compat.dll": {}
+        }
+      },
+      "FFImageLoadingCompat.Maui/0.1.1": {
+        "type": "package",
+        "dependencies": {
+          "FFImageLoadingCompat": "0.1.1",
+          "FFImageLoadingCompat.Transformations": "0.1.1"
+        },
+        "compile": {
+          "lib/net7.0-ios16.1/FFImageLoading.Compat.Maui.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0-ios16.1/FFImageLoading.Compat.Maui.dll": {}
+        }
+      },
+      "FFImageLoadingCompat.Transformations/0.1.1": {
+        "type": "package",
+        "dependencies": {
+          "FFImageLoadingCompat": "0.1.1"
+        },
+        "compile": {
+          "lib/net7.0-ios16.1/FFImageLoading.Compat.Transformations.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0-ios16.1/FFImageLoading.Compat.Transformations.dll": {}
+        }
+      },
       "InputKit.Maui/4.4.7": {
         "type": "package",
         "compile": {
@@ -19500,7 +19902,7 @@
           }
         }
       },
-      "UraniumUI/2.10.1": {
+      "UraniumUI/2.10.2": {
         "type": "package",
         "dependencies": {
           "InputKit.Maui": "4.4.7",
@@ -19518,10 +19920,10 @@
           }
         }
       },
-      "UraniumUI.Material/2.10.1": {
+      "UraniumUI.Material/2.10.2": {
         "type": "package",
         "dependencies": {
-          "UraniumUI": "2.10.1"
+          "UraniumUI": "2.10.2"
         },
         "compile": {
           "lib/net8.0/UraniumUI.Material.dll": {
@@ -19568,6 +19970,40 @@
           "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
         }
       },
+      "FFImageLoadingCompat/0.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-ios16.1/FFImageLoading.Compat.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0-ios16.1/FFImageLoading.Compat.dll": {}
+        }
+      },
+      "FFImageLoadingCompat.Maui/0.1.1": {
+        "type": "package",
+        "dependencies": {
+          "FFImageLoadingCompat": "0.1.1",
+          "FFImageLoadingCompat.Transformations": "0.1.1"
+        },
+        "compile": {
+          "lib/net7.0-ios16.1/FFImageLoading.Compat.Maui.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0-ios16.1/FFImageLoading.Compat.Maui.dll": {}
+        }
+      },
+      "FFImageLoadingCompat.Transformations/0.1.1": {
+        "type": "package",
+        "dependencies": {
+          "FFImageLoadingCompat": "0.1.1"
+        },
+        "compile": {
+          "lib/net7.0-ios16.1/FFImageLoading.Compat.Transformations.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0-ios16.1/FFImageLoading.Compat.Transformations.dll": {}
+        }
+      },
       "InputKit.Maui/4.4.7": {
         "type": "package",
         "compile": {
@@ -20379,7 +20815,7 @@
           }
         }
       },
-      "UraniumUI/2.10.1": {
+      "UraniumUI/2.10.2": {
         "type": "package",
         "dependencies": {
           "InputKit.Maui": "4.4.7",
@@ -20397,10 +20833,10 @@
           }
         }
       },
-      "UraniumUI.Material/2.10.1": {
+      "UraniumUI.Material/2.10.2": {
         "type": "package",
         "dependencies": {
-          "UraniumUI": "2.10.1"
+          "UraniumUI": "2.10.2"
         },
         "compile": {
           "lib/net8.0/UraniumUI.Material.dll": {
@@ -20447,6 +20883,40 @@
           "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
         }
       },
+      "FFImageLoadingCompat/0.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-ios16.1/FFImageLoading.Compat.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0-ios16.1/FFImageLoading.Compat.dll": {}
+        }
+      },
+      "FFImageLoadingCompat.Maui/0.1.1": {
+        "type": "package",
+        "dependencies": {
+          "FFImageLoadingCompat": "0.1.1",
+          "FFImageLoadingCompat.Transformations": "0.1.1"
+        },
+        "compile": {
+          "lib/net7.0-ios16.1/FFImageLoading.Compat.Maui.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0-ios16.1/FFImageLoading.Compat.Maui.dll": {}
+        }
+      },
+      "FFImageLoadingCompat.Transformations/0.1.1": {
+        "type": "package",
+        "dependencies": {
+          "FFImageLoadingCompat": "0.1.1"
+        },
+        "compile": {
+          "lib/net7.0-ios16.1/FFImageLoading.Compat.Transformations.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0-ios16.1/FFImageLoading.Compat.Transformations.dll": {}
+        }
+      },
       "InputKit.Maui/4.4.7": {
         "type": "package",
         "compile": {
@@ -21258,7 +21728,7 @@
           }
         }
       },
-      "UraniumUI/2.10.1": {
+      "UraniumUI/2.10.2": {
         "type": "package",
         "dependencies": {
           "InputKit.Maui": "4.4.7",
@@ -21276,10 +21746,10 @@
           }
         }
       },
-      "UraniumUI.Material/2.10.1": {
+      "UraniumUI.Material/2.10.2": {
         "type": "package",
         "dependencies": {
-          "UraniumUI": "2.10.1"
+          "UraniumUI": "2.10.2"
         },
         "compile": {
           "lib/net8.0/UraniumUI.Material.dll": {
@@ -21326,6 +21796,40 @@
           "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
         }
       },
+      "FFImageLoadingCompat/0.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-ios16.1/FFImageLoading.Compat.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0-ios16.1/FFImageLoading.Compat.dll": {}
+        }
+      },
+      "FFImageLoadingCompat.Maui/0.1.1": {
+        "type": "package",
+        "dependencies": {
+          "FFImageLoadingCompat": "0.1.1",
+          "FFImageLoadingCompat.Transformations": "0.1.1"
+        },
+        "compile": {
+          "lib/net7.0-ios16.1/FFImageLoading.Compat.Maui.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0-ios16.1/FFImageLoading.Compat.Maui.dll": {}
+        }
+      },
+      "FFImageLoadingCompat.Transformations/0.1.1": {
+        "type": "package",
+        "dependencies": {
+          "FFImageLoadingCompat": "0.1.1"
+        },
+        "compile": {
+          "lib/net7.0-ios16.1/FFImageLoading.Compat.Transformations.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0-ios16.1/FFImageLoading.Compat.Transformations.dll": {}
+        }
+      },
       "InputKit.Maui/4.4.7": {
         "type": "package",
         "compile": {
@@ -22137,7 +22641,7 @@
           }
         }
       },
-      "UraniumUI/2.10.1": {
+      "UraniumUI/2.10.2": {
         "type": "package",
         "dependencies": {
           "InputKit.Maui": "4.4.7",
@@ -22155,10 +22659,10 @@
           }
         }
       },
-      "UraniumUI.Material/2.10.1": {
+      "UraniumUI.Material/2.10.2": {
         "type": "package",
         "dependencies": {
-          "UraniumUI": "2.10.1"
+          "UraniumUI": "2.10.2"
         },
         "compile": {
           "lib/net8.0/UraniumUI.Material.dll": {
@@ -22205,6 +22709,40 @@
           "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
         }
       },
+      "FFImageLoadingCompat/0.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-ios16.1/FFImageLoading.Compat.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0-ios16.1/FFImageLoading.Compat.dll": {}
+        }
+      },
+      "FFImageLoadingCompat.Maui/0.1.1": {
+        "type": "package",
+        "dependencies": {
+          "FFImageLoadingCompat": "0.1.1",
+          "FFImageLoadingCompat.Transformations": "0.1.1"
+        },
+        "compile": {
+          "lib/net7.0-ios16.1/FFImageLoading.Compat.Maui.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0-ios16.1/FFImageLoading.Compat.Maui.dll": {}
+        }
+      },
+      "FFImageLoadingCompat.Transformations/0.1.1": {
+        "type": "package",
+        "dependencies": {
+          "FFImageLoadingCompat": "0.1.1"
+        },
+        "compile": {
+          "lib/net7.0-ios16.1/FFImageLoading.Compat.Transformations.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0-ios16.1/FFImageLoading.Compat.Transformations.dll": {}
+        }
+      },
       "InputKit.Maui/4.4.7": {
         "type": "package",
         "compile": {
@@ -23016,7 +23554,7 @@
           }
         }
       },
-      "UraniumUI/2.10.1": {
+      "UraniumUI/2.10.2": {
         "type": "package",
         "dependencies": {
           "InputKit.Maui": "4.4.7",
@@ -23034,10 +23572,10 @@
           }
         }
       },
-      "UraniumUI.Material/2.10.1": {
+      "UraniumUI.Material/2.10.2": {
         "type": "package",
         "dependencies": {
-          "UraniumUI": "2.10.1"
+          "UraniumUI": "2.10.2"
         },
         "compile": {
           "lib/net8.0/UraniumUI.Material.dll": {
@@ -23082,6 +23620,40 @@
         },
         "build": {
           "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
+        }
+      },
+      "FFImageLoadingCompat/0.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-ios16.1/FFImageLoading.Compat.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0-ios16.1/FFImageLoading.Compat.dll": {}
+        }
+      },
+      "FFImageLoadingCompat.Maui/0.1.1": {
+        "type": "package",
+        "dependencies": {
+          "FFImageLoadingCompat": "0.1.1",
+          "FFImageLoadingCompat.Transformations": "0.1.1"
+        },
+        "compile": {
+          "lib/net7.0-ios16.1/FFImageLoading.Compat.Maui.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0-ios16.1/FFImageLoading.Compat.Maui.dll": {}
+        }
+      },
+      "FFImageLoadingCompat.Transformations/0.1.1": {
+        "type": "package",
+        "dependencies": {
+          "FFImageLoadingCompat": "0.1.1"
+        },
+        "compile": {
+          "lib/net7.0-ios16.1/FFImageLoading.Compat.Transformations.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0-ios16.1/FFImageLoading.Compat.Transformations.dll": {}
         }
       },
       "InputKit.Maui/4.4.7": {
@@ -23900,7 +24472,7 @@
           }
         }
       },
-      "UraniumUI/2.10.1": {
+      "UraniumUI/2.10.2": {
         "type": "package",
         "dependencies": {
           "InputKit.Maui": "4.4.7",
@@ -23918,10 +24490,10 @@
           }
         }
       },
-      "UraniumUI.Material/2.10.1": {
+      "UraniumUI.Material/2.10.2": {
         "type": "package",
         "dependencies": {
-          "UraniumUI": "2.10.1"
+          "UraniumUI": "2.10.2"
         },
         "compile": {
           "lib/net8.0/UraniumUI.Material.dll": {
@@ -23966,6 +24538,40 @@
         },
         "build": {
           "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
+        }
+      },
+      "FFImageLoadingCompat/0.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-ios16.1/FFImageLoading.Compat.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0-ios16.1/FFImageLoading.Compat.dll": {}
+        }
+      },
+      "FFImageLoadingCompat.Maui/0.1.1": {
+        "type": "package",
+        "dependencies": {
+          "FFImageLoadingCompat": "0.1.1",
+          "FFImageLoadingCompat.Transformations": "0.1.1"
+        },
+        "compile": {
+          "lib/net7.0-ios16.1/FFImageLoading.Compat.Maui.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0-ios16.1/FFImageLoading.Compat.Maui.dll": {}
+        }
+      },
+      "FFImageLoadingCompat.Transformations/0.1.1": {
+        "type": "package",
+        "dependencies": {
+          "FFImageLoadingCompat": "0.1.1"
+        },
+        "compile": {
+          "lib/net7.0-ios16.1/FFImageLoading.Compat.Transformations.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0-ios16.1/FFImageLoading.Compat.Transformations.dll": {}
         }
       },
       "InputKit.Maui/4.4.7": {
@@ -24784,7 +25390,7 @@
           }
         }
       },
-      "UraniumUI/2.10.1": {
+      "UraniumUI/2.10.2": {
         "type": "package",
         "dependencies": {
           "InputKit.Maui": "4.4.7",
@@ -24802,10 +25408,10 @@
           }
         }
       },
-      "UraniumUI.Material/2.10.1": {
+      "UraniumUI.Material/2.10.2": {
         "type": "package",
         "dependencies": {
-          "UraniumUI": "2.10.1"
+          "UraniumUI": "2.10.2"
         },
         "compile": {
           "lib/net8.0/UraniumUI.Material.dll": {
@@ -24850,6 +25456,40 @@
         },
         "build": {
           "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
+        }
+      },
+      "FFImageLoadingCompat/0.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-ios16.1/FFImageLoading.Compat.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0-ios16.1/FFImageLoading.Compat.dll": {}
+        }
+      },
+      "FFImageLoadingCompat.Maui/0.1.1": {
+        "type": "package",
+        "dependencies": {
+          "FFImageLoadingCompat": "0.1.1",
+          "FFImageLoadingCompat.Transformations": "0.1.1"
+        },
+        "compile": {
+          "lib/net7.0-ios16.1/FFImageLoading.Compat.Maui.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0-ios16.1/FFImageLoading.Compat.Maui.dll": {}
+        }
+      },
+      "FFImageLoadingCompat.Transformations/0.1.1": {
+        "type": "package",
+        "dependencies": {
+          "FFImageLoadingCompat": "0.1.1"
+        },
+        "compile": {
+          "lib/net7.0-ios16.1/FFImageLoading.Compat.Transformations.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0-ios16.1/FFImageLoading.Compat.Transformations.dll": {}
         }
       },
       "InputKit.Maui/4.4.7": {
@@ -25644,7 +26284,7 @@
           }
         }
       },
-      "UraniumUI/2.10.1": {
+      "UraniumUI/2.10.2": {
         "type": "package",
         "dependencies": {
           "InputKit.Maui": "4.4.7",
@@ -25662,10 +26302,10 @@
           }
         }
       },
-      "UraniumUI.Material/2.10.1": {
+      "UraniumUI.Material/2.10.2": {
         "type": "package",
         "dependencies": {
-          "UraniumUI": "2.10.1"
+          "UraniumUI": "2.10.2"
         },
         "compile": {
           "lib/net8.0/UraniumUI.Material.dll": {
@@ -25710,6 +26350,40 @@
         },
         "build": {
           "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
+        }
+      },
+      "FFImageLoadingCompat/0.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-maccatalyst16.1/FFImageLoading.Compat.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst16.1/FFImageLoading.Compat.dll": {}
+        }
+      },
+      "FFImageLoadingCompat.Maui/0.1.1": {
+        "type": "package",
+        "dependencies": {
+          "FFImageLoadingCompat": "0.1.1",
+          "FFImageLoadingCompat.Transformations": "0.1.1"
+        },
+        "compile": {
+          "lib/net7.0-maccatalyst16.1/FFImageLoading.Compat.Maui.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst16.1/FFImageLoading.Compat.Maui.dll": {}
+        }
+      },
+      "FFImageLoadingCompat.Transformations/0.1.1": {
+        "type": "package",
+        "dependencies": {
+          "FFImageLoadingCompat": "0.1.1"
+        },
+        "compile": {
+          "lib/net7.0-maccatalyst16.1/FFImageLoading.Compat.Transformations.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst16.1/FFImageLoading.Compat.Transformations.dll": {}
         }
       },
       "InputKit.Maui/4.4.7": {
@@ -26384,7 +27058,7 @@
           }
         }
       },
-      "UraniumUI/2.10.1": {
+      "UraniumUI/2.10.2": {
         "type": "package",
         "dependencies": {
           "InputKit.Maui": "4.4.7",
@@ -26402,10 +27076,10 @@
           }
         }
       },
-      "UraniumUI.Material/2.10.1": {
+      "UraniumUI.Material/2.10.2": {
         "type": "package",
         "dependencies": {
-          "UraniumUI": "2.10.1"
+          "UraniumUI": "2.10.2"
         },
         "compile": {
           "lib/net8.0/UraniumUI.Material.dll": {
@@ -26452,6 +27126,40 @@
           "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
         }
       },
+      "FFImageLoadingCompat/0.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-maccatalyst16.1/FFImageLoading.Compat.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst16.1/FFImageLoading.Compat.dll": {}
+        }
+      },
+      "FFImageLoadingCompat.Maui/0.1.1": {
+        "type": "package",
+        "dependencies": {
+          "FFImageLoadingCompat": "0.1.1",
+          "FFImageLoadingCompat.Transformations": "0.1.1"
+        },
+        "compile": {
+          "lib/net7.0-maccatalyst16.1/FFImageLoading.Compat.Maui.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst16.1/FFImageLoading.Compat.Maui.dll": {}
+        }
+      },
+      "FFImageLoadingCompat.Transformations/0.1.1": {
+        "type": "package",
+        "dependencies": {
+          "FFImageLoadingCompat": "0.1.1"
+        },
+        "compile": {
+          "lib/net7.0-maccatalyst16.1/FFImageLoading.Compat.Transformations.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst16.1/FFImageLoading.Compat.Transformations.dll": {}
+        }
+      },
       "InputKit.Maui/4.4.7": {
         "type": "package",
         "compile": {
@@ -27263,7 +27971,7 @@
           }
         }
       },
-      "UraniumUI/2.10.1": {
+      "UraniumUI/2.10.2": {
         "type": "package",
         "dependencies": {
           "InputKit.Maui": "4.4.7",
@@ -27281,10 +27989,10 @@
           }
         }
       },
-      "UraniumUI.Material/2.10.1": {
+      "UraniumUI.Material/2.10.2": {
         "type": "package",
         "dependencies": {
-          "UraniumUI": "2.10.1"
+          "UraniumUI": "2.10.2"
         },
         "compile": {
           "lib/net8.0/UraniumUI.Material.dll": {
@@ -27331,6 +28039,40 @@
           "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
         }
       },
+      "FFImageLoadingCompat/0.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-maccatalyst16.1/FFImageLoading.Compat.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst16.1/FFImageLoading.Compat.dll": {}
+        }
+      },
+      "FFImageLoadingCompat.Maui/0.1.1": {
+        "type": "package",
+        "dependencies": {
+          "FFImageLoadingCompat": "0.1.1",
+          "FFImageLoadingCompat.Transformations": "0.1.1"
+        },
+        "compile": {
+          "lib/net7.0-maccatalyst16.1/FFImageLoading.Compat.Maui.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst16.1/FFImageLoading.Compat.Maui.dll": {}
+        }
+      },
+      "FFImageLoadingCompat.Transformations/0.1.1": {
+        "type": "package",
+        "dependencies": {
+          "FFImageLoadingCompat": "0.1.1"
+        },
+        "compile": {
+          "lib/net7.0-maccatalyst16.1/FFImageLoading.Compat.Transformations.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst16.1/FFImageLoading.Compat.Transformations.dll": {}
+        }
+      },
       "InputKit.Maui/4.4.7": {
         "type": "package",
         "compile": {
@@ -28142,7 +28884,7 @@
           }
         }
       },
-      "UraniumUI/2.10.1": {
+      "UraniumUI/2.10.2": {
         "type": "package",
         "dependencies": {
           "InputKit.Maui": "4.4.7",
@@ -28160,10 +28902,10 @@
           }
         }
       },
-      "UraniumUI.Material/2.10.1": {
+      "UraniumUI.Material/2.10.2": {
         "type": "package",
         "dependencies": {
-          "UraniumUI": "2.10.1"
+          "UraniumUI": "2.10.2"
         },
         "compile": {
           "lib/net8.0/UraniumUI.Material.dll": {
@@ -28210,6 +28952,40 @@
           "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
         }
       },
+      "FFImageLoadingCompat/0.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-maccatalyst16.1/FFImageLoading.Compat.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst16.1/FFImageLoading.Compat.dll": {}
+        }
+      },
+      "FFImageLoadingCompat.Maui/0.1.1": {
+        "type": "package",
+        "dependencies": {
+          "FFImageLoadingCompat": "0.1.1",
+          "FFImageLoadingCompat.Transformations": "0.1.1"
+        },
+        "compile": {
+          "lib/net7.0-maccatalyst16.1/FFImageLoading.Compat.Maui.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst16.1/FFImageLoading.Compat.Maui.dll": {}
+        }
+      },
+      "FFImageLoadingCompat.Transformations/0.1.1": {
+        "type": "package",
+        "dependencies": {
+          "FFImageLoadingCompat": "0.1.1"
+        },
+        "compile": {
+          "lib/net7.0-maccatalyst16.1/FFImageLoading.Compat.Transformations.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst16.1/FFImageLoading.Compat.Transformations.dll": {}
+        }
+      },
       "InputKit.Maui/4.4.7": {
         "type": "package",
         "compile": {
@@ -29021,7 +29797,7 @@
           }
         }
       },
-      "UraniumUI/2.10.1": {
+      "UraniumUI/2.10.2": {
         "type": "package",
         "dependencies": {
           "InputKit.Maui": "4.4.7",
@@ -29039,10 +29815,10 @@
           }
         }
       },
-      "UraniumUI.Material/2.10.1": {
+      "UraniumUI.Material/2.10.2": {
         "type": "package",
         "dependencies": {
-          "UraniumUI": "2.10.1"
+          "UraniumUI": "2.10.2"
         },
         "compile": {
           "lib/net8.0/UraniumUI.Material.dll": {
@@ -29089,6 +29865,40 @@
           "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
         }
       },
+      "FFImageLoadingCompat/0.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-maccatalyst16.1/FFImageLoading.Compat.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst16.1/FFImageLoading.Compat.dll": {}
+        }
+      },
+      "FFImageLoadingCompat.Maui/0.1.1": {
+        "type": "package",
+        "dependencies": {
+          "FFImageLoadingCompat": "0.1.1",
+          "FFImageLoadingCompat.Transformations": "0.1.1"
+        },
+        "compile": {
+          "lib/net7.0-maccatalyst16.1/FFImageLoading.Compat.Maui.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst16.1/FFImageLoading.Compat.Maui.dll": {}
+        }
+      },
+      "FFImageLoadingCompat.Transformations/0.1.1": {
+        "type": "package",
+        "dependencies": {
+          "FFImageLoadingCompat": "0.1.1"
+        },
+        "compile": {
+          "lib/net7.0-maccatalyst16.1/FFImageLoading.Compat.Transformations.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst16.1/FFImageLoading.Compat.Transformations.dll": {}
+        }
+      },
       "InputKit.Maui/4.4.7": {
         "type": "package",
         "compile": {
@@ -29900,7 +30710,7 @@
           }
         }
       },
-      "UraniumUI/2.10.1": {
+      "UraniumUI/2.10.2": {
         "type": "package",
         "dependencies": {
           "InputKit.Maui": "4.4.7",
@@ -29918,10 +30728,10 @@
           }
         }
       },
-      "UraniumUI.Material/2.10.1": {
+      "UraniumUI.Material/2.10.2": {
         "type": "package",
         "dependencies": {
-          "UraniumUI": "2.10.1"
+          "UraniumUI": "2.10.2"
         },
         "compile": {
           "lib/net8.0/UraniumUI.Material.dll": {
@@ -29968,6 +30778,40 @@
           "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
         }
       },
+      "FFImageLoadingCompat/0.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-maccatalyst16.1/FFImageLoading.Compat.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst16.1/FFImageLoading.Compat.dll": {}
+        }
+      },
+      "FFImageLoadingCompat.Maui/0.1.1": {
+        "type": "package",
+        "dependencies": {
+          "FFImageLoadingCompat": "0.1.1",
+          "FFImageLoadingCompat.Transformations": "0.1.1"
+        },
+        "compile": {
+          "lib/net7.0-maccatalyst16.1/FFImageLoading.Compat.Maui.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst16.1/FFImageLoading.Compat.Maui.dll": {}
+        }
+      },
+      "FFImageLoadingCompat.Transformations/0.1.1": {
+        "type": "package",
+        "dependencies": {
+          "FFImageLoadingCompat": "0.1.1"
+        },
+        "compile": {
+          "lib/net7.0-maccatalyst16.1/FFImageLoading.Compat.Transformations.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst16.1/FFImageLoading.Compat.Transformations.dll": {}
+        }
+      },
       "InputKit.Maui/4.4.7": {
         "type": "package",
         "compile": {
@@ -30779,7 +31623,7 @@
           }
         }
       },
-      "UraniumUI/2.10.1": {
+      "UraniumUI/2.10.2": {
         "type": "package",
         "dependencies": {
           "InputKit.Maui": "4.4.7",
@@ -30797,10 +31641,10 @@
           }
         }
       },
-      "UraniumUI.Material/2.10.1": {
+      "UraniumUI.Material/2.10.2": {
         "type": "package",
         "dependencies": {
-          "UraniumUI": "2.10.1"
+          "UraniumUI": "2.10.2"
         },
         "compile": {
           "lib/net8.0/UraniumUI.Material.dll": {
@@ -30845,6 +31689,40 @@
         },
         "build": {
           "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
+        }
+      },
+      "FFImageLoadingCompat/0.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-maccatalyst16.1/FFImageLoading.Compat.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst16.1/FFImageLoading.Compat.dll": {}
+        }
+      },
+      "FFImageLoadingCompat.Maui/0.1.1": {
+        "type": "package",
+        "dependencies": {
+          "FFImageLoadingCompat": "0.1.1",
+          "FFImageLoadingCompat.Transformations": "0.1.1"
+        },
+        "compile": {
+          "lib/net7.0-maccatalyst16.1/FFImageLoading.Compat.Maui.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst16.1/FFImageLoading.Compat.Maui.dll": {}
+        }
+      },
+      "FFImageLoadingCompat.Transformations/0.1.1": {
+        "type": "package",
+        "dependencies": {
+          "FFImageLoadingCompat": "0.1.1"
+        },
+        "compile": {
+          "lib/net7.0-maccatalyst16.1/FFImageLoading.Compat.Transformations.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst16.1/FFImageLoading.Compat.Transformations.dll": {}
         }
       },
       "InputKit.Maui/4.4.7": {
@@ -31661,7 +32539,7 @@
           }
         }
       },
-      "UraniumUI/2.10.1": {
+      "UraniumUI/2.10.2": {
         "type": "package",
         "dependencies": {
           "InputKit.Maui": "4.4.7",
@@ -31679,10 +32557,10 @@
           }
         }
       },
-      "UraniumUI.Material/2.10.1": {
+      "UraniumUI.Material/2.10.2": {
         "type": "package",
         "dependencies": {
-          "UraniumUI": "2.10.1"
+          "UraniumUI": "2.10.2"
         },
         "compile": {
           "lib/net8.0/UraniumUI.Material.dll": {
@@ -31727,6 +32605,40 @@
         },
         "build": {
           "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
+        }
+      },
+      "FFImageLoadingCompat/0.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-maccatalyst16.1/FFImageLoading.Compat.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst16.1/FFImageLoading.Compat.dll": {}
+        }
+      },
+      "FFImageLoadingCompat.Maui/0.1.1": {
+        "type": "package",
+        "dependencies": {
+          "FFImageLoadingCompat": "0.1.1",
+          "FFImageLoadingCompat.Transformations": "0.1.1"
+        },
+        "compile": {
+          "lib/net7.0-maccatalyst16.1/FFImageLoading.Compat.Maui.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst16.1/FFImageLoading.Compat.Maui.dll": {}
+        }
+      },
+      "FFImageLoadingCompat.Transformations/0.1.1": {
+        "type": "package",
+        "dependencies": {
+          "FFImageLoadingCompat": "0.1.1"
+        },
+        "compile": {
+          "lib/net7.0-maccatalyst16.1/FFImageLoading.Compat.Transformations.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst16.1/FFImageLoading.Compat.Transformations.dll": {}
         }
       },
       "InputKit.Maui/4.4.7": {
@@ -32521,7 +33433,7 @@
           }
         }
       },
-      "UraniumUI/2.10.1": {
+      "UraniumUI/2.10.2": {
         "type": "package",
         "dependencies": {
           "InputKit.Maui": "4.4.7",
@@ -32539,10 +33451,10 @@
           }
         }
       },
-      "UraniumUI.Material/2.10.1": {
+      "UraniumUI.Material/2.10.2": {
         "type": "package",
         "dependencies": {
-          "UraniumUI": "2.10.1"
+          "UraniumUI": "2.10.2"
         },
         "compile": {
           "lib/net8.0/UraniumUI.Material.dll": {
@@ -32587,6 +33499,40 @@
         },
         "build": {
           "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
+        }
+      },
+      "FFImageLoadingCompat/0.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-windows10.0.19041/FFImageLoading.Compat.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0-windows10.0.19041/FFImageLoading.Compat.dll": {}
+        }
+      },
+      "FFImageLoadingCompat.Maui/0.1.1": {
+        "type": "package",
+        "dependencies": {
+          "FFImageLoadingCompat": "0.1.1",
+          "FFImageLoadingCompat.Transformations": "0.1.1"
+        },
+        "compile": {
+          "lib/net7.0-windows10.0.19041/FFImageLoading.Compat.Maui.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0-windows10.0.19041/FFImageLoading.Compat.Maui.dll": {}
+        }
+      },
+      "FFImageLoadingCompat.Transformations/0.1.1": {
+        "type": "package",
+        "dependencies": {
+          "FFImageLoadingCompat": "0.1.1"
+        },
+        "compile": {
+          "lib/net7.0-windows10.0.19041/FFImageLoading.Compat.Transformations.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0-windows10.0.19041/FFImageLoading.Compat.Transformations.dll": {}
         }
       },
       "InputKit.Maui/4.4.7": {
@@ -33437,7 +34383,7 @@
           }
         }
       },
-      "UraniumUI/2.10.1": {
+      "UraniumUI/2.10.2": {
         "type": "package",
         "dependencies": {
           "InputKit.Maui": "4.4.7",
@@ -33455,10 +34401,10 @@
           }
         }
       },
-      "UraniumUI.Material/2.10.1": {
+      "UraniumUI.Material/2.10.2": {
         "type": "package",
         "dependencies": {
-          "UraniumUI": "2.10.1"
+          "UraniumUI": "2.10.2"
         },
         "compile": {
           "lib/net8.0-windows10.0.19041/UraniumUI.Material.dll": {
@@ -33505,6 +34451,40 @@
           "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
         }
       },
+      "FFImageLoadingCompat/0.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-windows10.0.19041/FFImageLoading.Compat.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0-windows10.0.19041/FFImageLoading.Compat.dll": {}
+        }
+      },
+      "FFImageLoadingCompat.Maui/0.1.1": {
+        "type": "package",
+        "dependencies": {
+          "FFImageLoadingCompat": "0.1.1",
+          "FFImageLoadingCompat.Transformations": "0.1.1"
+        },
+        "compile": {
+          "lib/net7.0-windows10.0.19041/FFImageLoading.Compat.Maui.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0-windows10.0.19041/FFImageLoading.Compat.Maui.dll": {}
+        }
+      },
+      "FFImageLoadingCompat.Transformations/0.1.1": {
+        "type": "package",
+        "dependencies": {
+          "FFImageLoadingCompat": "0.1.1"
+        },
+        "compile": {
+          "lib/net7.0-windows10.0.19041/FFImageLoading.Compat.Transformations.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0-windows10.0.19041/FFImageLoading.Compat.Transformations.dll": {}
+        }
+      },
       "InputKit.Maui/4.4.7": {
         "type": "package",
         "compile": {
@@ -34438,7 +35418,7 @@
           }
         }
       },
-      "UraniumUI/2.10.1": {
+      "UraniumUI/2.10.2": {
         "type": "package",
         "dependencies": {
           "InputKit.Maui": "4.4.7",
@@ -34456,10 +35436,10 @@
           }
         }
       },
-      "UraniumUI.Material/2.10.1": {
+      "UraniumUI.Material/2.10.2": {
         "type": "package",
         "dependencies": {
-          "UraniumUI": "2.10.1"
+          "UraniumUI": "2.10.2"
         },
         "compile": {
           "lib/net8.0-windows10.0.19041/UraniumUI.Material.dll": {
@@ -34506,6 +35486,40 @@
           "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
         }
       },
+      "FFImageLoadingCompat/0.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-windows10.0.19041/FFImageLoading.Compat.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0-windows10.0.19041/FFImageLoading.Compat.dll": {}
+        }
+      },
+      "FFImageLoadingCompat.Maui/0.1.1": {
+        "type": "package",
+        "dependencies": {
+          "FFImageLoadingCompat": "0.1.1",
+          "FFImageLoadingCompat.Transformations": "0.1.1"
+        },
+        "compile": {
+          "lib/net7.0-windows10.0.19041/FFImageLoading.Compat.Maui.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0-windows10.0.19041/FFImageLoading.Compat.Maui.dll": {}
+        }
+      },
+      "FFImageLoadingCompat.Transformations/0.1.1": {
+        "type": "package",
+        "dependencies": {
+          "FFImageLoadingCompat": "0.1.1"
+        },
+        "compile": {
+          "lib/net7.0-windows10.0.19041/FFImageLoading.Compat.Transformations.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0-windows10.0.19041/FFImageLoading.Compat.Transformations.dll": {}
+        }
+      },
       "InputKit.Maui/4.4.7": {
         "type": "package",
         "compile": {
@@ -35439,7 +36453,7 @@
           }
         }
       },
-      "UraniumUI/2.10.1": {
+      "UraniumUI/2.10.2": {
         "type": "package",
         "dependencies": {
           "InputKit.Maui": "4.4.7",
@@ -35457,10 +36471,10 @@
           }
         }
       },
-      "UraniumUI.Material/2.10.1": {
+      "UraniumUI.Material/2.10.2": {
         "type": "package",
         "dependencies": {
-          "UraniumUI": "2.10.1"
+          "UraniumUI": "2.10.2"
         },
         "compile": {
           "lib/net8.0-windows10.0.19041/UraniumUI.Material.dll": {
@@ -35507,6 +36521,40 @@
           "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
         }
       },
+      "FFImageLoadingCompat/0.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-windows10.0.19041/FFImageLoading.Compat.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0-windows10.0.19041/FFImageLoading.Compat.dll": {}
+        }
+      },
+      "FFImageLoadingCompat.Maui/0.1.1": {
+        "type": "package",
+        "dependencies": {
+          "FFImageLoadingCompat": "0.1.1",
+          "FFImageLoadingCompat.Transformations": "0.1.1"
+        },
+        "compile": {
+          "lib/net7.0-windows10.0.19041/FFImageLoading.Compat.Maui.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0-windows10.0.19041/FFImageLoading.Compat.Maui.dll": {}
+        }
+      },
+      "FFImageLoadingCompat.Transformations/0.1.1": {
+        "type": "package",
+        "dependencies": {
+          "FFImageLoadingCompat": "0.1.1"
+        },
+        "compile": {
+          "lib/net7.0-windows10.0.19041/FFImageLoading.Compat.Transformations.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0-windows10.0.19041/FFImageLoading.Compat.Transformations.dll": {}
+        }
+      },
       "InputKit.Maui/4.4.7": {
         "type": "package",
         "compile": {
@@ -36440,7 +37488,7 @@
           }
         }
       },
-      "UraniumUI/2.10.1": {
+      "UraniumUI/2.10.2": {
         "type": "package",
         "dependencies": {
           "InputKit.Maui": "4.4.7",
@@ -36458,10 +37506,10 @@
           }
         }
       },
-      "UraniumUI.Material/2.10.1": {
+      "UraniumUI.Material/2.10.2": {
         "type": "package",
         "dependencies": {
-          "UraniumUI": "2.10.1"
+          "UraniumUI": "2.10.2"
         },
         "compile": {
           "lib/net8.0-windows10.0.19041/UraniumUI.Material.dll": {
@@ -36508,6 +37556,40 @@
           "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
         }
       },
+      "FFImageLoadingCompat/0.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-windows10.0.19041/FFImageLoading.Compat.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0-windows10.0.19041/FFImageLoading.Compat.dll": {}
+        }
+      },
+      "FFImageLoadingCompat.Maui/0.1.1": {
+        "type": "package",
+        "dependencies": {
+          "FFImageLoadingCompat": "0.1.1",
+          "FFImageLoadingCompat.Transformations": "0.1.1"
+        },
+        "compile": {
+          "lib/net7.0-windows10.0.19041/FFImageLoading.Compat.Maui.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0-windows10.0.19041/FFImageLoading.Compat.Maui.dll": {}
+        }
+      },
+      "FFImageLoadingCompat.Transformations/0.1.1": {
+        "type": "package",
+        "dependencies": {
+          "FFImageLoadingCompat": "0.1.1"
+        },
+        "compile": {
+          "lib/net7.0-windows10.0.19041/FFImageLoading.Compat.Transformations.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0-windows10.0.19041/FFImageLoading.Compat.Transformations.dll": {}
+        }
+      },
       "InputKit.Maui/4.4.7": {
         "type": "package",
         "compile": {
@@ -37441,7 +38523,7 @@
           }
         }
       },
-      "UraniumUI/2.10.1": {
+      "UraniumUI/2.10.2": {
         "type": "package",
         "dependencies": {
           "InputKit.Maui": "4.4.7",
@@ -37459,10 +38541,10 @@
           }
         }
       },
-      "UraniumUI.Material/2.10.1": {
+      "UraniumUI.Material/2.10.2": {
         "type": "package",
         "dependencies": {
-          "UraniumUI": "2.10.1"
+          "UraniumUI": "2.10.2"
         },
         "compile": {
           "lib/net8.0-windows10.0.19041/UraniumUI.Material.dll": {
@@ -37509,6 +38591,40 @@
           "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
         }
       },
+      "FFImageLoadingCompat/0.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-windows10.0.19041/FFImageLoading.Compat.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0-windows10.0.19041/FFImageLoading.Compat.dll": {}
+        }
+      },
+      "FFImageLoadingCompat.Maui/0.1.1": {
+        "type": "package",
+        "dependencies": {
+          "FFImageLoadingCompat": "0.1.1",
+          "FFImageLoadingCompat.Transformations": "0.1.1"
+        },
+        "compile": {
+          "lib/net7.0-windows10.0.19041/FFImageLoading.Compat.Maui.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0-windows10.0.19041/FFImageLoading.Compat.Maui.dll": {}
+        }
+      },
+      "FFImageLoadingCompat.Transformations/0.1.1": {
+        "type": "package",
+        "dependencies": {
+          "FFImageLoadingCompat": "0.1.1"
+        },
+        "compile": {
+          "lib/net7.0-windows10.0.19041/FFImageLoading.Compat.Transformations.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0-windows10.0.19041/FFImageLoading.Compat.Transformations.dll": {}
+        }
+      },
       "InputKit.Maui/4.4.7": {
         "type": "package",
         "compile": {
@@ -38442,7 +39558,7 @@
           }
         }
       },
-      "UraniumUI/2.10.1": {
+      "UraniumUI/2.10.2": {
         "type": "package",
         "dependencies": {
           "InputKit.Maui": "4.4.7",
@@ -38460,10 +39576,10 @@
           }
         }
       },
-      "UraniumUI.Material/2.10.1": {
+      "UraniumUI.Material/2.10.2": {
         "type": "package",
         "dependencies": {
-          "UraniumUI": "2.10.1"
+          "UraniumUI": "2.10.2"
         },
         "compile": {
           "lib/net8.0-windows10.0.19041/UraniumUI.Material.dll": {
@@ -38510,6 +39626,40 @@
           "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
         }
       },
+      "FFImageLoadingCompat/0.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-windows10.0.19041/FFImageLoading.Compat.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0-windows10.0.19041/FFImageLoading.Compat.dll": {}
+        }
+      },
+      "FFImageLoadingCompat.Maui/0.1.1": {
+        "type": "package",
+        "dependencies": {
+          "FFImageLoadingCompat": "0.1.1",
+          "FFImageLoadingCompat.Transformations": "0.1.1"
+        },
+        "compile": {
+          "lib/net7.0-windows10.0.19041/FFImageLoading.Compat.Maui.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0-windows10.0.19041/FFImageLoading.Compat.Maui.dll": {}
+        }
+      },
+      "FFImageLoadingCompat.Transformations/0.1.1": {
+        "type": "package",
+        "dependencies": {
+          "FFImageLoadingCompat": "0.1.1"
+        },
+        "compile": {
+          "lib/net7.0-windows10.0.19041/FFImageLoading.Compat.Transformations.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0-windows10.0.19041/FFImageLoading.Compat.Transformations.dll": {}
+        }
+      },
       "InputKit.Maui/4.4.7": {
         "type": "package",
         "compile": {
@@ -39443,7 +40593,7 @@
           }
         }
       },
-      "UraniumUI/2.10.1": {
+      "UraniumUI/2.10.2": {
         "type": "package",
         "dependencies": {
           "InputKit.Maui": "4.4.7",
@@ -39461,10 +40611,10 @@
           }
         }
       },
-      "UraniumUI.Material/2.10.1": {
+      "UraniumUI.Material/2.10.2": {
         "type": "package",
         "dependencies": {
-          "UraniumUI": "2.10.1"
+          "UraniumUI": "2.10.2"
         },
         "compile": {
           "lib/net8.0-windows10.0.19041/UraniumUI.Material.dll": {
@@ -39509,6 +40659,40 @@
         },
         "build": {
           "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
+        }
+      },
+      "FFImageLoadingCompat/0.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-windows10.0.19041/FFImageLoading.Compat.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0-windows10.0.19041/FFImageLoading.Compat.dll": {}
+        }
+      },
+      "FFImageLoadingCompat.Maui/0.1.1": {
+        "type": "package",
+        "dependencies": {
+          "FFImageLoadingCompat": "0.1.1",
+          "FFImageLoadingCompat.Transformations": "0.1.1"
+        },
+        "compile": {
+          "lib/net7.0-windows10.0.19041/FFImageLoading.Compat.Maui.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0-windows10.0.19041/FFImageLoading.Compat.Maui.dll": {}
+        }
+      },
+      "FFImageLoadingCompat.Transformations/0.1.1": {
+        "type": "package",
+        "dependencies": {
+          "FFImageLoadingCompat": "0.1.1"
+        },
+        "compile": {
+          "lib/net7.0-windows10.0.19041/FFImageLoading.Compat.Transformations.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0-windows10.0.19041/FFImageLoading.Compat.Transformations.dll": {}
         }
       },
       "InputKit.Maui/4.4.7": {
@@ -40434,7 +41618,7 @@
           }
         }
       },
-      "UraniumUI/2.10.1": {
+      "UraniumUI/2.10.2": {
         "type": "package",
         "dependencies": {
           "InputKit.Maui": "4.4.7",
@@ -40452,10 +41636,10 @@
           }
         }
       },
-      "UraniumUI.Material/2.10.1": {
+      "UraniumUI.Material/2.10.2": {
         "type": "package",
         "dependencies": {
-          "UraniumUI": "2.10.1"
+          "UraniumUI": "2.10.2"
         },
         "compile": {
           "lib/net8.0-windows10.0.19041/UraniumUI.Material.dll": {
@@ -40516,6 +41700,58 @@
         "lib/netstandard2.1/CommunityToolkit.Mvvm.dll",
         "lib/netstandard2.1/CommunityToolkit.Mvvm.pdb",
         "lib/netstandard2.1/CommunityToolkit.Mvvm.xml"
+      ]
+    },
+    "FFImageLoadingCompat/0.1.1": {
+      "sha512": "obcy9k+rSNHZ1Z93f5ygq1FZZAjiZ5edpSmz9TpkhjxdkySVH6LeQltAX+HuiL+8hEvYm8IX10IAIIlj0lT15w==",
+      "type": "package",
+      "path": "ffimageloadingcompat/0.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ffimageloadingcompat.0.1.1.nupkg.sha512",
+        "ffimageloadingcompat.nuspec",
+        "lib/net7.0-android33.0/FFImageLoading.Compat.aar",
+        "lib/net7.0-android33.0/FFImageLoading.Compat.dll",
+        "lib/net7.0-android33.0/FFImageLoading.Compat.xml",
+        "lib/net7.0-ios16.1/FFImageLoading.Compat.dll",
+        "lib/net7.0-maccatalyst16.1/FFImageLoading.Compat.dll",
+        "lib/net7.0-windows10.0.19041/FFImageLoading.Compat.dll",
+        "lib/net7.0/FFImageLoading.Compat.dll"
+      ]
+    },
+    "FFImageLoadingCompat.Maui/0.1.1": {
+      "sha512": "WOKBAazENn54pjSjzpl+tu7K7ECVFmDjLNiEIMixxmEVt0/nsbLsz7NP64yl3yn5S0HgFhKdH3ylgwFVDCe7Yw==",
+      "type": "package",
+      "path": "ffimageloadingcompat.maui/0.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ffimageloadingcompat.maui.0.1.1.nupkg.sha512",
+        "ffimageloadingcompat.maui.nuspec",
+        "lib/net7.0-android33.0/FFImageLoading.Compat.Maui.aar",
+        "lib/net7.0-android33.0/FFImageLoading.Compat.Maui.dll",
+        "lib/net7.0-android33.0/FFImageLoading.Compat.Maui.xml",
+        "lib/net7.0-ios16.1/FFImageLoading.Compat.Maui.dll",
+        "lib/net7.0-maccatalyst16.1/FFImageLoading.Compat.Maui.dll",
+        "lib/net7.0-windows10.0.19041/FFImageLoading.Compat.Maui.dll"
+      ]
+    },
+    "FFImageLoadingCompat.Transformations/0.1.1": {
+      "sha512": "d3MFJrgL4LdFMl50yJjwDKEtejC8GBNbUSKdm67Qc2d3yDTSpfoK8RGh2l4cxXBfq13efKOyLqdIZ4HMTmQfJA==",
+      "type": "package",
+      "path": "ffimageloadingcompat.transformations/0.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ffimageloadingcompat.transformations.0.1.1.nupkg.sha512",
+        "ffimageloadingcompat.transformations.nuspec",
+        "lib/net7.0-android33.0/FFImageLoading.Compat.Transformations.aar",
+        "lib/net7.0-android33.0/FFImageLoading.Compat.Transformations.dll",
+        "lib/net7.0-android33.0/FFImageLoading.Compat.Transformations.xml",
+        "lib/net7.0-ios16.1/FFImageLoading.Compat.Transformations.dll",
+        "lib/net7.0-maccatalyst16.1/FFImageLoading.Compat.Transformations.dll",
+        "lib/net7.0-windows10.0.19041/FFImageLoading.Compat.Transformations.dll"
       ]
     },
     "GoogleGson/2.10.1.4": {
@@ -44128,10 +45364,10 @@
         "system.threading.tasks.nuspec"
       ]
     },
-    "UraniumUI/2.10.1": {
-      "sha512": "dwxzfZd21vjvVihSWI8hplb7zTsIQTmPzkPgOsdRmi3GU2T2qZODTisCfwxdnaUjHbgrU/z+58xwHa2cRZAtPw==",
+    "UraniumUI/2.10.2": {
+      "sha512": "B4nEzYdHqJHWJuAg/YpaLGcaZrl0duJ8Hf1rPoUevN3wl+YSXctztZEAguqdgxm2q8JICKfg0Sv9PB+ThnE31w==",
       "type": "package",
-      "path": "uraniumui/2.10.1",
+      "path": "uraniumui/2.10.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -44148,14 +45384,14 @@
         "lib/net8.0/UraniumUI.dll",
         "lib/net8.0/UraniumUI.pdb",
         "logo_128.png",
-        "uraniumui.2.10.1.nupkg.sha512",
+        "uraniumui.2.10.2.nupkg.sha512",
         "uraniumui.nuspec"
       ]
     },
-    "UraniumUI.Material/2.10.1": {
-      "sha512": "5YSH6Wy3/hIJCA4bTVZ/zlzhCfNmtHUBb6T+Qkv5AzsZlmifQsrxzMZ/iDaRxQ2Lo8r0kpw4Vz2vQGS0+syKLA==",
+    "UraniumUI.Material/2.10.2": {
+      "sha512": "H+u7Q60QN+Af+fYhLQmFYJo1gYiBjKp8bnXTJCpv3nJ/X5ty+LJvuybIp/MC9YOvNp3RfOlqHurEwfbEbsWs/Q==",
       "type": "package",
-      "path": "uraniumui.material/2.10.1",
+      "path": "uraniumui.material/2.10.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -44172,7 +45408,7 @@
         "lib/net8.0/UraniumUI.Material.dll",
         "lib/net8.0/UraniumUI.Material.pdb",
         "logo_128.png",
-        "uraniumui.material.2.10.1.nupkg.sha512",
+        "uraniumui.material.2.10.2.nupkg.sha512",
         "uraniumui.material.nuspec"
       ]
     },
@@ -46218,45 +47454,53 @@
     "net8.0-android34.0": [
       "CommunityToolkit.Maui.Markup >= 4.1.0",
       "CommunityToolkit.Mvvm >= 8.2.2",
+      "FFImageLoadingCompat.Maui >= 0.1.1",
       "Microsoft.Extensions.Logging.Debug >= 8.0.0",
       "Microsoft.Maui.Controls >= 8.0.40",
       "Microsoft.Maui.Controls.Compatibility >= 8.0.40",
       "Microsoft.NET.ILLink.Tasks >= 8.0.6",
       "SkiaSharp >= 2.88.8",
       "System.ObjectModel >= 4.3.0",
-      "UraniumUI.Material >= 2.10.1"
+      "UraniumUI >= 2.10.2",
+      "UraniumUI.Material >= 2.10.2"
     ],
     "net8.0-ios17.2": [
       "CommunityToolkit.Maui.Markup >= 4.1.0",
       "CommunityToolkit.Mvvm >= 8.2.2",
+      "FFImageLoadingCompat.Maui >= 0.1.1",
       "Microsoft.Extensions.Logging.Debug >= 8.0.0",
       "Microsoft.Maui.Controls >= 8.0.40",
       "Microsoft.Maui.Controls.Compatibility >= 8.0.40",
       "Microsoft.NET.ILLink.Tasks >= 8.0.6",
       "SkiaSharp >= 2.88.8",
       "System.ObjectModel >= 4.3.0",
-      "UraniumUI.Material >= 2.10.1"
+      "UraniumUI >= 2.10.2",
+      "UraniumUI.Material >= 2.10.2"
     ],
     "net8.0-maccatalyst17.2": [
       "CommunityToolkit.Maui.Markup >= 4.1.0",
       "CommunityToolkit.Mvvm >= 8.2.2",
+      "FFImageLoadingCompat.Maui >= 0.1.1",
       "Microsoft.Extensions.Logging.Debug >= 8.0.0",
       "Microsoft.Maui.Controls >= 8.0.40",
       "Microsoft.Maui.Controls.Compatibility >= 8.0.40",
       "Microsoft.NET.ILLink.Tasks >= 8.0.6",
       "SkiaSharp >= 2.88.8",
       "System.ObjectModel >= 4.3.0",
-      "UraniumUI.Material >= 2.10.1"
+      "UraniumUI >= 2.10.2",
+      "UraniumUI.Material >= 2.10.2"
     ],
     "net8.0-windows10.0.19041": [
       "CommunityToolkit.Maui.Markup >= 4.1.0",
       "CommunityToolkit.Mvvm >= 8.2.2",
+      "FFImageLoadingCompat.Maui >= 0.1.1",
       "Microsoft.Extensions.Logging.Debug >= 8.0.0",
       "Microsoft.Maui.Controls >= 8.0.40",
       "Microsoft.Maui.Controls.Compatibility >= 8.0.40",
       "SkiaSharp >= 2.88.8",
       "System.ObjectModel >= 4.3.0",
-      "UraniumUI.Material >= 2.10.1"
+      "UraniumUI >= 2.10.2",
+      "UraniumUI.Material >= 2.10.2"
     ]
   },
   "packageFolders": {
@@ -46333,6 +47577,10 @@
             "target": "Package",
             "version": "[8.2.2, )"
           },
+          "FFImageLoadingCompat.Maui": {
+            "target": "Package",
+            "version": "[0.1.1, )"
+          },
           "Microsoft.Extensions.Logging.Debug": {
             "target": "Package",
             "version": "[8.0.0, )"
@@ -46359,9 +47607,13 @@
             "target": "Package",
             "version": "[4.3.0, )"
           },
+          "UraniumUI": {
+            "target": "Package",
+            "version": "[2.10.2, )"
+          },
           "UraniumUI.Material": {
             "target": "Package",
-            "version": "[2.10.1, )"
+            "version": "[2.10.2, )"
           }
         },
         "imports": [
@@ -46396,6 +47648,10 @@
             "target": "Package",
             "version": "[8.2.2, )"
           },
+          "FFImageLoadingCompat.Maui": {
+            "target": "Package",
+            "version": "[0.1.1, )"
+          },
           "Microsoft.Extensions.Logging.Debug": {
             "target": "Package",
             "version": "[8.0.0, )"
@@ -46422,9 +47678,13 @@
             "target": "Package",
             "version": "[4.3.0, )"
           },
+          "UraniumUI": {
+            "target": "Package",
+            "version": "[2.10.2, )"
+          },
           "UraniumUI.Material": {
             "target": "Package",
-            "version": "[2.10.1, )"
+            "version": "[2.10.2, )"
           }
         },
         "imports": [
@@ -46459,6 +47719,10 @@
             "target": "Package",
             "version": "[8.2.2, )"
           },
+          "FFImageLoadingCompat.Maui": {
+            "target": "Package",
+            "version": "[0.1.1, )"
+          },
           "Microsoft.Extensions.Logging.Debug": {
             "target": "Package",
             "version": "[8.0.0, )"
@@ -46485,9 +47749,13 @@
             "target": "Package",
             "version": "[4.3.0, )"
           },
+          "UraniumUI": {
+            "target": "Package",
+            "version": "[2.10.2, )"
+          },
           "UraniumUI.Material": {
             "target": "Package",
-            "version": "[2.10.1, )"
+            "version": "[2.10.2, )"
           }
         },
         "imports": [
@@ -46523,6 +47791,10 @@
             "target": "Package",
             "version": "[8.2.2, )"
           },
+          "FFImageLoadingCompat.Maui": {
+            "target": "Package",
+            "version": "[0.1.1, )"
+          },
           "Microsoft.Extensions.Logging.Debug": {
             "target": "Package",
             "version": "[8.0.0, )"
@@ -46543,9 +47815,13 @@
             "target": "Package",
             "version": "[4.3.0, )"
           },
+          "UraniumUI": {
+            "target": "Package",
+            "version": "[2.10.2, )"
+          },
           "UraniumUI.Material": {
             "target": "Package",
-            "version": "[2.10.1, )"
+            "version": "[2.10.2, )"
           }
         },
         "imports": [

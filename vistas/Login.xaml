@@ -3,6 +3,8 @@
     x:Class="campusCare.vistas.Login"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:ffimageloading="clr-namespace:FFImageLoading.Maui;assembly=FFImageLoading.Compat.Maui"
+    xmlns:material="clr-namespace:UraniumUI.Material.Controls;assembly=UraniumUI.Material"
     Title="Login"
     BackgroundColor="White"
     Shell.NavBarIsVisible="False">
@@ -10,125 +12,313 @@
 
 
     <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="*" />
-        </Grid.RowDefinitions>
-        <Grid Grid.Row="0" HeightRequest="200">
-            <!--  Banner  -->
-            <Image
-                Grid.Row="0"
-                Aspect="Fill"
-               
-                HorizontalOptions="Center"
-                Source="banner.png"
-                VerticalOptions="Center" />
-
-            <!--  Logo superpuesto al banner  -->
-            <Image
-                Grid.Row="0"
-                Margin="0,20,0,0"
-                Aspect="Center" 
-                HorizontalOptions="Center"
-                Source="logo.png"
-                VerticalOptions="Start" />
-
-            <!--  Texto "Login" superpuesto al banner  -->
-            <Label
-                Grid.Row="0"
-                Margin="0,0,0,20"
-                FontFamily="Bungee"
-                FontSize="30"
-                HorizontalOptions="Center"
-                Text="Login"
-                TextColor="#00ffea"
-                VerticalOptions="End" />
-
-        </Grid>
-        <!--  esta es la seccion del formulario  -->
-        <Grid Grid.Row="1" VerticalOptions="Center">
+        <Grid IsVisible="{OnPlatform Android=true, WinUI=false}">
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto" />
                 <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
             </Grid.RowDefinitions>
-            <!--  Entry para usuario  -->
-            <Grid Grid.Row="0" Margin="50,30,50,0">
+            <Grid Grid.Row="0" HeightRequest="200">
+                <!--  Banner  -->
+                <Image
+                    Grid.Row="0"
+                    Aspect="Fill"
+                    HorizontalOptions="Center"
+                    Source="banner.png"
+                    VerticalOptions="Center" />
+
+                <!--  Logo superpuesto al banner  -->
+                <Image
+                    Grid.Row="0"
+                    Margin="0,20,0,0"
+                    Aspect="Center"
+                    HorizontalOptions="Center"
+                    Source="logo.png"
+                    VerticalOptions="Start" />
+
+                <!--  Texto "Login" superpuesto al banner  -->
+                <Label
+                    Grid.Row="0"
+                    Margin="0,0,0,20"
+                    FontFamily="Bungee"
+                    FontSize="30"
+                    HorizontalOptions="Center"
+                    Text="Login"
+                    TextColor="#00ffea"
+                    VerticalOptions="End" />
+
+            </Grid>
+            <!--  esta es la seccion del formulario  -->
+            <Grid Grid.Row="1" VerticalOptions="Center">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto" />
                     <RowDefinition Height="Auto" />
                 </Grid.RowDefinitions>
-                <Label
-                    Grid.Row="0"
-                    Margin="0,0,0,10"
-                    FontFamily="Ubuntu"
-                    FontSize="20"
-                    Text="Nombre de Usuario"
-                    TextColor="#07016C"
-                    VerticalOptions="Center" />
-                <Frame
-                    Grid.Row="1"
-                    Padding="2"
-                    Background="White"
-                    BorderColor="#07016C"
-                    HasShadow="True">
-
-                    <Entry
-                        Background="White"
+                <!--  Entry para usuario  -->
+                <Grid Grid.Row="0" Margin="50,30,50,0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Label
+                        Grid.Row="0"
+                        Margin="0,0,0,10"
                         FontFamily="Ubuntu"
-                        Placeholder="Nombre de Usuario"
-                        PlaceholderColor="#7C74FF"
-                        Text="{Binding NombreUsuario}"
-                        TextColor="#07016C" />
+                        FontSize="20"
+                        Text="Nombre de Usuario"
+                        TextColor="#07016C"
+                        VerticalOptions="Center" />
+                    <Frame
+                        Grid.Row="1"
+                        Padding="2"
+                        Background="White"
+                        BorderColor="#07016C"
+                        HasShadow="True">
+
+                        <Entry
+                            Background="White"
+                            FontFamily="Ubuntu"
+                            Placeholder="Nombre de Usuario"
+                            PlaceholderColor="#7C74FF"
+                            Text="{Binding NombreUsuario}"
+                            TextColor="#07016C" />
+                    </Frame>
+                </Grid>
+                <!--  Entry para password  -->
+                <Grid Grid.Row="1" Margin="50,30,50,0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Label
+                        Grid.Row="0"
+                        Margin="0,0,0,10"
+                        FontFamily="Ubuntu"
+                        FontSize="20"
+                        Text="Contraseña"
+                        TextColor="#07016C"
+                        VerticalOptions="Center" />
+                    <Frame
+                        Grid.Row="1"
+                        Padding="2"
+                        Background="White"
+                        BorderColor="#07016C"
+                        HasShadow="True">
+                        <Entry
+                            Background="White"
+                            FontFamily="Ubuntu"
+                            Placeholder="Contraseña"
+                            PlaceholderColor="#7C74FF"
+                            Text="{Binding Contraseña}"
+                            TextColor="#07016C" />
+                    </Frame>
+                </Grid>
+
+            </Grid>
+            <!--  Boton de login  -->
+            <Button
+                Grid.Row="2"
+                Margin="50,0,50,30"
+                Padding="0"
+                BackgroundColor="#73FA93"
+                Command="{Binding LoginCommand}"
+                FontFamily="Bungee"
+                FontSize="20"
+                Text="Iniciar Sesión"
+                TextColor="#07016C"
+                VerticalOptions="End" />
+        </Grid>
+
+        <!--  Version para windows  -->
+        <Grid IsVisible="{OnPlatform Android=false, WinUI=true}">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+
+            </Grid.ColumnDefinitions>
+            <!--  Columna 1  -->
+            <Grid Grid.Column="0" Margin="10">
+                <Grid.RowDefinitions>
+
+                    <RowDefinition Height="*" />
+
+                </Grid.RowDefinitions>
+                <Frame
+                    Grid.Row="0"
+                    Padding="29,31,42,0"
+                    Background="#07016C"
+                    BorderColor="Transparent"
+                    CornerRadius="25">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                        <Image
+                            Grid.Row="0"
+                            Margin="0,0,0,111"
+                            Source="logo_for_windows.png" />
+                        <Image Grid.Row="1" Source="doctor_vector.png" />
+                    </Grid>
                 </Frame>
             </Grid>
-            <!--  Entry para password  -->
-            <Grid Grid.Row="1" Margin="50,30,50,0">
+            <!--  Columna 2  -->
+            <Grid
+                Grid.Column="1"
+                Margin="10"
+                RowSpacing="10">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto" />
                     <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
                 </Grid.RowDefinitions>
                 <Label
                     Grid.Row="0"
-                    Margin="0,0,0,10"
-                    FontFamily="Ubuntu"
-                    FontSize="20"
-                    Text="Contraseña"
-                    TextColor="#07016C"
-                    VerticalOptions="Center" />
-                <Frame
+                    Margin="0,24,0,0"
+                    FontFamily="Bungee"
+                    FontSize="48"
+                    HorizontalOptions="Center"
+                    Text="Login"
+                    TextColor="#07016C" />
+
+                <Label
                     Grid.Row="1"
-                    Padding="2"
-                    Background="White"
-                    BorderColor="#07016C"
-                    HasShadow="True"
-                    
-                    
-                    >
-                    <Entry
-                        Background="White"
+                    FontAttributes="Bold"
+                    FontFamily="Ubuntu"
+                    FontSize="36"
+                    HorizontalOptions="Center"
+                    Text="una clínica al alcance  de tu mano"
+                    TextColor="#136AED" />
+                <!--  Botones para elegir el tipo de login  -->
+                <Grid
+                    Grid.Row="2"
+                    Margin="0,24,0,0"
+                    ColumnSpacing="10"
+                    HorizontalOptions="Center">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+                    <Button
+                        x:Name="pacientes"
+                        Grid.Column="0"
+                        Padding="9,5,9,5"
+                        BackgroundColor="#136AED"
+                        Clicked="pacientes_Clicked"
+                        CornerRadius="15"
+                        FontAttributes="Bold"
                         FontFamily="Ubuntu"
-                        Placeholder="Contraseña"
-                        PlaceholderColor="#7C74FF"
-                        
-                        Text="{Binding Contraseña}"
+                        FontSize="32"
+                        Text="Pacientes"
+                        TextColor="White" />
+
+                    <Button
+                        x:Name="doctores"
+                        Grid.Column="1"
+                        Padding="9,5,9,5"
+                        BackgroundColor="#136AED"
+                        Clicked="doctores_Clicked"
+                        CornerRadius="15"
+                        FontAttributes="Bold"
+                        FontFamily="Ubuntu"
+                        FontSize="32"
+                        Text="Personal Médico"
+                        TextColor="White" />
+
+
+
+                </Grid>
+                <!--  Field para el nombre de usuario  -->
+                <Grid Grid.Row="3" Margin="34,59,34,0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Label
+                        Grid.Row="0"
+                        Margin="0,0,0,10"
+                        FontAttributes="Bold"
+                        FontFamily="Ubuntu"
+                        FontSize="32"
+                        HorizontalOptions="Center"
+                        Text="Nombre de Usuario"
                         TextColor="#07016C" />
-                </Frame>
+                    <Border
+                        Grid.Row="1"
+                        Stroke="#07016C"
+                        WidthRequest="552"
+                        StrokeThickness="3">
+                        <Border.StrokeShape>
+                            <RoundRectangle CornerRadius="15" />
+                        </Border.StrokeShape>
+                        <Entry
+                            Background="White"
+                            FontFamily="Ubuntu"
+                            FontSize="16"
+                            Placeholder="Nombre de Usuario"
+                            PlaceholderColor="#7C74FF"
+                            Text="{Binding NombreUsuario}"
+                            TextColor="#07016C" />
+                    </Border>
+                </Grid>
+                <!--  Field para la contraseña  -->
+                <Grid Grid.Row="4" Margin="34,36,34,0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Label
+                        Grid.Row="0"
+                        Margin="0,0,0,10"
+                        FontAttributes="Bold"
+                        FontFamily="Ubuntu"
+                        FontSize="32"
+                        HorizontalOptions="Center"
+                        Text="Contraseña"
+                        TextColor="#07016C" />
+                    <Border
+                        Grid.Row="1"
+                        WidthRequest="552"
+                        Stroke="#07016C"
+                        StrokeThickness="3">
+                        <Border.StrokeShape>
+                            <RoundRectangle CornerRadius="15" />
+                        </Border.StrokeShape>
+                        <Entry
+                            Background="White"
+                            FontFamily="Ubuntu"
+                            FontSize="16"
+                            IsPassword="True"
+                            Placeholder="Contraseña"
+                            PlaceholderColor="#7C74FF"
+                            Text="{Binding Contraseña}"
+                            TextColor="#07016C" />
+                    </Border>
+
+                </Grid>
+                <!--  Boton de login  -->
+                <Button
+                    Grid.Row="5"
+                    Margin="0,0,0,35"
+                    Background="#73FA93"
+                    FontFamily="Bungee"
+                    FontSize="32"
+                    HeightRequest="70"
+                    HorizontalOptions="Center"
+                    Text="Iniciar Sesión"
+                    TextColor="#07016C"
+                    VerticalOptions="End" 
+                    Command="{Binding LoginCommand}"
+                    />
             </Grid>
 
         </Grid>
-        <!--  Boton de login  -->
-        <Button
-            Grid.Row="2"
-            Margin="50,0,50,30"
-            Padding="0"
-            BackgroundColor="#73FA93"
-            Command="{Binding LoginCommand}"
-            FontFamily="Bungee"
-            FontSize="20"
-            Text="Iniciar Sesión"
-            TextColor="#07016C"
-            VerticalOptions="End" />
+
+
+
     </Grid>
 
 

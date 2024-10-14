@@ -53,12 +53,21 @@ namespace campusCare.vistasModelos
             if (response.IsSuccessStatusCode)
             {
                 var responseContent = await response.Content.ReadAsStringAsync();
-                int IdUsuario = int.Parse(responseContent);
-                string Nombre = responseContent;
-                Preferences.Set("IdUsuario", IdUsuario);
+                var loginResponse = await response.Content.ReadFromJsonAsync<LoginResponse>();
+                if (loginResponse != null)
+                {
+                    Preferences.Set("IdUsuario", loginResponse.IdUsuarios.Value);
+                    Preferences.Set("Nombre", loginResponse.Nombre);
+                    Preferences.Set("Apellido", loginResponse.Apellido);
+                    Debug.WriteLine($"Valor de userId: {loginResponse.IdUsuarios}");
+                    Debug.WriteLine($"Valor de Nombre: {loginResponse.Nombre}");
+                    Debug.WriteLine($"Valor de Apellido: {loginResponse.Apellido}");
+                }
 
-                Debug.WriteLine($"Valor de userId: {IdUsuario}");
-                if (IdUsuario == 4)
+
+
+
+                if (loginResponse.IdUsuarios == 4)
                 {
                     await Shell.Current.GoToAsync("///CRUDpaciente");
 
@@ -82,6 +91,7 @@ namespace campusCare.vistasModelos
             {
                 await Application.Current.MainPage.DisplayAlert("Error", "Ha ocurrido un error inesperado", "OK");
             }
+
 
 
         }
