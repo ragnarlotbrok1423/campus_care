@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace campusCare.modelos
 {
-    public class ServerString
+    public class TiposConsultas
     {
-        public string cabecera = " http://localhost:5132/";
+        public int IdtiposConsultas { get; set; }
+
+        public string TipoConsulta { get; set; } = null!;
     }
 }

@@ -111,6 +111,10 @@
             "UraniumUI.Material": {
               "target": "Package",
               "version": "[2.10.2, )"
+            },
+            "XCalendar.Maui": {
+              "target": "Package",
+              "version": "[4.6.0, )"
             }
           },
           "imports": [
@@ -182,6 +186,10 @@
             "UraniumUI.Material": {
               "target": "Package",
               "version": "[2.10.2, )"
+            },
+            "XCalendar.Maui": {
+              "target": "Package",
+              "version": "[4.6.0, )"
             }
           },
           "imports": [
@@ -253,6 +261,10 @@
             "UraniumUI.Material": {
               "target": "Package",
               "version": "[2.10.2, )"
+            },
+            "XCalendar.Maui": {
+              "target": "Package",
+              "version": "[4.6.0, )"
             }
           },
           "imports": [
@@ -319,6 +331,10 @@
             "UraniumUI.Material": {
               "target": "Package",
               "version": "[2.10.2, )"
+            },
+            "XCalendar.Maui": {
+              "target": "Package",
+              "version": "[4.6.0, )"
             }
           },
           "imports": [

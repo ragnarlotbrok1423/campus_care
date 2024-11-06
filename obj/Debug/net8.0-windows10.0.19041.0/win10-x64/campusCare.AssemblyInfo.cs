@@ -18,7 +18,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("campusCare")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+a6d4acf9070b72684a9c4fb53b4eb10683eecea3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+09e807bc44669cc5315c818ad4875fbe7fa4ee0c")]
 [assembly: System.Reflection.AssemblyProductAttribute("campusCare")]
 [assembly: System.Reflection.AssemblyTitleAttribute("campusCare")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

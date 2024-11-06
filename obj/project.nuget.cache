@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "n+UodYexzWQ=",
+  "dgSpecHash": "eRYEh1Tg5vM=",
   "success": true,
   "projectFilePath": "C:\\Users\\erick\\Downloads\\campusCareRepository\\campus_care\\campusCare.csproj",
   "expectedPackageFiles": [
@@ -155,6 +155,8 @@
     "C:\\Users\\erick\\.nuget\\packages\\xamarin.kotlin.stdlib.jdk8\\1.9.0.1\\xamarin.kotlin.stdlib.jdk8.1.9.0.1.nupkg.sha512",
     "C:\\Users\\erick\\.nuget\\packages\\xamarin.kotlinx.coroutines.android\\1.7.2.1\\xamarin.kotlinx.coroutines.android.1.7.2.1.nupkg.sha512",
     "C:\\Users\\erick\\.nuget\\packages\\xamarin.kotlinx.coroutines.core.jvm\\1.7.2.1\\xamarin.kotlinx.coroutines.core.jvm.1.7.2.1.nupkg.sha512",
+    "C:\\Users\\erick\\.nuget\\packages\\xcalendar.core\\4.6.0\\xcalendar.core.4.6.0.nupkg.sha512",
+    "C:\\Users\\erick\\.nuget\\packages\\xcalendar.maui\\4.6.0\\xcalendar.maui.4.6.0.nupkg.sha512",
     "C:\\Users\\erick\\.nuget\\packages\\microsoft.windows.sdk.net.ref\\10.0.19041.31\\microsoft.windows.sdk.net.ref.10.0.19041.31.nupkg.sha512"
   ],
   "logs": []

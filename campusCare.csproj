@@ -70,6 +70,7 @@
 		<PackageReference Include="System.ObjectModel" Version="4.3.0" />
 		<PackageReference Include="UraniumUI" Version="2.10.2" />
 		<PackageReference Include="UraniumUI.Material" Version="2.10.2" />
+		<PackageReference Include="XCalendar.Maui" Version="4.6.0" />
 	</ItemGroup>
 
 	<ItemGroup>

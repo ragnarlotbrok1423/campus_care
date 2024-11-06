@@ -67,7 +67,7 @@ namespace campusCare.vistasModelos
 
 
 
-                if (loginResponse.IdUsuarios == 4)
+                if (loginResponse.IdUsuarios == 2)
                 {
                     await Shell.Current.GoToAsync("///CRUDpaciente");
 

@@ -5,35 +5,25 @@ namespace campusCare.vistas;
 
 public partial class AgendarCitas : ContentPage
 {
+    private readonly CrearCitaViewModel _viewModel;
     public AgendarCitas()
     {
         InitializeComponent();
-
+        _viewModel = new CrearCitaViewModel();
+        BindingContext = _viewModel;
+    }
+    protected override void OnAppearing()
+    {
+        base.OnAppearing();
+        _viewModel.CargarEspecialidadesCommand.Execute(null);
+        _viewModel.CargarTiposDeCitaCommand.Execute(null);
     }
 
-    private static void OnGuardarInfoClicked(object sender, EventArgs e)
-    {
-        CitaMedicaService citaMedicaService = new CitaMedicaService();
 
-        CitaRequest cita = new CitaRequest
-        {
-            fecha = "2024-05-12",
-            certificadoBuenaSalud = 0,
-            peso = 0,
-            inhaloterapias = 0,
-            inyecciones = "",
-            glisemiaCapilar = 0,
-            referenciaMedica = "tiene miopia avanzada, requiere oftamologo",
-            tipoConsulta = "medicinaGeneral",
-            idUsuario = 2,
-            idDoctor = 1
-        }
-        ;
-        citaMedicaService.CreateAppointmentAsync(cita);
-    }
-
-    private async void home(object sender, EventArgs e)
+    private void picker2_SelectedIndexChanged(object sender, EventArgs e)
     {
-        await Shell.Current.GoToAsync("///HomePacient");
+
+        _viewModel.OnEspecialidadChanged();
+
     }
 }

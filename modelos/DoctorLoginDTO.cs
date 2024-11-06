@@ -12,11 +12,22 @@ namespace campusCare.modelos
 
         public string Contraseña { get; set; } = null!;
     }
+    public class Especialidad
+    {
+        public int IdEspecialidad { get; set; }
+        public string NombreEspecialidad { get; set; } = null!;
+    }
     public class DoctorLoginResponse
     {
         public int? IdDoctores { get; set; }
 
         public string NombreCompleto { get; set; } = null!;
         public int? EspecialidadFk { get; set; }
+    }
+
+    public class EspecialidadDTO
+    {
+        public int IdEspecialidad { get; set; }
+        public string Especialidad { get; set; } = null!;
     }
 }

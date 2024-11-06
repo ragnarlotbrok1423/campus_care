@@ -2406,6 +2406,34 @@
         "build": {
           "buildTransitive/net6.0-android31.0/Xamarin.KotlinX.Coroutines.Core.Jvm.targets": {}
         }
+      },
+      "XCalendar.Core/4.6.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/XCalendar.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/XCalendar.Core.dll": {}
+        }
+      },
+      "XCalendar.Maui/4.6.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Logging.Debug": "8.0.0",
+          "Microsoft.Maui.Controls": "8.0.3",
+          "Microsoft.Maui.Controls.Compatibility": "8.0.3",
+          "XCalendar.Core": "4.6.0"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/XCalendar.Maui.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/XCalendar.Maui.dll": {
+            "related": ".xml"
+          }
+        }
       }
     },
     "net8.0-android34.0/android-arm": {
@@ -4797,6 +4825,34 @@
         },
         "build": {
           "buildTransitive/net6.0-android31.0/Xamarin.KotlinX.Coroutines.Core.Jvm.targets": {}
+        }
+      },
+      "XCalendar.Core/4.6.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/XCalendar.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/XCalendar.Core.dll": {}
+        }
+      },
+      "XCalendar.Maui/4.6.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Logging.Debug": "8.0.0",
+          "Microsoft.Maui.Controls": "8.0.3",
+          "Microsoft.Maui.Controls.Compatibility": "8.0.3",
+          "XCalendar.Core": "4.6.0"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/XCalendar.Maui.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/XCalendar.Maui.dll": {
+            "related": ".xml"
+          }
         }
       }
     },
@@ -7190,6 +7246,34 @@
         "build": {
           "buildTransitive/net6.0-android31.0/Xamarin.KotlinX.Coroutines.Core.Jvm.targets": {}
         }
+      },
+      "XCalendar.Core/4.6.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/XCalendar.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/XCalendar.Core.dll": {}
+        }
+      },
+      "XCalendar.Maui/4.6.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Logging.Debug": "8.0.0",
+          "Microsoft.Maui.Controls": "8.0.3",
+          "Microsoft.Maui.Controls.Compatibility": "8.0.3",
+          "XCalendar.Core": "4.6.0"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/XCalendar.Maui.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/XCalendar.Maui.dll": {
+            "related": ".xml"
+          }
+        }
       }
     },
     "net8.0-android34.0/android-x64": {
@@ -9581,6 +9665,34 @@
         },
         "build": {
           "buildTransitive/net6.0-android31.0/Xamarin.KotlinX.Coroutines.Core.Jvm.targets": {}
+        }
+      },
+      "XCalendar.Core/4.6.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/XCalendar.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/XCalendar.Core.dll": {}
+        }
+      },
+      "XCalendar.Maui/4.6.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Logging.Debug": "8.0.0",
+          "Microsoft.Maui.Controls": "8.0.3",
+          "Microsoft.Maui.Controls.Compatibility": "8.0.3",
+          "XCalendar.Core": "4.6.0"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/XCalendar.Maui.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/XCalendar.Maui.dll": {
+            "related": ".xml"
+          }
         }
       }
     },
@@ -11974,6 +12086,34 @@
         "build": {
           "buildTransitive/net6.0-android31.0/Xamarin.KotlinX.Coroutines.Core.Jvm.targets": {}
         }
+      },
+      "XCalendar.Core/4.6.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/XCalendar.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/XCalendar.Core.dll": {}
+        }
+      },
+      "XCalendar.Maui/4.6.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Logging.Debug": "8.0.0",
+          "Microsoft.Maui.Controls": "8.0.3",
+          "Microsoft.Maui.Controls.Compatibility": "8.0.3",
+          "XCalendar.Core": "4.6.0"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/XCalendar.Maui.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/XCalendar.Maui.dll": {
+            "related": ".xml"
+          }
+        }
       }
     },
     "net8.0-android34.0/iossimulator-x64": {
@@ -14362,6 +14502,34 @@
         },
         "build": {
           "buildTransitive/net6.0-android31.0/Xamarin.KotlinX.Coroutines.Core.Jvm.targets": {}
+        }
+      },
+      "XCalendar.Core/4.6.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/XCalendar.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/XCalendar.Core.dll": {}
+        }
+      },
+      "XCalendar.Maui/4.6.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Logging.Debug": "8.0.0",
+          "Microsoft.Maui.Controls": "8.0.3",
+          "Microsoft.Maui.Controls.Compatibility": "8.0.3",
+          "XCalendar.Core": "4.6.0"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/XCalendar.Maui.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/XCalendar.Maui.dll": {
+            "related": ".xml"
+          }
         }
       }
     },
@@ -16752,6 +16920,34 @@
         "build": {
           "buildTransitive/net6.0-android31.0/Xamarin.KotlinX.Coroutines.Core.Jvm.targets": {}
         }
+      },
+      "XCalendar.Core/4.6.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/XCalendar.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/XCalendar.Core.dll": {}
+        }
+      },
+      "XCalendar.Maui/4.6.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Logging.Debug": "8.0.0",
+          "Microsoft.Maui.Controls": "8.0.3",
+          "Microsoft.Maui.Controls.Compatibility": "8.0.3",
+          "XCalendar.Core": "4.6.0"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/XCalendar.Maui.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/XCalendar.Maui.dll": {
+            "related": ".xml"
+          }
+        }
       }
     },
     "net8.0-android34.0/win10-x64": {
@@ -19141,6 +19337,34 @@
         "build": {
           "buildTransitive/net6.0-android31.0/Xamarin.KotlinX.Coroutines.Core.Jvm.targets": {}
         }
+      },
+      "XCalendar.Core/4.6.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/XCalendar.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/XCalendar.Core.dll": {}
+        }
+      },
+      "XCalendar.Maui/4.6.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Logging.Debug": "8.0.0",
+          "Microsoft.Maui.Controls": "8.0.3",
+          "Microsoft.Maui.Controls.Compatibility": "8.0.3",
+          "XCalendar.Core": "4.6.0"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/XCalendar.Maui.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/XCalendar.Maui.dll": {
+            "related": ".xml"
+          }
+        }
       }
     },
     "net8.0-ios17.2": {
@@ -19934,6 +20158,30 @@
           "lib/net8.0/UraniumUI.Material.dll": {
             "related": ".pdb"
           }
+        }
+      },
+      "XCalendar.Core/4.6.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/XCalendar.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/XCalendar.Core.dll": {}
+        }
+      },
+      "XCalendar.Maui/4.6.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Logging.Debug": "8.0.0",
+          "Microsoft.Maui.Controls": "8.0.3",
+          "Microsoft.Maui.Controls.Compatibility": "8.0.3",
+          "XCalendar.Core": "4.6.0"
+        },
+        "compile": {
+          "lib/net8.0-ios17.2/XCalendar.Maui.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0-ios17.2/XCalendar.Maui.dll": {}
         }
       }
     },
@@ -20848,6 +21096,30 @@
             "related": ".pdb"
           }
         }
+      },
+      "XCalendar.Core/4.6.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/XCalendar.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/XCalendar.Core.dll": {}
+        }
+      },
+      "XCalendar.Maui/4.6.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Logging.Debug": "8.0.0",
+          "Microsoft.Maui.Controls": "8.0.3",
+          "Microsoft.Maui.Controls.Compatibility": "8.0.3",
+          "XCalendar.Core": "4.6.0"
+        },
+        "compile": {
+          "lib/net8.0-ios17.2/XCalendar.Maui.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0-ios17.2/XCalendar.Maui.dll": {}
+        }
       }
     },
     "net8.0-ios17.2/android-arm64": {
@@ -21760,6 +22032,30 @@
           "lib/net8.0/UraniumUI.Material.dll": {
             "related": ".pdb"
           }
+        }
+      },
+      "XCalendar.Core/4.6.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/XCalendar.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/XCalendar.Core.dll": {}
+        }
+      },
+      "XCalendar.Maui/4.6.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Logging.Debug": "8.0.0",
+          "Microsoft.Maui.Controls": "8.0.3",
+          "Microsoft.Maui.Controls.Compatibility": "8.0.3",
+          "XCalendar.Core": "4.6.0"
+        },
+        "compile": {
+          "lib/net8.0-ios17.2/XCalendar.Maui.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0-ios17.2/XCalendar.Maui.dll": {}
         }
       }
     },
@@ -22674,6 +22970,30 @@
             "related": ".pdb"
           }
         }
+      },
+      "XCalendar.Core/4.6.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/XCalendar.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/XCalendar.Core.dll": {}
+        }
+      },
+      "XCalendar.Maui/4.6.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Logging.Debug": "8.0.0",
+          "Microsoft.Maui.Controls": "8.0.3",
+          "Microsoft.Maui.Controls.Compatibility": "8.0.3",
+          "XCalendar.Core": "4.6.0"
+        },
+        "compile": {
+          "lib/net8.0-ios17.2/XCalendar.Maui.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0-ios17.2/XCalendar.Maui.dll": {}
+        }
       }
     },
     "net8.0-ios17.2/android-x86": {
@@ -23586,6 +23906,30 @@
           "lib/net8.0/UraniumUI.Material.dll": {
             "related": ".pdb"
           }
+        }
+      },
+      "XCalendar.Core/4.6.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/XCalendar.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/XCalendar.Core.dll": {}
+        }
+      },
+      "XCalendar.Maui/4.6.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Logging.Debug": "8.0.0",
+          "Microsoft.Maui.Controls": "8.0.3",
+          "Microsoft.Maui.Controls.Compatibility": "8.0.3",
+          "XCalendar.Core": "4.6.0"
+        },
+        "compile": {
+          "lib/net8.0-ios17.2/XCalendar.Maui.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0-ios17.2/XCalendar.Maui.dll": {}
         }
       }
     },
@@ -24505,6 +24849,30 @@
             "related": ".pdb"
           }
         }
+      },
+      "XCalendar.Core/4.6.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/XCalendar.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/XCalendar.Core.dll": {}
+        }
+      },
+      "XCalendar.Maui/4.6.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Logging.Debug": "8.0.0",
+          "Microsoft.Maui.Controls": "8.0.3",
+          "Microsoft.Maui.Controls.Compatibility": "8.0.3",
+          "XCalendar.Core": "4.6.0"
+        },
+        "compile": {
+          "lib/net8.0-ios17.2/XCalendar.Maui.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0-ios17.2/XCalendar.Maui.dll": {}
+        }
       }
     },
     "net8.0-ios17.2/maccatalyst-x64": {
@@ -25423,6 +25791,30 @@
             "related": ".pdb"
           }
         }
+      },
+      "XCalendar.Core/4.6.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/XCalendar.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/XCalendar.Core.dll": {}
+        }
+      },
+      "XCalendar.Maui/4.6.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Logging.Debug": "8.0.0",
+          "Microsoft.Maui.Controls": "8.0.3",
+          "Microsoft.Maui.Controls.Compatibility": "8.0.3",
+          "XCalendar.Core": "4.6.0"
+        },
+        "compile": {
+          "lib/net8.0-ios17.2/XCalendar.Maui.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0-ios17.2/XCalendar.Maui.dll": {}
+        }
       }
     },
     "net8.0-ios17.2/win10-x64": {
@@ -26317,6 +26709,30 @@
             "related": ".pdb"
           }
         }
+      },
+      "XCalendar.Core/4.6.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/XCalendar.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/XCalendar.Core.dll": {}
+        }
+      },
+      "XCalendar.Maui/4.6.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Logging.Debug": "8.0.0",
+          "Microsoft.Maui.Controls": "8.0.3",
+          "Microsoft.Maui.Controls.Compatibility": "8.0.3",
+          "XCalendar.Core": "4.6.0"
+        },
+        "compile": {
+          "lib/net8.0-ios17.2/XCalendar.Maui.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0-ios17.2/XCalendar.Maui.dll": {}
+        }
       }
     },
     "net8.0-maccatalyst17.2": {
@@ -27090,6 +27506,30 @@
           "lib/net8.0/UraniumUI.Material.dll": {
             "related": ".pdb"
           }
+        }
+      },
+      "XCalendar.Core/4.6.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/XCalendar.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/XCalendar.Core.dll": {}
+        }
+      },
+      "XCalendar.Maui/4.6.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Logging.Debug": "8.0.0",
+          "Microsoft.Maui.Controls": "8.0.3",
+          "Microsoft.Maui.Controls.Compatibility": "8.0.3",
+          "XCalendar.Core": "4.6.0"
+        },
+        "compile": {
+          "lib/net8.0-maccatalyst17.2/XCalendar.Maui.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst17.2/XCalendar.Maui.dll": {}
         }
       }
     },
@@ -28004,6 +28444,30 @@
             "related": ".pdb"
           }
         }
+      },
+      "XCalendar.Core/4.6.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/XCalendar.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/XCalendar.Core.dll": {}
+        }
+      },
+      "XCalendar.Maui/4.6.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Logging.Debug": "8.0.0",
+          "Microsoft.Maui.Controls": "8.0.3",
+          "Microsoft.Maui.Controls.Compatibility": "8.0.3",
+          "XCalendar.Core": "4.6.0"
+        },
+        "compile": {
+          "lib/net8.0-maccatalyst17.2/XCalendar.Maui.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst17.2/XCalendar.Maui.dll": {}
+        }
       }
     },
     "net8.0-maccatalyst17.2/android-arm64": {
@@ -28916,6 +29380,30 @@
           "lib/net8.0/UraniumUI.Material.dll": {
             "related": ".pdb"
           }
+        }
+      },
+      "XCalendar.Core/4.6.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/XCalendar.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/XCalendar.Core.dll": {}
+        }
+      },
+      "XCalendar.Maui/4.6.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Logging.Debug": "8.0.0",
+          "Microsoft.Maui.Controls": "8.0.3",
+          "Microsoft.Maui.Controls.Compatibility": "8.0.3",
+          "XCalendar.Core": "4.6.0"
+        },
+        "compile": {
+          "lib/net8.0-maccatalyst17.2/XCalendar.Maui.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst17.2/XCalendar.Maui.dll": {}
         }
       }
     },
@@ -29830,6 +30318,30 @@
             "related": ".pdb"
           }
         }
+      },
+      "XCalendar.Core/4.6.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/XCalendar.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/XCalendar.Core.dll": {}
+        }
+      },
+      "XCalendar.Maui/4.6.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Logging.Debug": "8.0.0",
+          "Microsoft.Maui.Controls": "8.0.3",
+          "Microsoft.Maui.Controls.Compatibility": "8.0.3",
+          "XCalendar.Core": "4.6.0"
+        },
+        "compile": {
+          "lib/net8.0-maccatalyst17.2/XCalendar.Maui.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst17.2/XCalendar.Maui.dll": {}
+        }
       }
     },
     "net8.0-maccatalyst17.2/android-x86": {
@@ -30743,6 +31255,30 @@
             "related": ".pdb"
           }
         }
+      },
+      "XCalendar.Core/4.6.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/XCalendar.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/XCalendar.Core.dll": {}
+        }
+      },
+      "XCalendar.Maui/4.6.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Logging.Debug": "8.0.0",
+          "Microsoft.Maui.Controls": "8.0.3",
+          "Microsoft.Maui.Controls.Compatibility": "8.0.3",
+          "XCalendar.Core": "4.6.0"
+        },
+        "compile": {
+          "lib/net8.0-maccatalyst17.2/XCalendar.Maui.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst17.2/XCalendar.Maui.dll": {}
+        }
       }
     },
     "net8.0-maccatalyst17.2/iossimulator-x64": {
@@ -31655,6 +32191,30 @@
           "lib/net8.0/UraniumUI.Material.dll": {
             "related": ".pdb"
           }
+        }
+      },
+      "XCalendar.Core/4.6.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/XCalendar.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/XCalendar.Core.dll": {}
+        }
+      },
+      "XCalendar.Maui/4.6.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Logging.Debug": "8.0.0",
+          "Microsoft.Maui.Controls": "8.0.3",
+          "Microsoft.Maui.Controls.Compatibility": "8.0.3",
+          "XCalendar.Core": "4.6.0"
+        },
+        "compile": {
+          "lib/net8.0-maccatalyst17.2/XCalendar.Maui.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst17.2/XCalendar.Maui.dll": {}
         }
       }
     },
@@ -32572,6 +33132,30 @@
             "related": ".pdb"
           }
         }
+      },
+      "XCalendar.Core/4.6.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/XCalendar.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/XCalendar.Core.dll": {}
+        }
+      },
+      "XCalendar.Maui/4.6.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Logging.Debug": "8.0.0",
+          "Microsoft.Maui.Controls": "8.0.3",
+          "Microsoft.Maui.Controls.Compatibility": "8.0.3",
+          "XCalendar.Core": "4.6.0"
+        },
+        "compile": {
+          "lib/net8.0-maccatalyst17.2/XCalendar.Maui.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst17.2/XCalendar.Maui.dll": {}
+        }
       }
     },
     "net8.0-maccatalyst17.2/win10-x64": {
@@ -33465,6 +34049,30 @@
           "lib/net8.0/UraniumUI.Material.dll": {
             "related": ".pdb"
           }
+        }
+      },
+      "XCalendar.Core/4.6.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/XCalendar.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/XCalendar.Core.dll": {}
+        }
+      },
+      "XCalendar.Maui/4.6.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Logging.Debug": "8.0.0",
+          "Microsoft.Maui.Controls": "8.0.3",
+          "Microsoft.Maui.Controls.Compatibility": "8.0.3",
+          "XCalendar.Core": "4.6.0"
+        },
+        "compile": {
+          "lib/net8.0-maccatalyst17.2/XCalendar.Maui.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst17.2/XCalendar.Maui.dll": {}
         }
       }
     },
@@ -34415,6 +35023,30 @@
           "lib/net8.0-windows10.0.19041/UraniumUI.Material.dll": {
             "related": ".pdb"
           }
+        }
+      },
+      "XCalendar.Core/4.6.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/XCalendar.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/XCalendar.Core.dll": {}
+        }
+      },
+      "XCalendar.Maui/4.6.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Logging.Debug": "8.0.0",
+          "Microsoft.Maui.Controls": "8.0.3",
+          "Microsoft.Maui.Controls.Compatibility": "8.0.3",
+          "XCalendar.Core": "4.6.0"
+        },
+        "compile": {
+          "lib/net8.0-windows10.0.19041/XCalendar.Maui.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/XCalendar.Maui.dll": {}
         }
       }
     },
@@ -35451,6 +36083,30 @@
             "related": ".pdb"
           }
         }
+      },
+      "XCalendar.Core/4.6.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/XCalendar.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/XCalendar.Core.dll": {}
+        }
+      },
+      "XCalendar.Maui/4.6.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Logging.Debug": "8.0.0",
+          "Microsoft.Maui.Controls": "8.0.3",
+          "Microsoft.Maui.Controls.Compatibility": "8.0.3",
+          "XCalendar.Core": "4.6.0"
+        },
+        "compile": {
+          "lib/net8.0-windows10.0.19041/XCalendar.Maui.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/XCalendar.Maui.dll": {}
+        }
       }
     },
     "net8.0-windows10.0.19041/android-arm64": {
@@ -36485,6 +37141,30 @@
           "lib/net8.0-windows10.0.19041/UraniumUI.Material.dll": {
             "related": ".pdb"
           }
+        }
+      },
+      "XCalendar.Core/4.6.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/XCalendar.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/XCalendar.Core.dll": {}
+        }
+      },
+      "XCalendar.Maui/4.6.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Logging.Debug": "8.0.0",
+          "Microsoft.Maui.Controls": "8.0.3",
+          "Microsoft.Maui.Controls.Compatibility": "8.0.3",
+          "XCalendar.Core": "4.6.0"
+        },
+        "compile": {
+          "lib/net8.0-windows10.0.19041/XCalendar.Maui.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/XCalendar.Maui.dll": {}
         }
       }
     },
@@ -37521,6 +38201,30 @@
             "related": ".pdb"
           }
         }
+      },
+      "XCalendar.Core/4.6.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/XCalendar.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/XCalendar.Core.dll": {}
+        }
+      },
+      "XCalendar.Maui/4.6.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Logging.Debug": "8.0.0",
+          "Microsoft.Maui.Controls": "8.0.3",
+          "Microsoft.Maui.Controls.Compatibility": "8.0.3",
+          "XCalendar.Core": "4.6.0"
+        },
+        "compile": {
+          "lib/net8.0-windows10.0.19041/XCalendar.Maui.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/XCalendar.Maui.dll": {}
+        }
       }
     },
     "net8.0-windows10.0.19041/android-x86": {
@@ -38555,6 +39259,30 @@
           "lib/net8.0-windows10.0.19041/UraniumUI.Material.dll": {
             "related": ".pdb"
           }
+        }
+      },
+      "XCalendar.Core/4.6.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/XCalendar.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/XCalendar.Core.dll": {}
+        }
+      },
+      "XCalendar.Maui/4.6.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Logging.Debug": "8.0.0",
+          "Microsoft.Maui.Controls": "8.0.3",
+          "Microsoft.Maui.Controls.Compatibility": "8.0.3",
+          "XCalendar.Core": "4.6.0"
+        },
+        "compile": {
+          "lib/net8.0-windows10.0.19041/XCalendar.Maui.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/XCalendar.Maui.dll": {}
         }
       }
     },
@@ -39591,6 +40319,30 @@
             "related": ".pdb"
           }
         }
+      },
+      "XCalendar.Core/4.6.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/XCalendar.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/XCalendar.Core.dll": {}
+        }
+      },
+      "XCalendar.Maui/4.6.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Logging.Debug": "8.0.0",
+          "Microsoft.Maui.Controls": "8.0.3",
+          "Microsoft.Maui.Controls.Compatibility": "8.0.3",
+          "XCalendar.Core": "4.6.0"
+        },
+        "compile": {
+          "lib/net8.0-windows10.0.19041/XCalendar.Maui.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/XCalendar.Maui.dll": {}
+        }
       }
     },
     "net8.0-windows10.0.19041/maccatalyst-x64": {
@@ -40626,6 +41378,30 @@
             "related": ".pdb"
           }
         }
+      },
+      "XCalendar.Core/4.6.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/XCalendar.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/XCalendar.Core.dll": {}
+        }
+      },
+      "XCalendar.Maui/4.6.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Logging.Debug": "8.0.0",
+          "Microsoft.Maui.Controls": "8.0.3",
+          "Microsoft.Maui.Controls.Compatibility": "8.0.3",
+          "XCalendar.Core": "4.6.0"
+        },
+        "compile": {
+          "lib/net8.0-windows10.0.19041/XCalendar.Maui.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/XCalendar.Maui.dll": {}
+        }
       }
     },
     "net8.0-windows10.0.19041/win10-x64": {
@@ -41650,6 +42426,30 @@
           "lib/net8.0-windows10.0.19041/UraniumUI.Material.dll": {
             "related": ".pdb"
           }
+        }
+      },
+      "XCalendar.Core/4.6.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/XCalendar.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/XCalendar.Core.dll": {}
+        }
+      },
+      "XCalendar.Maui/4.6.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Logging.Debug": "8.0.0",
+          "Microsoft.Maui.Controls": "8.0.3",
+          "Microsoft.Maui.Controls.Compatibility": "8.0.3",
+          "XCalendar.Core": "4.6.0"
+        },
+        "compile": {
+          "lib/net8.0-windows10.0.19041/XCalendar.Maui.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/XCalendar.Maui.dll": {}
         }
       }
     }
@@ -47448,6 +48248,37 @@
         "xamarin.kotlinx.coroutines.core.jvm.1.7.2.1.nupkg.sha512",
         "xamarin.kotlinx.coroutines.core.jvm.nuspec"
       ]
+    },
+    "XCalendar.Core/4.6.0": {
+      "sha512": "MpVRy9g0/uV9Q01Xw357ftdpF8s7J+Ekq5iA8WdaqyPNfAV4nT78/1Jgpd0OIjg4u+/qRcK1wtyn4Pq7YJGQ0w==",
+      "type": "package",
+      "path": "xcalendar.core/4.6.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "XCalendar.Core Nuget Icon.png",
+        "lib/netstandard2.0/XCalendar.Core.dll",
+        "xcalendar.core.4.6.0.nupkg.sha512",
+        "xcalendar.core.nuspec"
+      ]
+    },
+    "XCalendar.Maui/4.6.0": {
+      "sha512": "7rgqrCqm+rnQJf91NUZloUV86GGVNU9eVfP9O3lHc+imzzwVFXydtjPXFycS1KoZ1W7Bec2BTgAtNaZk4S2K+w==",
+      "type": "package",
+      "path": "xcalendar.maui/4.6.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "XCalendar.Maui Nuget Icon.png",
+        "lib/net8.0-android34.0/XCalendar.Maui.dll",
+        "lib/net8.0-android34.0/XCalendar.Maui.xml",
+        "lib/net8.0-ios17.2/XCalendar.Maui.dll",
+        "lib/net8.0-maccatalyst17.2/XCalendar.Maui.dll",
+        "lib/net8.0-windows10.0.19041/XCalendar.Maui.dll",
+        "lib/net8.0/XCalendar.Maui.dll",
+        "xcalendar.maui.4.6.0.nupkg.sha512",
+        "xcalendar.maui.nuspec"
+      ]
     }
   },
   "projectFileDependencyGroups": {
@@ -47462,7 +48293,8 @@
       "SkiaSharp >= 2.88.8",
       "System.ObjectModel >= 4.3.0",
       "UraniumUI >= 2.10.2",
-      "UraniumUI.Material >= 2.10.2"
+      "UraniumUI.Material >= 2.10.2",
+      "XCalendar.Maui >= 4.6.0"
     ],
     "net8.0-ios17.2": [
       "CommunityToolkit.Maui.Markup >= 4.1.0",
@@ -47475,7 +48307,8 @@
       "SkiaSharp >= 2.88.8",
       "System.ObjectModel >= 4.3.0",
       "UraniumUI >= 2.10.2",
-      "UraniumUI.Material >= 2.10.2"
+      "UraniumUI.Material >= 2.10.2",
+      "XCalendar.Maui >= 4.6.0"
     ],
     "net8.0-maccatalyst17.2": [
       "CommunityToolkit.Maui.Markup >= 4.1.0",
@@ -47488,7 +48321,8 @@
       "SkiaSharp >= 2.88.8",
       "System.ObjectModel >= 4.3.0",
       "UraniumUI >= 2.10.2",
-      "UraniumUI.Material >= 2.10.2"
+      "UraniumUI.Material >= 2.10.2",
+      "XCalendar.Maui >= 4.6.0"
     ],
     "net8.0-windows10.0.19041": [
       "CommunityToolkit.Maui.Markup >= 4.1.0",
@@ -47500,7 +48334,8 @@
       "SkiaSharp >= 2.88.8",
       "System.ObjectModel >= 4.3.0",
       "UraniumUI >= 2.10.2",
-      "UraniumUI.Material >= 2.10.2"
+      "UraniumUI.Material >= 2.10.2",
+      "XCalendar.Maui >= 4.6.0"
     ]
   },
   "packageFolders": {
@@ -47614,6 +48449,10 @@
           "UraniumUI.Material": {
             "target": "Package",
             "version": "[2.10.2, )"
+          },
+          "XCalendar.Maui": {
+            "target": "Package",
+            "version": "[4.6.0, )"
           }
         },
         "imports": [
@@ -47685,6 +48524,10 @@
           "UraniumUI.Material": {
             "target": "Package",
             "version": "[2.10.2, )"
+          },
+          "XCalendar.Maui": {
+            "target": "Package",
+            "version": "[4.6.0, )"
           }
         },
         "imports": [
@@ -47756,6 +48599,10 @@
           "UraniumUI.Material": {
             "target": "Package",
             "version": "[2.10.2, )"
+          },
+          "XCalendar.Maui": {
+            "target": "Package",
+            "version": "[4.6.0, )"
           }
         },
         "imports": [
@@ -47822,6 +48669,10 @@
           "UraniumUI.Material": {
             "target": "Package",
             "version": "[2.10.2, )"
+          },
+          "XCalendar.Maui": {
+            "target": "Package",
+            "version": "[4.6.0, )"
           }
         },
         "imports": [

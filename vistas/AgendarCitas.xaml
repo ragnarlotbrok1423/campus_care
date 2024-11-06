@@ -1,57 +1,100 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="campusCare.vistas.AgendarCitas"
-             Shell.NavBarIsVisible="False"
-             Title="AgendarCitas">
-    <ScrollView BackgroundColor="White">
-        <StackLayout Spacing="20">
-            <!-- Header -->
-            <Grid BackgroundColor="#000080" HeightRequest="140" WidthRequest="600">
-                <Image Source="logo.png" HeightRequest="45" Margin="0,-69,0,0"/>
-                <Label Text="CAMPUS CARE" TextColor="White" FontSize="24" FontAttributes="Bold" Margin="0,10,0,0" HorizontalOptions="Center" VerticalOptions="Center" FontFamily="Bungee-regular"/>
-                <Label Text="CITAS" TextColor="#00FFFF" FontSize="18" HorizontalOptions="Center"  Margin="0,80,0,5" FontFamily="Bungee-Regular"/>
-            </Grid>
+<ContentPage
+    x:Class="campusCare.vistas.AgendarCitas"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:material="clr-namespace:UraniumUI.Material.Controls;assembly=UraniumUI.Material"
+    xmlns:sys="clr-namespace:System;assembly=netstandard"
+    xmlns:viewModel="clr-namespace:campusCare.vistasModelos"
+    Title="AgendarCitas"
+    Background="White"
+    Shell.NavBarIsVisible="False">
 
-            <!-- Contenido con fondo blanco -->
-            <Frame BackgroundColor="White" Padding="10" BorderColor="White">
-                <StackLayout Spacing="20">
-                    <Button Text="Volver" TextColor="#00FFFF" BackgroundColor="Transparent" HorizontalOptions="Start" FontFamily="Bungee-Regular" Clicked="home" />
+    <Grid HorizontalOptions="Center">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Label
+            Grid.Row="0"
+            Margin="0,24,0,0"
+            FontFamily="Bungee"
+            FontSize="48"
+            HorizontalOptions="Center"
+            Text="Agendar Citas"
+            TextColor="BurlyWood" />
 
-                    <!-- Date Selection -->
-                    <Label Text="Escoje la fecha de tu Cita" TextColor="#000080" FontSize="17"  FontFamily="Roboto-Black"/>
-                    <DatePicker BackgroundColor="#E6E6FA" TextColor="#000080" x:Name="CalendarioAgenda"/>
-                    <Label Text="Seleccione al medico" TextColor="#000080" FontSize="17"  FontFamily="Roboto-Black"/>
-                    <Picker x:Name="Doctorpicker" SelectedItem="Binding ItemSelected"
-                        Title="seleccione una opcion"
-                            TextColor="#000080"
-                            >
-                        <Picker.ItemsSource>
-                            <x:Array Type="{x:Type x:String}">
-                                <x:String>medina gonzalez - Ginocologo</x:String>
-                            </x:Array>
-                        </Picker.ItemsSource>
-                    </Picker>
+        <DatePicker
+            x:Name="datePicker"
+            Grid.Row="1"
+            Background="DarkCyan"
+            Date="{Binding FechaSeleccionada}"
+            HorizontalOptions="Center"
+            VerticalOptions="Center" />
+        <TimePicker
+            Grid.Row="2"
+            Background="DarkCyan"
+            HorizontalOptions="Center"
+            Time="{Binding HoraSeleccionada}"
+            VerticalOptions="Center" />
 
-                    <Label Text="Seleccione el motivo de su cita" TextColor="#000080" FontSize="17"  FontFamily="Roboto-Black"/>
-                    <Picker x:Name="picker" SelectedItem="Binding ItemSelected"
-                        Title="seleccione una opcion"
-                            TextColor="#000080"
-                            >
-                        <Picker.ItemsSource>
-                            <x:Array Type="{x:Type x:String}">
-                                <x:String>Medicina General</x:String>
-                                <x:String>Especialidad</x:String>
-                                <x:String>Glucosa</x:String>
-                                <x:String>Toma de Presion</x:String>
-                            </x:Array>
-                            
-                        </Picker.ItemsSource>
-                    </Picker>
 
-                    <Button Text="Realizar Cita" Clicked="OnGuardarInfoClicked" BackgroundColor="#000080" TextColor="White" CornerRadius="20" />
-                </StackLayout>
-            </Frame>
-        </StackLayout>
-    </ScrollView>
+        <Picker
+            x:Name="picker"
+            Title="Tipo de Consulta"
+            Grid.Row="3"
+            Background="DarkCyan"
+            HorizontalOptions="Center"
+            ItemDisplayBinding="{Binding TipoConsulta}"
+            ItemsSource="{Binding TiposDeCita}"
+            SelectedItem="{Binding TipoCitaSeleccionado}"
+            TextColor="White"
+            VerticalOptions="Center" />
+        <Grid Grid.Row="4" ColumnSpacing="20">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+
+            </Grid.ColumnDefinitions>
+
+            <Picker
+                x:Name="picker2"
+                Title="Especialidad"
+                Grid.Column="0"
+                Background="DarkCyan"
+                HorizontalOptions="Center"
+                ItemDisplayBinding="{Binding Especialidad}"
+                ItemsSource="{Binding Especialidades}"
+                SelectedIndexChanged="picker2_SelectedIndexChanged"
+                SelectedItem="{Binding EspecialidadSeleccionada}"
+                TextColor="White"
+                VerticalOptions="Center" />
+            <Picker
+                x:Name="picker3"
+                Title="Doctor"
+                Grid.Column="1"
+                Background="DarkCyan"
+                HorizontalOptions="Center"
+                IsEnabled="{Binding IsDoctorPickerEnabled}"
+                ItemDisplayBinding="{Binding nombreCompleto}"
+                ItemsSource="{Binding Doctores}"
+                SelectedItem="{Binding DoctorSeleccionado}"
+                VerticalOptions="Center" />
+        </Grid>
+
+
+        <Button
+            Grid.Row="5"
+            BackgroundColor="DarkCyan"
+            Command="{Binding CrearCitaCommand}"
+            HorizontalOptions="Center"
+            Text="Agendar"
+            VerticalOptions="Center" />
+
+    </Grid>
+
 </ContentPage>

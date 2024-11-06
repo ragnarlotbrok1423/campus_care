@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Globalization;
 using System.Linq;
 using System.Net.Http.Json;
 using System.Text;
+using System.Text.Json;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using campusCare.modelos;
@@ -71,5 +73,8 @@ namespace campusCare.vistasModelos
                 await Application.Current.MainPage.DisplayAlert("Error", "Error en el servidor", "OK");
             }
         }
+
+        // este es el
+
     }
 }
