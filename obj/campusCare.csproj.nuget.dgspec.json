@@ -74,6 +74,10 @@
               "target": "Package",
               "version": "[8.2.2, )"
             },
+            "FFImageLoadingCompat.Maui": {
+              "target": "Package",
+              "version": "[0.1.1, )"
+            },
             "Microsoft.Extensions.Logging.Debug": {
               "target": "Package",
               "version": "[8.0.0, )"
@@ -92,9 +96,25 @@
               "version": "[8.0.6, )",
               "autoReferenced": true
             },
+            "SkiaSharp": {
+              "target": "Package",
+              "version": "[2.88.8, )"
+            },
             "System.ObjectModel": {
               "target": "Package",
               "version": "[4.3.0, )"
+            },
+            "UraniumUI": {
+              "target": "Package",
+              "version": "[2.10.2, )"
+            },
+            "UraniumUI.Material": {
+              "target": "Package",
+              "version": "[2.10.2, )"
+            },
+            "XCalendar.Maui": {
+              "target": "Package",
+              "version": "[4.6.0, )"
             }
           },
           "imports": [
@@ -129,6 +149,10 @@
               "target": "Package",
               "version": "[8.2.2, )"
             },
+            "FFImageLoadingCompat.Maui": {
+              "target": "Package",
+              "version": "[0.1.1, )"
+            },
             "Microsoft.Extensions.Logging.Debug": {
               "target": "Package",
               "version": "[8.0.0, )"
@@ -147,9 +171,25 @@
               "version": "[8.0.6, )",
               "autoReferenced": true
             },
+            "SkiaSharp": {
+              "target": "Package",
+              "version": "[2.88.8, )"
+            },
             "System.ObjectModel": {
               "target": "Package",
               "version": "[4.3.0, )"
+            },
+            "UraniumUI": {
+              "target": "Package",
+              "version": "[2.10.2, )"
+            },
+            "UraniumUI.Material": {
+              "target": "Package",
+              "version": "[2.10.2, )"
+            },
+            "XCalendar.Maui": {
+              "target": "Package",
+              "version": "[4.6.0, )"
             }
           },
           "imports": [
@@ -184,6 +224,10 @@
               "target": "Package",
               "version": "[8.2.2, )"
             },
+            "FFImageLoadingCompat.Maui": {
+              "target": "Package",
+              "version": "[0.1.1, )"
+            },
             "Microsoft.Extensions.Logging.Debug": {
               "target": "Package",
               "version": "[8.0.0, )"
@@ -202,9 +246,25 @@
               "version": "[8.0.6, )",
               "autoReferenced": true
             },
+            "SkiaSharp": {
+              "target": "Package",
+              "version": "[2.88.8, )"
+            },
             "System.ObjectModel": {
               "target": "Package",
               "version": "[4.3.0, )"
+            },
+            "UraniumUI": {
+              "target": "Package",
+              "version": "[2.10.2, )"
+            },
+            "UraniumUI.Material": {
+              "target": "Package",
+              "version": "[2.10.2, )"
+            },
+            "XCalendar.Maui": {
+              "target": "Package",
+              "version": "[4.6.0, )"
             }
           },
           "imports": [
@@ -240,6 +300,10 @@
               "target": "Package",
               "version": "[8.2.2, )"
             },
+            "FFImageLoadingCompat.Maui": {
+              "target": "Package",
+              "version": "[0.1.1, )"
+            },
             "Microsoft.Extensions.Logging.Debug": {
               "target": "Package",
               "version": "[8.0.0, )"
@@ -252,9 +316,25 @@
               "target": "Package",
               "version": "[8.0.40, )"
             },
+            "SkiaSharp": {
+              "target": "Package",
+              "version": "[2.88.8, )"
+            },
             "System.ObjectModel": {
               "target": "Package",
               "version": "[4.3.0, )"
+            },
+            "UraniumUI": {
+              "target": "Package",
+              "version": "[2.10.2, )"
+            },
+            "UraniumUI.Material": {
+              "target": "Package",
+              "version": "[2.10.2, )"
+            },
+            "XCalendar.Maui": {
+              "target": "Package",
+              "version": "[4.6.0, )"
             }
           },
           "imports": [

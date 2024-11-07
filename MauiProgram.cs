@@ -1,4 +1,7 @@
-﻿using Microsoft.Extensions.Logging;
+﻿using FFImageLoading;
+using FFImageLoading.Maui;
+using Microsoft.Extensions.Logging;
+using UraniumUI;
 
 namespace campusCare
 {
@@ -8,7 +11,10 @@ namespace campusCare
         {
             var builder = MauiApp.CreateBuilder();
             builder
+                .UseUraniumUI()
+                .UseUraniumUIMaterial()
                 .UseMauiApp<App>()
+                 .UseFFImageLoading()
                 .ConfigureFonts(fonts =>
                 {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
@@ -17,8 +23,10 @@ namespace campusCare
                     fonts.AddFont("Ubuntu-Bold.ttf", "Ubuntu");
                 });
 
+
+
 #if DEBUG
-    		builder.Logging.AddDebug();
+            builder.Logging.AddDebug();
 #endif
 
             return builder.Build();

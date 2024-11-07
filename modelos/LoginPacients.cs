@@ -15,6 +15,8 @@ namespace campusCare.modelos
     {
         public string? Message { get; set; }
         public int? IdUsuarios { get; set; }
+        public string Nombre { get; set; }
+        public string Apellido { get; set; }
     }
 }
 

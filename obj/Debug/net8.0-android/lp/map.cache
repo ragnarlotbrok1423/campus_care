@@ -1,4 +1,8 @@
+FFImageLoading.Compat.dll
+FFImageLoading.Compat.Maui.dll
+FFImageLoading.Compat.Transformations.dll
 GoogleGson.dll
+InputKit.Maui.dll
 Jsr305Binding.dll
 Microsoft.Maui.Controls.Compatibility.dll
 Microsoft.Maui.Controls.dll
@@ -6,6 +10,10 @@ Microsoft.Maui.Controls.Xaml.dll
 Microsoft.Maui.dll
 Microsoft.Maui.Essentials.dll
 Microsoft.Maui.Graphics.dll
+Plainer.Maui.dll
+SkiaSharp.dll
+UraniumUI.dll
+UraniumUI.Material.dll
 Xamarin.Android.Glide.Annotations.dll
 Xamarin.Android.Glide.DiskLruCache.dll
 Xamarin.Android.Glide.dll
@@ -88,6 +96,7 @@ Xamarin.Kotlin.StdLib.Jdk7.dll
 Xamarin.Kotlin.StdLib.Jdk8.dll
 Xamarin.KotlinX.Coroutines.Android.dll
 Xamarin.KotlinX.Coroutines.Core.Jvm.dll
+XCalendar.Maui.dll
 androidx.versionedparcelable.versionedparcelable.aar
 androidx.tracing.tracing.aar
 androidx.startup.startup-runtime.aar
@@ -149,6 +158,9 @@ androidx.exifinterface.exifinterface.aar
 androidx.browser.browser.aar
 gifdecoder.aar
 glide.aar
+FFImageLoading.Compat.aar
+FFImageLoading.Compat.Maui.aar
+FFImageLoading.Compat.Transformations.aar
 GoogleGson.aar
 Jsr305Binding.aar
 Microsoft.Maui.Controls.Compatibility.aar

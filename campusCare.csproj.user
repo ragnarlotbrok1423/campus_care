@@ -10,22 +10,22 @@
     <DebuggerFlavor>ProjectDebugger</DebuggerFlavor>
   </PropertyGroup>
   <ItemGroup>
-    <MauiXaml Update="vistas\AgendarCitas.xaml">
-      <SubType>Designer</SubType>
-    </MauiXaml>
     <MauiXaml Update="vistas\CreateUser.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
     <MauiXaml Update="vistas\CRUDpacientes.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
+    <MauiXaml Update="vistas\DoctorLogin.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="vistas\DoctorMainPage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
     <MauiXaml Update="vistas\HistoryPacient.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
     <MauiXaml Update="vistas\HomePacient.xaml">
-      <SubType>Designer</SubType>
-    </MauiXaml>
-    <MauiXaml Update="vistas\Login.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
   </ItemGroup>

@@ -17,7 +17,8 @@
             <!--  DataTemplate for each item  -->
             <DataTemplate x:Key="UsuarioTemplate">
                 <Frame
-                    Margin="10,10,10,10"
+                    Margin="{OnPlatform Android='10,10,10,10',
+                                        WinUI='10,100,10,17'}"
                     Padding="10"
                     BackgroundColor="#136AED"
                     BorderColor="Transparent"
@@ -26,64 +27,41 @@
                     <!--  Margen para crear espacio entre los elementos  -->
 
                     <Grid
-                        ColumnSpacing="15"
-                        HorizontalOptions="Start"
-                        VerticalOptions="Center">
+                        Padding="0,10,0,10"
+                        ColumnSpacing="{OnPlatform Android=15,
+                                                   WinUI=25}"
+                        HorizontalOptions="Center">
 
                         <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="auto" />
                             <ColumnDefinition Width="auto" />
                             <ColumnDefinition Width="auto" />
                             <ColumnDefinition Width="auto" />
                         </Grid.ColumnDefinitions>
 
 
-                        <Grid ColumnSpacing="10">
+                        <Grid Grid.Column="0" ColumnSpacing="10">
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="auto" />
                                 <ColumnDefinition Width="auto" />
                             </Grid.ColumnDefinitions>
-                            <Button
-                                Grid.Column="0"
-                                Background="#07016C"
-                                Command="{Binding 
-                                Source={RelativeSource AncestorType={x:Type local:UsuariosViewModel}}, 
-                                Path=CargarPacienteCommand}"
-                                CommandParameter="{Binding Id}"
-                                ImageSource="edit.svg" />
-                            <Button
-                                Grid.Column="1"
-                                Background="#07016C"
-                                ImageSource="delete.svg" />
-
-
-
-
-                            <ImageButton
-                                Grid.Column="1"
-                                Aspect="AspectFit"
-                                BackgroundColor="#07016C"
-                                HeightRequest="30"
-                                HorizontalOptions="Center"
-                                Source="delete.svg"
-                                VerticalOptions="Center"
-                                WidthRequest="30" />
 
                         </Grid>
 
                         <Label
-                            Grid.Column="2"
+                            Grid.Column="1"
                             FontFamily="Ubuntu"
-                            FontSize="16"
+                            FontSize="{OnPlatform Android=16,
+                                                  WinUI=25}"
                             Text="{Binding Nombre}"
                             TextColor="White"
                             VerticalOptions="Center" />
 
                         <!--  Tercera columna: Cédula del usuario  -->
                         <Label
-                            Grid.Column="3"
+                            Grid.Column="2"
                             FontFamily="Ubuntu"
-                            FontSize="16"
+                            FontSize="{OnPlatform Android=16,
+                                                  WinUI=25}"
                             Text="{Binding Cedula}"
                             TextColor="White"
                             VerticalOptions="Center" />
@@ -99,6 +77,7 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
             <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
         <Grid BackgroundColor="#07016C">
@@ -113,7 +92,8 @@
                 <RowDefinition Height="120" />
                 <RowDefinition Height="50" />
                 <RowDefinition Height="Auto" />
-                <RowDefinition Height="75" />
+
+
             </Grid.RowDefinitions>
             <Image
                 Grid.Row="0"
@@ -151,15 +131,25 @@
                         TextColor="#07016C" />
                     <Image
                         Grid.Column="1"
+                        HeightRequest="35"
                         HorizontalOptions="End"
-                        Source="lupa.svg"
+                        Source="lupa.png"
                         VerticalOptions="Center" />
                 </Grid>
 
             </Frame>
 
+
+
+
+        </Grid>
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
             <Button
-                Grid.Row="3"
+                Grid.Row="0"
                 Margin="80,10,80,20"
                 BackgroundColor="#00FFEA"
                 Clicked="AddUserNavigation"
@@ -168,11 +158,22 @@
                 FontSize="20"
                 Text="Agregar Paciente"
                 TextColor="#07016C" />
-
-
+            <Button
+                Grid.Row="1"
+                Margin="80,10,80,20"
+                BackgroundColor="#00FFEA"
+                
+                Command="{Binding logOutCommand}"
+                CornerRadius="{OnPlatform Android=50,
+                                          WinUI=15}"
+                FontAttributes="Bold"
+                FontFamily="Ubuntu"
+                FontSize="20"
+                Text="Cerrar Sesión"
+                TextColor="#07016C" />
         </Grid>
         <Label
-            Grid.Row="1"
+            Grid.Row="2"
             Margin="0,20,0,0"
             FontFamily="Bungee"
             FontSize="20"
@@ -180,8 +181,11 @@
             Text="Filtros"
             TextColor="#07016C"
             VerticalOptions="Center" />
+
+
+
         <Grid />
-        <ScrollView Grid.Row="2" Margin="0,0,0,20">
+        <ScrollView Grid.Row="3" Margin="{OnPlatform Android='0,0,0,20', WinUI='350,20,350,20'}">
             <CollectionView ItemTemplate="{StaticResource UsuarioTemplate}" ItemsSource="{Binding Usuarios}" />
         </ScrollView>
 

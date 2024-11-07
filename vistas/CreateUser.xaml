@@ -213,6 +213,7 @@
                         Text="Contraseña"
                         TextColor="#07016C"
                         VerticalOptions="Center" />
+
                     <Frame
                         Grid.Row="1"
                         Padding="2"

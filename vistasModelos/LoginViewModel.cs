@@ -33,10 +33,11 @@ namespace campusCare.vistasModelos
 
         public LoginViewModel()
         {
+            ServerString server = new ServerString();
             LoginCommand = new AsyncRelayCommand(ExecuteLoginCommand);
             _httpClient = new HttpClient
             {
-                BaseAddress = new Uri(" https://3bd5-200-124-21-59.ngrok-free.app/")
+                BaseAddress = new Uri(server.cabecera)
             };
         }
 
@@ -52,11 +53,31 @@ namespace campusCare.vistasModelos
             if (response.IsSuccessStatusCode)
             {
                 var responseContent = await response.Content.ReadAsStringAsync();
-                int IdUsuario = int.Parse(responseContent);
-                Preferences.Set("IdUsuario", IdUsuario);
-                Debug.WriteLine($"Valor de userId: {IdUsuario}");
+                var loginResponse = await response.Content.ReadFromJsonAsync<LoginResponse>();
+                if (loginResponse != null)
+                {
+                    Preferences.Set("IdUsuario", loginResponse.IdUsuarios.Value);
+                    Preferences.Set("Nombre", loginResponse.Nombre);
+                    Preferences.Set("Apellido", loginResponse.Apellido);
+                    Debug.WriteLine($"Valor de userId: {loginResponse.IdUsuarios}");
+                    Debug.WriteLine($"Valor de Nombre: {loginResponse.Nombre}");
+                    Debug.WriteLine($"Valor de Apellido: {loginResponse.Apellido}");
+                }
 
-                await Shell.Current.GoToAsync("///HomePacient");
+
+
+
+                if (loginResponse.IdUsuarios == 2)
+                {
+                    await Shell.Current.GoToAsync("///CRUDpaciente");
+
+                }
+                else
+                {
+                    await Shell.Current.GoToAsync("///HomePacient");
+                }
+
+
 
             }
             else if (response.StatusCode == System.Net.HttpStatusCode.Unauthorized)
@@ -70,6 +91,7 @@ namespace campusCare.vistasModelos
             {
                 await Application.Current.MainPage.DisplayAlert("Error", "Ha ocurrido un error inesperado", "OK");
             }
+
 
 
         }

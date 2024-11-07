@@ -6,6 +6,7 @@ using System.Diagnostics;
 using System.Net.Http;
 using System.Net.Http.Json;
 using System.Text.Json.Serialization;
+using System.Windows.Input;
 
 
 namespace campusCare.vistasModelos
@@ -19,6 +20,7 @@ namespace campusCare.vistasModelos
     public partial class UsuariosViewModel : ObservableObject
     {
         private readonly HttpClient _httpClient;
+        public ICommand logOutCommand { get; }
 
         [ObservableProperty]
         private ObservableCollection<UserDTO> usuarios = new ObservableCollection<UserDTO>();
@@ -28,10 +30,12 @@ namespace campusCare.vistasModelos
         public UsuariosViewModel()
 
         {
+            logOutCommand = new AsyncRelayCommand(ExecuteLogOutCommandAsync);
+            ServerString server = new ServerString();
 
             _httpClient = new HttpClient
             {
-                BaseAddress = new Uri("https://c66d-200-124-21-55.ngrok-free.app/")
+                BaseAddress = new Uri(server.cabecera)
             };
 
             LoadUsuariosCommand = new AsyncRelayCommand(LoadUsuariosAsync);
@@ -40,6 +44,11 @@ namespace campusCare.vistasModelos
                 // Llama a la vista de creación pasando el ID del paciente
                 await Shell.Current.GoToAsync($"CreateUserPage?id={id}");
             });
+        }
+        private async Task ExecuteLogOutCommandAsync()
+        {
+            Preferences.Remove("IdUsuario");
+            await Shell.Current.GoToAsync("///Login");
         }
 
         public async Task LoadUsuariosAsync()
