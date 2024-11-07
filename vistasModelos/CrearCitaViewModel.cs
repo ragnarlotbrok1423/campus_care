@@ -52,8 +52,7 @@ namespace campusCare.vistasModelos
         [ObservableProperty]
         private ObservableCollection<TiposConsultas> tiposDeCita;
 
-        [ObservableProperty]
-        private EspecialidadDTO especialidadSeleccionada;
+
 
         [ObservableProperty]
         private Doctores_X_Especialidad_Response doctorSeleccionado;
@@ -70,6 +69,21 @@ namespace campusCare.vistasModelos
         [ObservableProperty]
         private bool isDoctorPickerEnabled;
 
+
+        private EspecialidadDTO especialidadSeleccionada;
+
+        public EspecialidadDTO EspecialidadSeleccionada
+        {
+            get => especialidadSeleccionada;
+            set
+            {
+                SetProperty(ref especialidadSeleccionada, value);
+                OnEspecialidadChanged();
+            }
+        }
+
+
+
         [RelayCommand]
         private async Task CargarEspecialidadesAsync()
         {
@@ -81,11 +95,11 @@ namespace campusCare.vistasModelos
                 Debug.WriteLine($"Respuesta de la API: {jsonString}");
 
                 //deserializamos el json
-                var result = await
-                    response.Content.ReadFromJsonAsync<ApiResponse<EspecialidadDTO>>();
+                var result = await response.Content.ReadFromJsonAsync<ApiResponse<EspecialidadDTO>>();
                 if (result != null && result.Values != null)
                 {
                     Especialidades.Clear();
+
                     foreach (var especialidad in result.Values)
                     {
                         Especialidades.Add(especialidad);
@@ -105,7 +119,8 @@ namespace campusCare.vistasModelos
             {
                 try
                 {
-                    var doctoresList = await _httpClient.GetAsync($"api/Doctores/Especialidad/{EspecialidadSeleccionada.IdEspecialidad}");
+                    int idEspecialidad = EspecialidadSeleccionada.IdEspecialidades;
+                    var doctoresList = await _httpClient.GetAsync($"api/Doctores/especialidad/{idEspecialidad}");
                     var jsonString = await doctoresList.Content.ReadAsStringAsync();
                     Debug.WriteLine($"Respuesta de la API: {jsonString}");
                     var doctores = await doctoresList.Content.ReadFromJsonAsync<ApiResponse<Doctores_X_Especialidad_Response>>();
@@ -136,7 +151,8 @@ namespace campusCare.vistasModelos
             if (EspecialidadSeleccionada == null) return;
             try
             {
-                var response = await _httpClient.GetAsync($"api/Doctores/Especialidad/{EspecialidadSeleccionada.IdEspecialidad}");
+                int idEspecialidad = EspecialidadSeleccionada.IdEspecialidades;
+                var response = await _httpClient.GetAsync($"api/Doctores/especialidad/{idEspecialidad}");
                 response.EnsureSuccessStatusCode();
                 var jsonString = await response.Content.ReadAsStringAsync();
                 Debug.WriteLine($"Respuesta de la API: {jsonString}");
@@ -193,47 +209,52 @@ namespace campusCare.vistasModelos
                 await Application.Current.MainPage.DisplayAlert("Error", "Por favor complete todos los campos", "OK");
                 return;
             }
-
-            try
+            else
             {
-                var fechaHora = new DateTime(
-                    FechaSeleccionada.Year,
-                    FechaSeleccionada.Month,
-                    FechaSeleccionada.Day,
-                    HoraSeleccionada.Hours,
-                    HoraSeleccionada.Minutes,
-                    HoraSeleccionada.Seconds
-                ).ToString("yyyy-MM-dd HH:mm:ss", CultureInfo.InvariantCulture);
-
-                var cita = new
+                try
                 {
-                    idUsuario = Preferences.Get("IdUsuario", 0),
-                    idDoctor = DoctorSeleccionado.IdDoctor,
-                    FechaHora = fechaHora,
-                    IdTipoCita = TipoCitaSeleccionado.IdtiposConsultas // Asegúrate que este es el nombre correcto de la propiedad
-                };
+                    var fechaHora = new DateTime(
+                        FechaSeleccionada.Year,
+                        FechaSeleccionada.Month,
+                        FechaSeleccionada.Day,
+                        HoraSeleccionada.Hours,
+                        HoraSeleccionada.Minutes,
+                        HoraSeleccionada.Seconds
+                    ).ToString("dd-MM-yyyy HH:mm:ss", CultureInfo.InvariantCulture);
 
-                var json = JsonSerializer.Serialize(cita);
-                var content = new StringContent(json, Encoding.UTF8, "application/json");
+                    var cita = new
+                    {
+                        idUsuario = Preferences.Get("IdUsuario", 0),
+                        idDoctor = DoctorSeleccionado.IdDoctores,
+                        fecha = fechaHora,
+                        IdTipoConsulta = TipoCitaSeleccionado.IdtiposConsultas // Asegúrate que este es el nombre correcto de la propiedad
+                    };
+                    Debug.WriteLine($"Esta es cadena para el post {cita}");
+                    var json = JsonSerializer.Serialize(cita);
+                    var content = new StringContent(json, Encoding.UTF8, "application/json");
 
-                // Usa la URL base que ya está configurada en el HttpClient
-                var response = await _httpClient.PostAsync("api/citas", content);
+                    // Usa la URL base que ya está configurada en el HttpClient
+                    var response = await _httpClient.PostAsync("api/CitasMedicas", content);
 
-                if (response.IsSuccessStatusCode)
-                {
-                    await Application.Current.MainPage.DisplayAlert("Éxito", "Cita agendada correctamente", "OK");
-                    await Shell.Current.GoToAsync("///HomePacient");
+                    if (response.IsSuccessStatusCode)
+                    {
+                        await Application.Current.MainPage.DisplayAlert("Éxito", "Cita agendada correctamente", "OK");
+                        await Shell.Current.GoToAsync("///HomePacient");
+                    }
+                    else
+                    {
+                        var errorMessage = await response.Content.ReadAsStringAsync();
+                        await Application.Current.MainPage.DisplayAlert("Error", $"No se pudo crear la cita: {errorMessage}", "OK");
+                        Debug.WriteLine($"Error al crear la cita: {errorMessage}");
+                    }
                 }
-                else
+                catch (Exception ex)
                 {
-                    var errorMessage = await response.Content.ReadAsStringAsync();
-                    await Application.Current.MainPage.DisplayAlert("Error", $"No se pudo crear la cita: {errorMessage}", "OK");
+                    await Application.Current.MainPage.DisplayAlert("Error", $"Error de exepcion: {ex.Message}", "OK");
+                    Debug.WriteLine($"Error al crear la cita: {ex.Message}");
                 }
             }
-            catch (Exception ex)
-            {
-                await Application.Current.MainPage.DisplayAlert("Error", $"Error al crear la cita: {ex.Message}", "OK");
-            }
+
         }
     }
 }

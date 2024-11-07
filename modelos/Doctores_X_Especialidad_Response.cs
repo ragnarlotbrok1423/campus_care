@@ -8,10 +8,10 @@ namespace campusCare.modelos
 {
     public class Doctores_X_Especialidad_Response
     {
-        public int IdDoctor { get; set; }
-        public string NombreCompleto { get; set; } = null!;
-        public string Cedula { get; set; } = null!;
-        public string Especialidad { get; set; } = null!;
+        public int IdDoctores { get; set; }
+        public string NombreCompleto { get; set; }
+        public string Cedula { get; set; }
+        public Especialidad Especialidad { get; set; }
 
     }
 }

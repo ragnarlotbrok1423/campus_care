@@ -7,6 +7,18 @@
       "RelativeMoniker": "D:0:0:{721CEF64-CEE2-45CF-B2EB-851FB24DECA3}|campusCare.csproj|solutionrelative:vistasmodelos\\crearcitaviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{721CEF64-CEE2-45CF-B2EB-851FB24DECA3}|campusCare.csproj|c:\\users\\erick\\downloads\\campuscarerepository\\campus_care\\modelos\\serverstring.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{721CEF64-CEE2-45CF-B2EB-851FB24DECA3}|campusCare.csproj|solutionrelative:modelos\\serverstring.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{721CEF64-CEE2-45CF-B2EB-851FB24DECA3}|campusCare.csproj|c:\\users\\erick\\downloads\\campuscarerepository\\campus_care\\modelos\\doctores_x_especialidad_response.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{721CEF64-CEE2-45CF-B2EB-851FB24DECA3}|campusCare.csproj|solutionrelative:modelos\\doctores_x_especialidad_response.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{721CEF64-CEE2-45CF-B2EB-851FB24DECA3}|campusCare.csproj|c:\\users\\erick\\downloads\\campuscarerepository\\campus_care\\modelos\\doctorlogindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{721CEF64-CEE2-45CF-B2EB-851FB24DECA3}|campusCare.csproj|solutionrelative:modelos\\doctorlogindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{721CEF64-CEE2-45CF-B2EB-851FB24DECA3}|campusCare.csproj|c:\\users\\erick\\downloads\\campuscarerepository\\campus_care\\vistas\\agendarcitas.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{721CEF64-CEE2-45CF-B2EB-851FB24DECA3}|campusCare.csproj|solutionrelative:vistas\\agendarcitas.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -15,8 +27,8 @@
       "RelativeMoniker": "D:0:0:{721CEF64-CEE2-45CF-B2EB-851FB24DECA3}|campusCare.csproj|solutionrelative:vistas\\agendarcitas.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{721CEF64-CEE2-45CF-B2EB-851FB24DECA3}|campusCare.csproj|c:\\users\\erick\\downloads\\campuscarerepository\\campus_care\\modelos\\doctorlogindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{721CEF64-CEE2-45CF-B2EB-851FB24DECA3}|campusCare.csproj|solutionrelative:modelos\\doctorlogindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{721CEF64-CEE2-45CF-B2EB-851FB24DECA3}|campusCare.csproj|c:\\users\\erick\\downloads\\campuscarerepository\\campus_care\\vistasmodelos\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{721CEF64-CEE2-45CF-B2EB-851FB24DECA3}|campusCare.csproj|solutionrelative:vistasmodelos\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{721CEF64-CEE2-45CF-B2EB-851FB24DECA3}|campusCare.csproj|c:\\users\\erick\\downloads\\campuscarerepository\\campus_care\\modelos\\tiposconsultas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -25,10 +37,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{721CEF64-CEE2-45CF-B2EB-851FB24DECA3}|campusCare.csproj|c:\\users\\erick\\downloads\\campuscarerepository\\campus_care\\vistasmodelos\\usuariosviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{721CEF64-CEE2-45CF-B2EB-851FB24DECA3}|campusCare.csproj|solutionrelative:vistasmodelos\\usuariosviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{721CEF64-CEE2-45CF-B2EB-851FB24DECA3}|campusCare.csproj|c:\\users\\erick\\downloads\\campuscarerepository\\campus_care\\modelos\\serverstring.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{721CEF64-CEE2-45CF-B2EB-851FB24DECA3}|campusCare.csproj|solutionrelative:modelos\\serverstring.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{721CEF64-CEE2-45CF-B2EB-851FB24DECA3}|campusCare.csproj|c:\\users\\erick\\downloads\\campuscarerepository\\campus_care\\vistas\\login.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -45,10 +53,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{721CEF64-CEE2-45CF-B2EB-851FB24DECA3}|campusCare.csproj|c:\\users\\erick\\downloads\\campuscarerepository\\campus_care\\modelos\\citarequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{721CEF64-CEE2-45CF-B2EB-851FB24DECA3}|campusCare.csproj|solutionrelative:modelos\\citarequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{721CEF64-CEE2-45CF-B2EB-851FB24DECA3}|campusCare.csproj|c:\\users\\erick\\downloads\\campuscarerepository\\campus_care\\vistasmodelos\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{721CEF64-CEE2-45CF-B2EB-851FB24DECA3}|campusCare.csproj|solutionrelative:vistasmodelos\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{721CEF64-CEE2-45CF-B2EB-851FB24DECA3}|campusCare.csproj|c:\\users\\erick\\downloads\\campuscarerepository\\campus_care\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -82,31 +86,29 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "AgendarCitas.xaml",
               "DocumentMoniker": "C:\\Users\\erick\\Downloads\\campusCareRepository\\campus_care\\vistas\\AgendarCitas.xaml",
               "RelativeDocumentMoniker": "vistas\\AgendarCitas.xaml",
               "ToolTip": "C:\\Users\\erick\\Downloads\\campusCareRepository\\campus_care\\vistas\\AgendarCitas.xaml",
               "RelativeToolTip": "vistas\\AgendarCitas.xaml",
-              "ViewState": "AQIAAEgAAAAAAAAAAAAIwFAAAAAqAAAA",
+              "ViewState": "AQIAAEgAAAAAAAAAAAAIwFAAAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-10-21T04:48:43.271Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "AgendarCitas.xaml.cs",
               "DocumentMoniker": "C:\\Users\\erick\\Downloads\\campusCareRepository\\campus_care\\vistas\\AgendarCitas.xaml.cs",
               "RelativeDocumentMoniker": "vistas\\AgendarCitas.xaml.cs",
               "ToolTip": "C:\\Users\\erick\\Downloads\\campusCareRepository\\campus_care\\vistas\\AgendarCitas.xaml.cs",
               "RelativeToolTip": "vistas\\AgendarCitas.xaml.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAgwBMAAAAFAAAA",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAowBoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-02T20:19:44.394Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -114,9 +116,9 @@
               "Title": "CrearCitaViewModel.cs",
               "DocumentMoniker": "C:\\Users\\erick\\Downloads\\campusCareRepository\\campus_care\\vistasModelos\\CrearCitaViewModel.cs",
               "RelativeDocumentMoniker": "vistasModelos\\CrearCitaViewModel.cs",
-              "ToolTip": "C:\\Users\\erick\\Downloads\\campusCareRepository\\campus_care\\vistasModelos\\CrearCitaViewModel.cs*",
-              "RelativeToolTip": "vistasModelos\\CrearCitaViewModel.cs*",
-              "ViewState": "AQIAAG4AAAAAAAAAAAAEwHUAAAAVAAAA",
+              "ToolTip": "C:\\Users\\erick\\Downloads\\campusCareRepository\\campus_care\\vistasModelos\\CrearCitaViewModel.cs",
+              "RelativeToolTip": "vistasModelos\\CrearCitaViewModel.cs",
+              "ViewState": "AQIAAOAAAAAAAAAAAAAUwOQAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-21T07:00:11.487Z",
               "IsPinned": true,
@@ -124,20 +126,32 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
+              "Title": "Doctores_X_Especialidad_Response.cs",
+              "DocumentMoniker": "C:\\Users\\erick\\Downloads\\campusCareRepository\\campus_care\\modelos\\Doctores_X_Especialidad_Response.cs",
+              "RelativeDocumentMoniker": "modelos\\Doctores_X_Especialidad_Response.cs",
+              "ToolTip": "C:\\Users\\erick\\Downloads\\campusCareRepository\\campus_care\\modelos\\Doctores_X_Especialidad_Response.cs",
+              "RelativeToolTip": "modelos\\Doctores_X_Especialidad_Response.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA0AAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-06T17:34:07.408Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "ServerString.cs",
               "DocumentMoniker": "C:\\Users\\erick\\Downloads\\campusCareRepository\\campus_care\\modelos\\ServerString.cs",
               "RelativeDocumentMoniker": "modelos\\ServerString.cs",
               "ToolTip": "C:\\Users\\erick\\Downloads\\campusCareRepository\\campus_care\\modelos\\ServerString.cs",
               "RelativeToolTip": "modelos\\ServerString.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAABAAAA",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAqwAoAAABLAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-06T04:04:29.338Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "CitaRequest.cs",
               "DocumentMoniker": "C:\\Users\\erick\\Downloads\\campusCareRepository\\campus_care\\modelos\\CitaRequest.cs",
               "RelativeDocumentMoniker": "modelos\\CitaRequest.cs",
@@ -149,7 +163,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "UserDTO.cs",
               "DocumentMoniker": "C:\\Users\\erick\\Downloads\\campusCareRepository\\campus_care\\modelos\\UserDTO.cs",
               "RelativeDocumentMoniker": "modelos\\UserDTO.cs",
@@ -167,14 +181,13 @@
               "RelativeDocumentMoniker": "modelos\\DoctorLoginDTO.cs",
               "ToolTip": "C:\\Users\\erick\\Downloads\\campusCareRepository\\campus_care\\modelos\\DoctorLoginDTO.cs",
               "RelativeToolTip": "modelos\\DoctorLoginDTO.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAAASwB0AAAAdAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-03T00:36:08.902Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-03T00:36:08.902Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "Login.xaml",
               "DocumentMoniker": "C:\\Users\\erick\\Downloads\\campusCareRepository\\campus_care\\vistas\\Login.xaml",
               "RelativeDocumentMoniker": "vistas\\Login.xaml",
@@ -186,7 +199,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "TiposConsultas.cs",
               "DocumentMoniker": "C:\\Users\\erick\\Downloads\\campusCareRepository\\campus_care\\modelos\\TiposConsultas.cs",
               "RelativeDocumentMoniker": "modelos\\TiposConsultas.cs",
@@ -194,12 +207,11 @@
               "RelativeToolTip": "modelos\\TiposConsultas.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAAAwAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-02T20:19:25.123Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-02T20:19:25.123Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "CreateUser.xaml",
               "DocumentMoniker": "C:\\Users\\erick\\Downloads\\campusCareRepository\\campus_care\\vistas\\CreateUser.xaml",
               "RelativeDocumentMoniker": "vistas\\CreateUser.xaml",
@@ -211,7 +223,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "UsuariosViewModel.cs",
               "DocumentMoniker": "C:\\Users\\erick\\Downloads\\campusCareRepository\\campus_care\\vistasModelos\\UsuariosViewModel.cs",
               "RelativeDocumentMoniker": "vistasModelos\\UsuariosViewModel.cs",
@@ -219,12 +231,11 @@
               "RelativeToolTip": "vistasModelos\\UsuariosViewModel.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAABEAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-06T05:55:55.037Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-06T05:55:55.037Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "AppShell.xaml",
               "DocumentMoniker": "C:\\Users\\erick\\Downloads\\campusCareRepository\\campus_care\\AppShell.xaml",
               "RelativeDocumentMoniker": "AppShell.xaml",
@@ -236,7 +247,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "HistorialMedicoViewModel.cs",
               "DocumentMoniker": "C:\\Users\\erick\\Downloads\\campusCareRepository\\campus_care\\vistasModelos\\HistorialMedicoViewModel.cs",
               "RelativeDocumentMoniker": "vistasModelos\\HistorialMedicoViewModel.cs",
@@ -248,7 +259,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "campusCare.csproj",
               "DocumentMoniker": "C:\\Users\\erick\\Downloads\\campusCareRepository\\campus_care\\campusCare.csproj",
               "RelativeDocumentMoniker": "campusCare.csproj",
@@ -260,7 +271,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "DoctorLoginViewModel.cs",
               "DocumentMoniker": "C:\\Users\\erick\\Downloads\\campusCareRepository\\campus_care\\vistasModelos\\DoctorLoginViewModel.cs",
               "RelativeDocumentMoniker": "vistasModelos\\DoctorLoginViewModel.cs",
@@ -272,19 +283,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 6,
               "Title": "LoginViewModel.cs",
               "DocumentMoniker": "C:\\Users\\erick\\Downloads\\campusCareRepository\\campus_care\\vistasModelos\\LoginViewModel.cs",
               "RelativeDocumentMoniker": "vistasModelos\\LoginViewModel.cs",
               "ToolTip": "C:\\Users\\erick\\Downloads\\campusCareRepository\\campus_care\\vistasModelos\\LoginViewModel.cs",
               "RelativeToolTip": "vistasModelos\\LoginViewModel.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAAQwEUAAAAxAAAA",
+              "ViewState": "AQIAACsAAAAAAAAAAAAwwDcAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-21T12:37:53.442Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "HistoryPacient.xaml",
               "DocumentMoniker": "C:\\Users\\erick\\Downloads\\campusCareRepository\\campus_care\\vistas\\HistoryPacient.xaml",
               "RelativeDocumentMoniker": "vistas\\HistoryPacient.xaml",

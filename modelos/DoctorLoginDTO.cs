@@ -27,7 +27,7 @@ namespace campusCare.modelos
 
     public class EspecialidadDTO
     {
-        public int IdEspecialidad { get; set; }
+        public int IdEspecialidades { get; set; }
         public string Especialidad { get; set; } = null!;
     }
 }

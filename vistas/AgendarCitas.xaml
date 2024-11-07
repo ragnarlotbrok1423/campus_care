@@ -78,9 +78,9 @@
                 Title="Doctor"
                 Grid.Column="1"
                 Background="DarkCyan"
+                TextColor="White"
                 HorizontalOptions="Center"
-                IsEnabled="{Binding IsDoctorPickerEnabled}"
-                ItemDisplayBinding="{Binding nombreCompleto}"
+                ItemDisplayBinding="{Binding NombreCompleto}"
                 ItemsSource="{Binding Doctores}"
                 SelectedItem="{Binding DoctorSeleccionado}"
                 VerticalOptions="Center" />
