@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="campusCare.vistas.HomePharmacy"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="HomePharmacy"
+    Background="White"
+    Shell.NavBarIsVisible="False">
+
+    <Grid>
+        <!--  version para windows  -->
+        <Grid IsVisible="{OnPlatform Android=false, WinUI=true}">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+
+            <!--  Left Sidebar  -->
+            <StackLayout
+                Grid.Column="0"
+                Padding="10"
+                BackgroundColor="#000080">
+                <Image
+                    Margin="0,10,0,0"
+                    HeightRequest="45"
+                    Source="logo.png" />
+                <Label
+                    Margin="0,20,0,20"
+                    FontAttributes="Bold"
+                    FontFamily="Bungee-Regular"
+                    FontSize="Subtitle"
+                    HorizontalOptions="Center"
+                    Text="CAMPUS CARE"
+                    TextColor="White" />
+
+                <StackLayout HorizontalOptions="Start" Spacing="20">
+                    <StackLayout
+                        Margin="0,0,0,10"
+                        Orientation="Horizontal"
+                        Spacing="5">
+                        <Image
+                            HeightRequest="23"
+                            Source="vector.png"
+                            VerticalOptions="Center"
+                            WidthRequest="23" />
+                        <Button
+                            Padding="0"
+                            BackgroundColor="Transparent"
+                            FontFamily="Roboto-black"
+                            FontSize="23"
+                            Text="Inicio"
+                            TextColor="White" />
+                    </StackLayout>
+
+                    <StackLayout
+                        Margin="0,0,0,10"
+                        Orientation="Horizontal"
+                        Spacing="5">
+                        <Image
+                            HeightRequest="23"
+                            Source="notificaciones.png"
+                            VerticalOptions="Center"
+                            WidthRequest="23" />
+                        <Button
+                            Padding="0"
+                            BackgroundColor="Transparent"
+                            FontFamily="Roboto-black"
+                            FontSize="23"
+                            Text="Notificaciones"
+                            TextColor="White" />
+                    </StackLayout>
+
+                    <StackLayout
+                        Margin="0,0,0,10"
+                        Orientation="Horizontal"
+                        Spacing="5">
+                        <Image
+                            HeightRequest="23"
+                            Source="medicamento.png"
+                            VerticalOptions="Center"
+                            WidthRequest="23" />
+                        <Button
+                            Padding="0"
+                            BackgroundColor="Transparent"
+                            FontFamily="Roboto-black"
+                            FontSize="23"
+                            Text="Recetas"
+                            TextColor="White" />
+                    </StackLayout>
+
+                    <StackLayout
+                        Margin="0,0,0,10"
+                        Orientation="Horizontal"
+                        Spacing="5">
+                        <Image
+                            HeightRequest="23"
+                            Source="perfil.png"
+                            VerticalOptions="Center"
+                            WidthRequest="23" />
+                        <Button
+                            Padding="0"
+                            BackgroundColor="Transparent"
+                            FontFamily="Roboto-black"
+                            FontSize="23"
+                            Text="Perfil"
+                            TextColor="White" />
+                    </StackLayout>
+                </StackLayout>
+
+
+            </StackLayout>
+
+            <!--  Main Content  -->
+            <!--  Main Content  -->
+            <!--  Main Content  -->
+            <!--  Main Content  -->
+            <!--  Main Content  -->
+            <!--  Main Content  -->
+            <StackLayout
+                Grid.Column="1"
+                Padding="20"
+                BackgroundColor="White">
+                <Label
+                    FontAttributes="Bold"
+                    FontFamily="Bungee-Regular"
+                    FontSize="24"
+                    Text="Bienvenido ERICK GONZALEZ"
+                    TextColor="#000080" />
+                <Label
+                    Margin="0,10,0,10"
+                    FontFamily="Roboto-Bold"
+                    FontSize="18"
+                    Text="Tus Datos"
+                    TextColor="#000080" />
+                <Grid
+                    Margin="0,50,0,20"
+                    Padding="0"
+                    HorizontalOptions="Center"
+                    RowSpacing="20">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+
+                    <!--  Existing Cards  -->
+                    <!--  Recetas Card  -->
+                    <Frame
+                        Grid.Row="0"
+                        Grid.Column="0"
+                        Margin="15"
+                        Padding="5"
+                        BackgroundColor="#136AED"
+                        BorderColor="Transparent"
+                        CornerRadius="10"
+                        HasShadow="False"
+                        HeightRequest="110"
+                        WidthRequest="120">
+                        <StackLayout>
+                            <Image
+                                HeightRequest="40"
+                                HorizontalOptions="Center"
+                                Source="medicamento.png"
+                                WidthRequest="40" />
+                            <Label
+                                Margin="0,10,0,0"
+                                FontSize="16"
+                                HorizontalOptions="Center"
+                                HorizontalTextAlignment="Center"
+                                Text="Gestion de Medicamentos"
+                                TextColor="White" />
+                        </StackLayout>
+                    </Frame>
+
+                    <!--  Citas Card  -->
+                    <Frame
+                        Grid.Row="0"
+                        Grid.Column="1"
+                        Margin="15"
+                        Padding="5"
+                        BackgroundColor="#139EED"
+                        BorderColor="Transparent"
+                        CornerRadius="10"
+                        HasShadow="False"
+                        HeightRequest="110"
+                        WidthRequest="120">
+                        <StackLayout>
+                            <Image
+                                HeightRequest="40"
+                                HorizontalOptions="Center"
+                                Source="cruz.png"
+                                WidthRequest="40" />
+                            <Label
+                                Margin="0,10,0,0"
+                                FontSize="16"
+                                HorizontalOptions="Center"
+                                Text="Recetas"
+                                TextColor="White" />
+                        </StackLayout>
+                    </Frame>
+
+                    <!--  Chequeos Card  -->
+                    <Frame
+                        Grid.Row="0"
+                        Grid.Column="2"
+                        Margin="15"
+                        Padding="5"
+                        BackgroundColor="#3325DC"
+                        BorderColor="Transparent"
+                        CornerRadius="10"
+                        HasShadow="False"
+                        HeightRequest="110"
+                        WidthRequest="120">
+                        <StackLayout>
+                            <Image
+                                HeightRequest="40"
+                                HorizontalOptions="Center"
+                                Source="ok.png"
+                                WidthRequest="40" />
+                            <Label
+                                Margin="0,10,0,0"
+                                FontSize="16"
+                                HorizontalOptions="Center"
+                                Text="Control de Inventarios"
+                                TextColor="White" />
+                        </StackLayout>
+                    </Frame>
+
+                    <!--  New Cards  -->
+                    <!--  New Card 1  -->
+                    <Frame
+                        Grid.Row="1"
+                        Grid.Column="0"
+                        Margin="15"
+                        Padding="5"
+                        BackgroundColor="#139EED"
+                        BorderColor="Transparent"
+                        CornerRadius="10"
+                        HasShadow="False"
+                        HeightRequest="110"
+                        WidthRequest="120">
+                        <StackLayout>
+                            <Image
+                                HeightRequest="40"
+                                HorizontalOptions="Center"
+                                Source="newicon1.png"
+                                WidthRequest="40" />
+                            <Label
+                                Margin="0,10,0,0"
+                                FontSize="16"
+                                HorizontalOptions="Center"
+                                HorizontalTextAlignment="Center"
+                                Text="Pedidos y Proveedores"
+                                TextColor="White" />
+                        </StackLayout>
+                    </Frame>
+
+                    <!--  New Card 2  -->
+                    <Frame
+                        Grid.Row="1"
+                        Grid.Column="1"
+                        Margin="15"
+                        Padding="5"
+                        BackgroundColor="#3325DC"
+                        BorderColor="Transparent"
+                        CornerRadius="10"
+                        HasShadow="False"
+                        HeightRequest="110"
+                        WidthRequest="120">
+                        <StackLayout>
+                            <Image
+                                HeightRequest="40"
+                                HorizontalOptions="Center"
+                                Source="newicon2.png"
+                                WidthRequest="40" />
+                            <Label
+                                Margin="0,10,0,0"
+                                FontSize="16"
+                                HorizontalOptions="Center"
+                                HorizontalTextAlignment="Center"
+                                Text="Consulta de Pacientes"
+                                TextColor="White" />
+                        </StackLayout>
+                    </Frame>
+
+                    <!--  New Card 3  -->
+                    <Frame
+                        Grid.Row="1"
+                        Grid.Column="2"
+                        Margin="15"
+                        Padding="5"
+                        BackgroundColor="#136AED"
+                        BorderColor="Transparent"
+                        CornerRadius="10"
+                        HasShadow="False"
+                        HeightRequest="110"
+                        WidthRequest="120">
+                        <StackLayout>
+                            <Image
+                                HeightRequest="40"
+                                HorizontalOptions="Center"
+                                Source="newicon3.png"
+                                WidthRequest="40" />
+                            <Label
+                                Margin="0,10,0,0"
+                                FontSize="16"
+                                HorizontalOptions="Center"
+                                HorizontalTextAlignment="Center"
+                                Text="Reporte y Estadisticas"
+                                TextColor="White" />
+                        </StackLayout>
+                    </Frame>
+                </Grid>
+            </StackLayout>
+
+
+            <!--  Right Sidebar  -->
+            <StackLayout
+                Grid.Column="2"
+                Padding="20"
+                BackgroundColor="White"
+                Spacing="10">
+                <!--  Tarjeta de perfil  -->
+                <Frame
+                    Padding="10"
+                    BackgroundColor="#07016C"
+                    BorderColor="Transparent"
+                    CornerRadius="15"
+                    HasShadow="True">
+                    <StackLayout HorizontalOptions="Center">
+                        <!--  Imagen de perfil  -->
+                        <Frame
+                            Padding="0"
+                            CornerRadius="50"
+                            HeightRequest="100"
+                            HorizontalOptions="Center"
+                            IsClippedToBounds="True"
+                            WidthRequest="100">
+                            <Image Aspect="AspectFill" Source="perfil.png" />
+                        </Frame>
+                        <!--  Nombre y número  -->
+                        <Label
+                            FontAttributes="Bold"
+                            FontSize="12"
+                            HorizontalOptions="Center"
+                            Text="Funcionario"
+                            TextColor="WhiteSmoke" />
+                        <Label
+                            FontAttributes="Bold"
+                            FontSize="18"
+                            HorizontalOptions="Center"
+                            Text="Erick González" />
+                        <Label
+                            FontSize="14"
+                            HorizontalOptions="Center"
+                            Text="4-823-2302"
+                            TextColor="White" />
+                    </StackLayout>
+                </Frame>
+
+                <!--  Card de Citas Programadas  -->
+                <Frame
+                    Margin="0,10,0,0"
+                    Padding="15"
+                    BackgroundColor="#07016C"
+                    BorderColor="Transparent"
+                    CornerRadius="15"
+                    HasShadow="True">
+                    <StackLayout>
+                        <!--  Título de la sección  -->
+                        <Label
+                            FontAttributes="Bold"
+                            FontSize="Subtitle"
+                            Text="Medicamentos"
+                            TextColor="White" />
+                        <Label
+                            FontAttributes="Bold"
+                            FontSize="16"
+                            Text="Lista de Espera"
+                            TextColor="White" />
+
+                        <!--  Detalles de las citas  -->
+                        <Label
+                            Margin="0,5,0,0"
+                            Padding="0,0,0,15"
+                            FontFamily="Roboto-black"
+                            FontSize="14"
+                            Text="Acetaminofén"
+                            TextColor="#00FFEA" />
+                        <Label
+                            Margin="0,5,0,0"
+                            Padding="0,0,0,15"
+                            FontFamily="Roboto-black"
+                            FontSize="14"
+                            Text="Acetaminofén"
+                            TextColor="#00FFEA" />
+                        <Label
+                            Margin="0,5,0,0"
+                            Padding="0,0,0,15"
+                            FontFamily="Roboto-black"
+                            FontSize="14"
+                            Text="Acetaminofén"
+                            TextColor="#00FFEA" />
+                        <Label
+                            Margin="0,5,0,0"
+                            Padding="0,0,0,15"
+                            FontFamily="Roboto-black"
+                            FontSize="14"
+                            Text="Acetaminofén"
+                            TextColor="#00FFEA" />
+                    </StackLayout>
+                </Frame>
+
+                <!--  Botón de cerrar sesión  -->
+                <Button
+                    Margin="0,5,0,0"
+                    BackgroundColor="#00FFEA"
+                    FontFamily="Bungee-Regular"
+                    FontSize="14"
+                    Text="CERRAR SESIÓN"
+                    TextColor="#07016C" />
+            </StackLayout>
+
+        </Grid>
+
+
+
+        <!--  Version para Android  -->
+        <Grid IsVisible="{OnPlatform Android=true, WinUI=false}" />
+    </Grid>
+</ContentPage>

@@ -59,8 +59,17 @@ namespace campusCare.vistasModelos
                     Preferences.Set("IdDoctor", doctorLoginResponse.IdDoctores.Value);
                     Preferences.Set("NombreCompleto", doctorLoginResponse.NombreCompleto);
                     Preferences.Set("EspecialidadFk", doctorLoginResponse.EspecialidadFk.Value);
-                    await Shell.Current.GoToAsync("///DoctorMainPage");
+
+                    if (doctorLoginResponse.IdDoctores == 1)
+                    {
+                        await Shell.Current.GoToAsync("///DoctorMainPage");
+                    }
+                    if (doctorLoginResponse.IdDoctores == 3)
+                    {
+                        await Shell.Current.GoToAsync("///DrogsView");
+                    }
                 }
+
             }
             else if (response.StatusCode == System.Net.HttpStatusCode.Unauthorized)
             {

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="campusCare.vistas.DrogsView"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="DrogsView">
+    <Grid>
+
+        <!--  Version para windows  -->
+        <Grid IsVisible="{OnPlatform Android=false, WinUI=true}">
+
+            <CollectionView ItemsSource="{Binding Medicamentos}">
+                <CollectionView.Header>
+                    <!--  Encabezado de la tabla  -->
+                    <Grid Padding="10" BackgroundColor="LightGray">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="2*" />
+                            <ColumnDefinition Width="2*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Label
+                            Grid.Column="0"
+                            FontAttributes="Bold"
+                            Text="ID"
+                            TextColor="Black" />
+                        <Label
+                            Grid.Column="1"
+                            FontAttributes="Bold"
+                            Text="Nombre"
+                            TextColor="Black" />
+                        <Label
+                            Grid.Column="2"
+                            FontAttributes="Bold"
+                            Text="Categoría"
+                            TextColor="Black" />
+                        <Label
+                            Grid.Column="3"
+                            FontAttributes="Bold"
+                            Text="Stock"
+                            TextColor="Black" />
+                    </Grid>
+                </CollectionView.Header>
+
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid Padding="5">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="2*" />
+                                <ColumnDefinition Width="2*" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+
+                            <!--  Datos de cada propiedad  -->
+                            <Label
+                                Grid.Column="0"
+                                Text="{Binding Idmedicamento}"
+                                TextColor="White" />
+                            <Label Grid.Column="1" Text="{Binding Nombre}" />
+                            <Label
+                                Grid.Column="2"
+                                Text="{Binding Categoria.NombreCategoria}"
+                                TextColor="White" />
+                            <Label
+                                Grid.Column="3"
+                                Text="{Binding CantidadStock}"
+                                TextColor="White" />
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
+
+        </Grid>
+
+        <!--  Version para android  -->
+        <Grid IsVisible="{OnPlatform Android=true, WinUI=false}" />
+    </Grid>
+</ContentPage>

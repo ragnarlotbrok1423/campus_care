@@ -76,6 +76,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = campusCare.vistas.DoctorMa
 build_metadata.AdditionalFiles.TargetPath = vistas\DoctorMainPage.xaml
 build_metadata.AdditionalFiles.RelativePath = vistas\DoctorMainPage.xaml
 
+[C:/Users/erick/Downloads/campusCareRepository/campus_care/vistas/DrogsView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = campusCare.vistas.DrogsView.xaml
+build_metadata.AdditionalFiles.TargetPath = vistas\DrogsView.xaml
+build_metadata.AdditionalFiles.RelativePath = vistas\DrogsView.xaml
+
 [C:/Users/erick/Downloads/campusCareRepository/campus_care/vistas/HistoryPacient.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = campusCare.vistas.HistoryPacient.xaml
@@ -87,6 +93,12 @@ build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = campusCare.vistas.HomePacient.xaml
 build_metadata.AdditionalFiles.TargetPath = vistas\HomePacient.xaml
 build_metadata.AdditionalFiles.RelativePath = vistas\HomePacient.xaml
+
+[C:/Users/erick/Downloads/campusCareRepository/campus_care/vistas/HomePharmacy.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = campusCare.vistas.HomePharmacy.xaml
+build_metadata.AdditionalFiles.TargetPath = vistas\HomePharmacy.xaml
+build_metadata.AdditionalFiles.RelativePath = vistas\HomePharmacy.xaml
 
 [C:/Users/erick/Downloads/campusCareRepository/campus_care/vistas/Login.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml

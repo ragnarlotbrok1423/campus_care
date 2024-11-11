@@ -22,10 +22,16 @@
     <MauiXaml Update="vistas\DoctorMainPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
+    <MauiXaml Update="vistas\DrogsView.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
     <MauiXaml Update="vistas\HistoryPacient.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
     <MauiXaml Update="vistas\HomePacient.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="vistas\HomePharmacy.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
   </ItemGroup>

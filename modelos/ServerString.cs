@@ -8,6 +8,6 @@ namespace campusCare.modelos
 {
     public class ServerString
     {
-        public string cabecera = "https://8697-200-46-172-72.ngrok-free.app/";
+        public string cabecera = "http://localhost:5132/";
     }
 }
