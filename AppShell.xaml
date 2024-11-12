@@ -17,6 +17,10 @@
         ContentTemplate="{DataTemplate vistas:DrogsView}"
         Route="DrogsView" />
     <ShellContent
+        Title="RecetasView"
+        ContentTemplate="{DataTemplate vistas:RecetasView}"
+        Route="RecetasView" />
+    <ShellContent
         Title="LoginDoctor"
         ContentTemplate="{DataTemplate vistas:DoctorLogin}"
         Route="DoctorLogin" />

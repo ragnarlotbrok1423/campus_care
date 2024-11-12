@@ -66,7 +66,7 @@ namespace campusCare.vistasModelos
                     }
                     if (doctorLoginResponse.IdDoctores == 3)
                     {
-                        await Shell.Current.GoToAsync("///DrogsView");
+                        await Shell.Current.GoToAsync("///RecetasView");
                     }
                 }
 
