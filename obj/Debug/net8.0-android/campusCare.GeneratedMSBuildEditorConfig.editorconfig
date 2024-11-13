@@ -52,6 +52,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = campusCare.vistas.AgendarC
 build_metadata.AdditionalFiles.TargetPath = vistas\AgendarCitas.xaml
 build_metadata.AdditionalFiles.RelativePath = vistas\AgendarCitas.xaml
 
+[C:/Users/erick/Downloads/campusCareRepository/campus_care/vistas/CrearRecetasView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = campusCare.vistas.CrearRecetasView.xaml
+build_metadata.AdditionalFiles.TargetPath = vistas\CrearRecetasView.xaml
+build_metadata.AdditionalFiles.RelativePath = vistas\CrearRecetasView.xaml
+
 [C:/Users/erick/Downloads/campusCareRepository/campus_care/vistas/CreateUser.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = campusCare.vistas.CreateUser.xaml
@@ -75,6 +81,12 @@ build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = campusCare.vistas.DoctorMainPage.xaml
 build_metadata.AdditionalFiles.TargetPath = vistas\DoctorMainPage.xaml
 build_metadata.AdditionalFiles.RelativePath = vistas\DoctorMainPage.xaml
+
+[C:/Users/erick/Downloads/campusCareRepository/campus_care/vistas/DonantesView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = campusCare.vistas.DonantesView.xaml
+build_metadata.AdditionalFiles.TargetPath = vistas\DonantesView.xaml
+build_metadata.AdditionalFiles.RelativePath = vistas\DonantesView.xaml
 
 [C:/Users/erick/Downloads/campusCareRepository/campus_care/vistas/DrogsView.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml

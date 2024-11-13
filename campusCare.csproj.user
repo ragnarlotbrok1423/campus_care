@@ -10,6 +10,9 @@
     <DebuggerFlavor>ProjectDebugger</DebuggerFlavor>
   </PropertyGroup>
   <ItemGroup>
+    <MauiXaml Update="vistas\CrearRecetasView.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
     <MauiXaml Update="vistas\CreateUser.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
@@ -20,6 +23,9 @@
       <SubType>Designer</SubType>
     </MauiXaml>
     <MauiXaml Update="vistas\DoctorMainPage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="vistas\DonantesView.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
     <MauiXaml Update="vistas\DrogsView.xaml">

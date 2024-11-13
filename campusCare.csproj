@@ -77,6 +77,9 @@
 		<MauiXaml Update="vistas\AgendarCitas.xaml">
 			<Generator>MSBuild:Compile</Generator>
 		</MauiXaml>
+		<MauiXaml Update="vistas\CrearRecetasView.xaml">
+		  <Generator>MSBuild:Compile</Generator>
+		</MauiXaml>
 		<MauiXaml Update="vistas\CreateUser.xaml">
 			<Generator>MSBuild:Compile</Generator>
 		</MauiXaml>
@@ -87,6 +90,9 @@
 		  <Generator>MSBuild:Compile</Generator>
 		</MauiXaml>
 		<MauiXaml Update="vistas\DoctorMainPage.xaml">
+		  <Generator>MSBuild:Compile</Generator>
+		</MauiXaml>
+		<MauiXaml Update="vistas\DonantesView.xaml">
 		  <Generator>MSBuild:Compile</Generator>
 		</MauiXaml>
 		<MauiXaml Update="vistas\DrogsView.xaml">

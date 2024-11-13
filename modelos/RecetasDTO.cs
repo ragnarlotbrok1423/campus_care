@@ -16,4 +16,13 @@ namespace campusCare.modelos
         public DoctoresDTO Doctor { get; set; } = null!;
         public MedicamentosDTO Medicamento { get; set; } = null!;
     }
+    public class CreateRecetaDTO
+    {
+        public string FechaDeEntrega { get; set; } = null!;
+        public int CantidadDeEntrega { get; set; }
+        public string Observaciones { get; set; } = null!;
+        public int IdPaciente { get; set; }
+        public int IdDoctor { get; set; }
+        public int IdMedicamento { get; set; }
+    }
 }

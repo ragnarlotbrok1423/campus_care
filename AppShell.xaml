@@ -12,10 +12,21 @@
         Title="Login"
         ContentTemplate="{DataTemplate vistas:Login}"
         Route="Login" />
+
+    <ShellContent
+        Title="DonantesView"
+        ContentTemplate="{DataTemplate vistas:DonantesView}"
+        Route="DonantesView" />
+
+    <ShellContent
+        Title="CrearRecetasView"
+        ContentTemplate="{DataTemplate vistas:CrearRecetasView}"
+        Route="CrearRecetasView" />
     <ShellContent
         Title="DrogsView"
         ContentTemplate="{DataTemplate vistas:DrogsView}"
         Route="DrogsView" />
+
     <ShellContent
         Title="RecetasView"
         ContentTemplate="{DataTemplate vistas:RecetasView}"

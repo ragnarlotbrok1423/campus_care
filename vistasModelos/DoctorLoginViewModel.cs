@@ -60,9 +60,13 @@ namespace campusCare.vistasModelos
                     Preferences.Set("NombreCompleto", doctorLoginResponse.NombreCompleto);
                     Preferences.Set("EspecialidadFk", doctorLoginResponse.EspecialidadFk.Value);
 
-                    if (doctorLoginResponse.IdDoctores == 1)
+                    Debug.WriteLine($"el id del doctor es: {doctorLoginResponse.IdDoctores.Value}");
+                    Debug.WriteLine($"el nombre del doctor es: {doctorLoginResponse.NombreCompleto}");
+                    Debug.WriteLine($"la especialidad del doctor es: {doctorLoginResponse.EspecialidadFk.Value}");
+
+                    if (doctorLoginResponse.IdDoctores == 2)
                     {
-                        await Shell.Current.GoToAsync("///DoctorMainPage");
+                        await Shell.Current.GoToAsync("///DonantesView");
                     }
                     if (doctorLoginResponse.IdDoctores == 3)
                     {

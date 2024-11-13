@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="campusCare.vistas.CrearRecetasView"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:viewModel="clr-namespace:campusCare.vistasModelos"
+    Title="CrearRecetasView">
+    <Grid>
+        <!--  Version Windows  -->
+        <Grid IsVisible="{OnPlatform Android=false, WinUI=true}">
+            <StackLayout Padding="20">
+                <!--  Picker for Categoria  -->
+
+                <Label Text="Selecciona una categoría" />
+                <Picker
+                    ItemDisplayBinding="{Binding NombreCategoria}"
+                    ItemsSource="{Binding Categorias}"
+                    SelectedItem="{Binding CategoriaSeleccionada}" />
+
+                <!--  Picker for Medicamento  -->
+                <Label Text="Selecciona un medicamento" />
+                <Picker
+                    ItemDisplayBinding="{Binding Nombre}"
+                    ItemsSource="{Binding Medicamentos}"
+                    SelectedItem="{Binding MedicamentoSeleccionado}" />
+
+                <!--  Picker for Paciente  -->
+                <Label Text="Selecciona un paciente" />
+                <Picker
+                    ItemDisplayBinding="{Binding Paciente.Cedula}"
+                    ItemsSource="{Binding Pacientes}"
+                    SelectedItem="{Binding PacienteSeleccionado}" />
+
+                <!--  DatePicker for Fecha  -->
+                <Label Text="Selecciona una fecha" />
+                <DatePicker Date="{Binding FechaSeleccionada}" />
+
+                <!--  Entry for Cantidad  -->
+                <Label Text="Cantidad" />
+                <Entry Keyboard="Numeric" Text="{Binding CantidadColocada, Mode=TwoWay}" />
+
+                <!--  Entry for Observaciones  -->
+                <Label Text="Observaciones" />
+                <Entry Text="{Binding ObservacionesColocadas, Mode=TwoWay}" />
+            </StackLayout>
+
+        </Grid>
+
+        <!--  version android  -->
+
+        <Grid IsVisible="{OnPlatform Android=true, WinUI=false}" />
+    </Grid>
+</ContentPage>

@@ -22,4 +22,11 @@ namespace campusCare.modelos
 
         public string NombreCategoria { get; set; } = null!;
     }
+    public class MedicamentosByCategoriaDTO
+    {
+        public int IdMedicamentos { get; set; }
+        public string Nombre { get; set; } = null!;
+
+        public CategoriaDTO Categoria { get; set; } = null!;
+    }
 }
