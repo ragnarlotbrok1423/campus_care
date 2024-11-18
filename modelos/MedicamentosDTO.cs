@@ -24,7 +24,7 @@ namespace campusCare.modelos
     }
     public class MedicamentosByCategoriaDTO
     {
-        public int IdMedicamentos { get; set; }
+        public int IdMedicamento { get; set; }
         public string Nombre { get; set; } = null!;
 
         public CategoriaDTO Categoria { get; set; } = null!;

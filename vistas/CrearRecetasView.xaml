@@ -15,7 +15,10 @@
                 <Picker
                     ItemDisplayBinding="{Binding NombreCategoria}"
                     ItemsSource="{Binding Categorias}"
-                    SelectedItem="{Binding CategoriaSeleccionada}" />
+                    SelectedItem="{Binding CategoriaSeleccionada}" 
+                    SelectedIndexChanged="CategoriaSeleccionada"
+                    />
+                
 
                 <!--  Picker for Medicamento  -->
                 <Label Text="Selecciona un medicamento" />
@@ -27,7 +30,7 @@
                 <!--  Picker for Paciente  -->
                 <Label Text="Selecciona un paciente" />
                 <Picker
-                    ItemDisplayBinding="{Binding Paciente.Cedula}"
+                    ItemDisplayBinding="{Binding Usuarios.Cedula}"
                     ItemsSource="{Binding Pacientes}"
                     SelectedItem="{Binding PacienteSeleccionado}" />
 
@@ -42,6 +45,14 @@
                 <!--  Entry for Observaciones  -->
                 <Label Text="Observaciones" />
                 <Entry Text="{Binding ObservacionesColocadas, Mode=TwoWay}" />
+                
+                <Button 
+                    HorizontalOptions="Center"
+                    Margin="0,20,0,0"
+                    Text="Agendar Receta"
+                    BackgroundColor="DarkCyan"
+                    Command="{Binding CrearRecetaCommand}"
+                    />
             </StackLayout>
 
         </Grid>

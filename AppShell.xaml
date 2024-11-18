@@ -17,6 +17,12 @@
         Title="DonantesView"
         ContentTemplate="{DataTemplate vistas:DonantesView}"
         Route="DonantesView" />
+    
+    <ShellContent
+        Title="ExamenesView"
+        ContentTemplate="{DataTemplate vistas:ExamenesView}"
+        Route="ExamenesView"
+        />
 
     <ShellContent
         Title="CrearRecetasView"

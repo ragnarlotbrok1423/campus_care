@@ -18,7 +18,16 @@ namespace campusCare.vistasModelos
     public partial class CrearRecetasViewModel : ObservableObject
     {
         private readonly HttpClient _httpClient;
+        private string _Observaciones;
 
+
+        public string Observaciones
+        {
+            get => _Observaciones;
+            set => SetProperty(ref _Observaciones, value);
+        }
+        
+        
         public CrearRecetasViewModel()
         {
             ServerString server = new ServerString();
@@ -30,6 +39,7 @@ namespace campusCare.vistasModelos
             Medicamentos = new ObservableCollection<MedicamentosByCategoriaDTO>();
             Categorias = new ObservableCollection<CategoriaDTO>();
             Pacientes = new ObservableCollection<PacientesByDoctor>();
+            
 
         }
 
@@ -88,6 +98,7 @@ namespace campusCare.vistasModelos
 
                 //deserializamos el json
                 var result = await response.Content.ReadFromJsonAsync<ApiResponse<CategoriaDTO>>();
+                Debug.WriteLine($"Esta es la conversion: {JsonSerializer.Serialize(result)}");
                 if (result != null && result.Values != null)
                 {
                     Categorias.Clear();
@@ -117,7 +128,20 @@ namespace campusCare.vistasModelos
                     int idCategoria = CategoriaSeleccionada.IdCategoria;
                     var medicamentosList = await _httpClient.GetAsync($"api/Medicamentos/categoria/{idCategoria}");
 
+                    var jsonString = await medicamentosList.Content.ReadAsStringAsync();
+                    Debug.WriteLine($"Respuesta de la API para los medicamentos: {jsonString}");
+                    
+                    var response = await medicamentosList.Content.ReadFromJsonAsync<ApiResponse<MedicamentosByCategoriaDTO>>();
 
+                    if (response != null && response.Values != null)
+                    {
+                        Medicamentos.Clear();
+                        foreach (var medicamentos in response.Values)
+                        {
+                            Medicamentos.Add(medicamentos);
+                        }
+
+                    }
 
                 }
                 catch (Exception ex)
@@ -127,32 +151,37 @@ namespace campusCare.vistasModelos
             }
         }
 
+     
         [RelayCommand]
         private async Task LoadPacientesAsync()
         {
             try
             {
-                //obtenemos el id del doctor ya guardado desde el login
+                var idDoctor = Preferences.Get("IdDoctor", 0);
+                Debug.WriteLine($"Id para obtener los pacientes por doctor: {idDoctor}");
 
-                var idPaciente = Preferences.Get("IdDoctor", 0);
-
-                var response = await _httpClient.GetAsync($"api/CitasMedicas/doctor/{idPaciente}");
+                var response = await _httpClient.GetAsync($"api/CitasMedicas/doctor/{idDoctor}");
 
                 var jsonString = await response.Content.ReadAsStringAsync();
                 Debug.WriteLine($"Respuesta de la API para los pacientes: {jsonString}");
 
                 var result = await response.Content.ReadFromJsonAsync<ApiResponse<PacientesByDoctor>>();
+                Debug.WriteLine($"Resultado de la conversión: {JsonSerializer.Serialize(result)}");
 
                 if (result != null && result.Values != null)
                 {
+                    Debug.WriteLine($"Número de pacientes obtenidos: {result.Values.Length}");
                     Pacientes.Clear();
-
                     foreach (var paciente in result.Values)
                     {
+                        Debug.WriteLine($"Paciente deserializado: {JsonSerializer.Serialize(paciente)}");
                         Pacientes.Add(paciente);
                     }
                 }
-
+                else
+                {
+                    Debug.WriteLine("El resultado de la deserialización es nulo o no contiene valores.");
+                }
             }
             catch (Exception ex)
             {
@@ -182,9 +211,9 @@ namespace campusCare.vistasModelos
                         fechaDeEntrega = fecha,
                         cantidadEntregada = cantidadColocada,
                         observaciones = observacionesColocadas,
-                        idPaciente = pacienteSeleccionado,
+                        idPaciente = pacienteSeleccionado.Usuarios.IdUsuarios,
                         idDoctor = Preferences.Get("IdDoctor", 0),
-                        idMedicamento = medicamentoSeleccionado
+                        idMedicamento = medicamentoSeleccionado.IdMedicamento
 
                     };
 

@@ -1,10 +1,19 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
+using System;
+using System.Collections.Generic;
+using System.Net.Http;
+using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
+using System.Security.Cryptography.X509Certificates;
 using System.Collections.ObjectModel;
 using campusCare.modelos;
 using CommunityToolkit.Mvvm.Input;
 using System.Net.Http.Json;
+using CommunityToolkit.Maui.Markup;
 using System.Diagnostics;
+using System.Windows.Input;
+using System.Numerics;
 using System.Text.Json;
 using System.Globalization;
 
@@ -229,7 +238,8 @@ namespace campusCare.vistasModelos
 
                     if (response.IsSuccessStatusCode)
                     {
-                        await Application.Current.MainPage.DisplayAlert("Éxito", "Cita agendada correctamente", "OK");
+                        await Application.Current.MainPage.DisplayAlert("Éxito", "Cita agendada correctamente, debe esperar" +
+                            "que el doctor acepte la cita", "OK");
                         await Shell.Current.GoToAsync("///HomePacient");
                     }
                     else

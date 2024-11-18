@@ -64,13 +64,13 @@ namespace campusCare.vistasModelos
                     Debug.WriteLine($"el nombre del doctor es: {doctorLoginResponse.NombreCompleto}");
                     Debug.WriteLine($"la especialidad del doctor es: {doctorLoginResponse.EspecialidadFk.Value}");
 
-                    if (doctorLoginResponse.IdDoctores == 2)
+                    if (doctorLoginResponse.IdDoctores == 3)
                     {
                         await Shell.Current.GoToAsync("///DonantesView");
                     }
-                    if (doctorLoginResponse.IdDoctores == 3)
+                    if (doctorLoginResponse.IdDoctores == 2)
                     {
-                        await Shell.Current.GoToAsync("///RecetasView");
+                        await Shell.Current.GoToAsync("///CrearRecetasView");
                     }
                 }
 

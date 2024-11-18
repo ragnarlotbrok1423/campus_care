@@ -19,8 +19,9 @@ public partial class CrearRecetasView : ContentPage
 
 
     }
-    private void Picker_SelectedIndexChanged(object sender, EventArgs e)
-    {
 
+    private void CategoriaSeleccionada(object? sender, EventArgs e)
+    {
+        _viewModel.OnCategoriaChanged();
     }
 }
