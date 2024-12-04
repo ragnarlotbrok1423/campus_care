@@ -17,7 +17,13 @@
         Title="DoctorDashBoard"
         ContentTemplate="{DataTemplate vistas:DoctorDashBoard}"
         Route="DoctorDashBoard"
+        
         />
+    <ShellContent Title="ReferenceView"
+                  ContentTemplate="{DataTemplate vistas:ReferenceView}"
+                  Route="ReferenceView" />
+
+   
     <ShellContent
         Title="DonantesView"
         ContentTemplate="{DataTemplate vistas:DonantesView}"

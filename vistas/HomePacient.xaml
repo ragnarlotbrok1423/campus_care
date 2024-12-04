@@ -227,6 +227,12 @@
                                    WidthRequest="250"
                                    HorizontalOptions="Center"
                                    VerticalOptions="Center">
+                                <Frame.GestureRecognizers>
+                                    <!--  Esto es para poder colarle un command  -->
+
+                                    <TapGestureRecognizer Command="{Binding references}" />
+
+                                </Frame.GestureRecognizers>
                                 <StackLayout VerticalOptions="Center">
                                     <Image Source="doc_for_windows.png"
                                            HeightRequest="65"

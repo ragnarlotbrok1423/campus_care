@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Background="White"
+             Shell.NavBarIsVisible="False"
+             x:Class="campusCare.vistas.ReferenceView"
+             xmlns:local="clr-namespace:campusCare.vistasModelos"
+             xmlns:cards="clr-namespace:Syncfusion.Maui.Cards;assembly=Syncfusion.Maui.Cards"
+             Title="ReferenceView">
+
+    <ContentPage.BindingContext>
+        <local:ReferenciasViewModel/>
+    </ContentPage.BindingContext>
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <DataTemplate x:Key="referenciasTemplate">
+
+                <Frame BorderColor="Transparent" BackgroundColor="Transparent">
+                    <cards:SfCardView Grid.Row="1"
+                                      Margin="0,20,0,0"
+                                      Padding="10,5,10,0"
+                                      HeightRequest="270"
+                                      Background="#139EED">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="auto" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Grid RowSpacing="10"
+                                  Grid.Column="0">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="auto" />
+                                    <RowDefinition Height="auto" />
+                                    <RowDefinition Height="auto" />
+                                    <RowDefinition Height="auto" />
+                                    <RowDefinition Height="auto" />
+                                    <RowDefinition Height="auto" />
+
+                                </Grid.RowDefinitions>
+                                <Label Grid.Row="0"
+                                       Text="Referencia N° 1"
+                                       FontFamily="Ubuntu"
+                                       Margin="0,0,0,8"
+                                       FontSize="30" />
+                                <Label Grid.Row="1"
+                                       Text="{Binding Fecha}"
+                                       FontSize="20" />
+                                <Label Grid.Row="2"
+                                       Text="{Binding CondicionMedica}"
+                                       FontSize="20" />
+                                <Label Grid.Row="3"
+                                       Text="{Binding Sintomas}"
+                                       FontSize="20" />
+                                <Label Grid.Row="4"
+                                       Text="{Binding Especialidad}"
+                                       FontSize="20" />
+                                <Label Grid.Row="5"
+                                       Text="{Binding Doctor.NombreCompleto}"
+                                       FontSize="20" />
+                            </Grid>
+                            <Button Grid.Column="1"
+                                    Text="Descargar Refencia"
+                                    BackgroundColor="#73FA93"
+                                    TextColor="#00003D"
+                                    VerticalOptions="FillAndExpand"
+                                    FontSize="24"
+                                    FontFamily="Bungee"
+                                    HorizontalOptions="EndAndExpand"
+                                    Margin="0,0,20,0" />
+                        </Grid>
+
+                    </cards:SfCardView>
+
+                </Frame>
+                
+            </DataTemplate>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <Grid>
+        <!--Vista para windows-->
+        <Grid IsVisible="{OnPlatform Android=false, WinUI=true}">
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <!--SideBar-->
+                <StackLayout Grid.Column="0"
+                             BackgroundColor="#000080"
+                             Padding="20,0,30,0"
+                             WidthRequest="300"
+                             VerticalOptions="FillAndExpand">
+                    <Image Source="logo_for_windows.png"
+                           HeightRequest="142"
+                           Margin="0,30,0,52"
+                           HorizontalOptions="Start" />
+
+                    <StackLayout Spacing="20"
+                                 HorizontalOptions="Start">
+                        <StackLayout Orientation="Horizontal"
+                                     Spacing="20"
+                                     Margin="0,0,0,10">
+                            <Image Source="home.png"
+                                   HeightRequest="40"
+                                   WidthRequest="40"
+                                   VerticalOptions="Center" />
+                            <Button Text="Inicio"
+                                    TextColor="White"
+                                    BackgroundColor="Transparent"
+                                    FontFamily="Ubuntu"
+                                    FontSize="28"
+                                    Padding="0" />
+                        </StackLayout>
+
+                        <StackLayout Orientation="Horizontal"
+                                     Spacing="5"
+                                     Margin="0,0,0,10">
+                            <Image Source="bell.png"
+                                   HeightRequest="40"
+                                   WidthRequest="40"
+                                   VerticalOptions="Center" />
+                            <Button Text="Notificaciones"
+                                    TextColor="White"
+                                    BackgroundColor="Transparent"
+                                    FontFamily="Ubuntu"
+                                    FontSize="28"
+                                    Padding="0" />
+                        </StackLayout>
+
+                        <StackLayout Orientation="Horizontal"
+                                     Spacing="5"
+                                     Margin="0,0,0,10">
+                            <Image Source="pill.png"
+                                   HeightRequest="40"
+                                   WidthRequest="40"
+                                   VerticalOptions="Center" />
+                            <Button Text="Recetas"
+                                    TextColor="White"
+                                    BackgroundColor="Transparent"
+                                    FontFamily="Ubuntu"
+                                    FontSize="28"
+                                    Padding="0" />
+                        </StackLayout>
+
+                        <StackLayout Orientation="Horizontal"
+                                     Spacing="5"
+                                     Margin="0,0,0,10">
+                            <Image Source="user.png"
+                                   HeightRequest="40"
+                                   WidthRequest="40"
+                                   VerticalOptions="Center" />
+                            <Button Text="Perfil"
+                                    TextColor="White"
+                                    BackgroundColor="Transparent"
+                                    FontFamily="Ubuntu"
+                                    FontSize="28"
+                                    Padding="0" />
+                        </StackLayout>
+
+                    </StackLayout>
+
+                    <Button Text="Volver"
+                            TextColor="#000080"
+                            BackgroundColor="#73FA93"
+                            Margin="0,80,0,10"
+                            FontFamily="Bungee-Regular"
+                            FontSize="28"
+                            Clicked="volver"
+                            HorizontalOptions="Center"
+                            VerticalOptions="EndAndExpand" />
+                </StackLayout>
+
+                <!--Main Content-->
+                <Grid Grid.Column="1"
+                      Margin="10,30,50,0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto" />
+                        <RowDefinition Height="auto" />
+                    </Grid.RowDefinitions>
+
+                    <Label Grid.Row="0"
+                           Text="Referencias Asignadas"
+                           FontFamily="Bungee"
+                           FontSize="50"
+                           TextColor="#00003D" />
+
+                    
+                        
+                        <!--Cards-->
+                    <ScrollView Grid.Row="1">
+
+                        <CollectionView ItemTemplate="{StaticResource Key=referenciasTemplate}"
+                                        ItemsSource="{Binding Referencias}"
+                                        />
+
+                    </ScrollView>
+
+                    
+
+                </Grid>
+
+            </Grid>
+
+        </Grid>
+        <!--Vista para android-->
+        <Grid IsVisible="{OnPlatform Android=true, WinUI=false}">
+
+        </Grid>
+    </Grid>
+</ContentPage>

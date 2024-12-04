@@ -143,3 +143,9 @@ build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = campusCare.vistas.RecetasView.xaml
 build_metadata.AdditionalFiles.TargetPath = vistas\RecetasView.xaml
 build_metadata.AdditionalFiles.RelativePath = vistas\RecetasView.xaml
+
+[C:/Users/erick/Downloads/campusCareRepository/campus_care/vistas/ReferenceView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = campusCare.vistas.ReferenceView.xaml
+build_metadata.AdditionalFiles.TargetPath = vistas\ReferenceView.xaml
+build_metadata.AdditionalFiles.RelativePath = vistas\ReferenceView.xaml

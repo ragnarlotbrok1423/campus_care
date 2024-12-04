@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "qVZI7lZb9MQ=",
+  "dgSpecHash": "15FsSQ0NzTk=",
   "success": true,
   "projectFilePath": "C:\\Users\\erick\\Downloads\\campusCareRepository\\campus_care\\campusCare.csproj",
   "expectedPackageFiles": [
@@ -96,6 +96,7 @@
     "C:\\Users\\erick\\.nuget\\packages\\skiasharp.nativeassets.win32\\2.88.8\\skiasharp.nativeassets.win32.2.88.8.nupkg.sha512",
     "C:\\Users\\erick\\.nuget\\packages\\syncfusion.licensing\\27.2.5\\syncfusion.licensing.27.2.5.nupkg.sha512",
     "C:\\Users\\erick\\.nuget\\packages\\syncfusion.maui.calendar\\27.2.5\\syncfusion.maui.calendar.27.2.5.nupkg.sha512",
+    "C:\\Users\\erick\\.nuget\\packages\\syncfusion.maui.cards\\27.2.5\\syncfusion.maui.cards.27.2.5.nupkg.sha512",
     "C:\\Users\\erick\\.nuget\\packages\\syncfusion.maui.core\\27.2.5\\syncfusion.maui.core.27.2.5.nupkg.sha512",
     "C:\\Users\\erick\\.nuget\\packages\\syncfusion.maui.popup\\27.2.5\\syncfusion.maui.popup.27.2.5.nupkg.sha512",
     "C:\\Users\\erick\\.nuget\\packages\\system.appcontext\\4.1.0\\system.appcontext.4.1.0.nupkg.sha512",

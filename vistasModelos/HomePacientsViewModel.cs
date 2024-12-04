@@ -14,10 +14,13 @@ namespace campusCare.vistasModelos
         public ICommand historyViewCommand { get; }
         public ICommand logOutCommand { get; }
 
+        public ICommand references { get; }
+
         public HomePacientsViewModel()
         {
             historyViewCommand = new AsyncRelayCommand(ExecuteHistoryViewCommandAsync);
             logOutCommand = new AsyncRelayCommand(ExecuteLogOutCommandAsync);
+            references = new AsyncRelayCommand(ExecuteReferencesCommandAsync);
 
         }
         private async Task ExecuteHistoryViewCommandAsync()
@@ -28,6 +31,10 @@ namespace campusCare.vistasModelos
         {
             Preferences.Remove("IdUsuario");
             await Shell.Current.GoToAsync("///Login");
+        }
+        private async Task ExecuteReferencesCommandAsync()
+        {
+            await Shell.Current.GoToAsync("///ReferenceView");
         }
     }
 }

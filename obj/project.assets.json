@@ -846,6 +846,22 @@
           }
         }
       },
+      "Syncfusion.Maui.Cards/27.2.5": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "27.2.5"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/Syncfusion.Maui.Cards.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Syncfusion.Maui.Cards.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Syncfusion.Maui.Core/27.2.5": {
         "type": "package",
         "dependencies": {
@@ -3921,6 +3937,22 @@
           }
         }
       },
+      "Syncfusion.Maui.Cards/27.2.5": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "27.2.5"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/Syncfusion.Maui.Cards.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Syncfusion.Maui.Cards.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Syncfusion.Maui.Core/27.2.5": {
         "type": "package",
         "dependencies": {
@@ -6928,6 +6960,22 @@
         },
         "runtime": {
           "lib/net8.0-android34.0/Syncfusion.Maui.Calendar.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Syncfusion.Maui.Cards/27.2.5": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "27.2.5"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/Syncfusion.Maui.Cards.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Syncfusion.Maui.Cards.dll": {
             "related": ".xml"
           }
         }
@@ -9943,6 +9991,22 @@
           }
         }
       },
+      "Syncfusion.Maui.Cards/27.2.5": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "27.2.5"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/Syncfusion.Maui.Cards.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Syncfusion.Maui.Cards.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Syncfusion.Maui.Core/27.2.5": {
         "type": "package",
         "dependencies": {
@@ -12950,6 +13014,22 @@
         },
         "runtime": {
           "lib/net8.0-android34.0/Syncfusion.Maui.Calendar.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Syncfusion.Maui.Cards/27.2.5": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "27.2.5"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/Syncfusion.Maui.Cards.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Syncfusion.Maui.Cards.dll": {
             "related": ".xml"
           }
         }
@@ -15962,6 +16042,22 @@
           }
         }
       },
+      "Syncfusion.Maui.Cards/27.2.5": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "27.2.5"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/Syncfusion.Maui.Cards.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Syncfusion.Maui.Cards.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Syncfusion.Maui.Core/27.2.5": {
         "type": "package",
         "dependencies": {
@@ -18970,6 +19066,22 @@
           }
         }
       },
+      "Syncfusion.Maui.Cards/27.2.5": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "27.2.5"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/Syncfusion.Maui.Cards.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Syncfusion.Maui.Cards.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Syncfusion.Maui.Core/27.2.5": {
         "type": "package",
         "dependencies": {
@@ -21974,6 +22086,22 @@
         },
         "runtime": {
           "lib/net8.0-android34.0/Syncfusion.Maui.Calendar.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Syncfusion.Maui.Cards/27.2.5": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "27.2.5"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/Syncfusion.Maui.Cards.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Syncfusion.Maui.Cards.dll": {
             "related": ".xml"
           }
         }
@@ -25180,6 +25308,22 @@
           }
         }
       },
+      "Syncfusion.Maui.Cards/27.2.5": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "27.2.5"
+        },
+        "compile": {
+          "lib/net8.0-ios16.1/Syncfusion.Maui.Cards.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios16.1/Syncfusion.Maui.Cards.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Syncfusion.Maui.Core/27.2.5": {
         "type": "package",
         "dependencies": {
@@ -27427,6 +27571,22 @@
           }
         }
       },
+      "Syncfusion.Maui.Cards/27.2.5": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "27.2.5"
+        },
+        "compile": {
+          "lib/net8.0-ios16.1/Syncfusion.Maui.Cards.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios16.1/Syncfusion.Maui.Cards.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Syncfusion.Maui.Core/27.2.5": {
         "type": "package",
         "dependencies": {
@@ -29647,6 +29807,22 @@
         },
         "runtime": {
           "lib/net8.0-ios16.1/Syncfusion.Maui.Calendar.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Syncfusion.Maui.Cards/27.2.5": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "27.2.5"
+        },
+        "compile": {
+          "lib/net8.0-ios16.1/Syncfusion.Maui.Cards.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios16.1/Syncfusion.Maui.Cards.dll": {
             "related": ".xml"
           }
         }
@@ -31875,6 +32051,22 @@
           }
         }
       },
+      "Syncfusion.Maui.Cards/27.2.5": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "27.2.5"
+        },
+        "compile": {
+          "lib/net8.0-ios16.1/Syncfusion.Maui.Cards.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios16.1/Syncfusion.Maui.Cards.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Syncfusion.Maui.Core/27.2.5": {
         "type": "package",
         "dependencies": {
@@ -34095,6 +34287,22 @@
         },
         "runtime": {
           "lib/net8.0-ios16.1/Syncfusion.Maui.Calendar.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Syncfusion.Maui.Cards/27.2.5": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "27.2.5"
+        },
+        "compile": {
+          "lib/net8.0-ios16.1/Syncfusion.Maui.Cards.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios16.1/Syncfusion.Maui.Cards.dll": {
             "related": ".xml"
           }
         }
@@ -36328,6 +36536,22 @@
           }
         }
       },
+      "Syncfusion.Maui.Cards/27.2.5": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "27.2.5"
+        },
+        "compile": {
+          "lib/net8.0-ios16.1/Syncfusion.Maui.Cards.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios16.1/Syncfusion.Maui.Cards.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Syncfusion.Maui.Core/27.2.5": {
         "type": "package",
         "dependencies": {
@@ -38554,6 +38778,22 @@
           }
         }
       },
+      "Syncfusion.Maui.Cards/27.2.5": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "27.2.5"
+        },
+        "compile": {
+          "lib/net8.0-ios16.1/Syncfusion.Maui.Cards.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios16.1/Syncfusion.Maui.Cards.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Syncfusion.Maui.Core/27.2.5": {
         "type": "package",
         "dependencies": {
@@ -40766,6 +41006,22 @@
           }
         }
       },
+      "Syncfusion.Maui.Cards/27.2.5": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "27.2.5"
+        },
+        "compile": {
+          "lib/net8.0-ios16.1/Syncfusion.Maui.Cards.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios16.1/Syncfusion.Maui.Cards.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Syncfusion.Maui.Core/27.2.5": {
         "type": "package",
         "dependencies": {
@@ -42872,6 +43128,22 @@
         },
         "runtime": {
           "lib/net8.0-maccatalyst16.1/Syncfusion.Maui.Calendar.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Syncfusion.Maui.Cards/27.2.5": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "27.2.5"
+        },
+        "compile": {
+          "lib/net8.0-maccatalyst16.1/Syncfusion.Maui.Cards.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst16.1/Syncfusion.Maui.Cards.dll": {
             "related": ".xml"
           }
         }
@@ -45123,6 +45395,22 @@
           }
         }
       },
+      "Syncfusion.Maui.Cards/27.2.5": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "27.2.5"
+        },
+        "compile": {
+          "lib/net8.0-maccatalyst16.1/Syncfusion.Maui.Cards.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst16.1/Syncfusion.Maui.Cards.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Syncfusion.Maui.Core/27.2.5": {
         "type": "package",
         "dependencies": {
@@ -47343,6 +47631,22 @@
         },
         "runtime": {
           "lib/net8.0-maccatalyst16.1/Syncfusion.Maui.Calendar.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Syncfusion.Maui.Cards/27.2.5": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "27.2.5"
+        },
+        "compile": {
+          "lib/net8.0-maccatalyst16.1/Syncfusion.Maui.Cards.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst16.1/Syncfusion.Maui.Cards.dll": {
             "related": ".xml"
           }
         }
@@ -49571,6 +49875,22 @@
           }
         }
       },
+      "Syncfusion.Maui.Cards/27.2.5": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "27.2.5"
+        },
+        "compile": {
+          "lib/net8.0-maccatalyst16.1/Syncfusion.Maui.Cards.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst16.1/Syncfusion.Maui.Cards.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Syncfusion.Maui.Core/27.2.5": {
         "type": "package",
         "dependencies": {
@@ -51791,6 +52111,22 @@
         },
         "runtime": {
           "lib/net8.0-maccatalyst16.1/Syncfusion.Maui.Calendar.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Syncfusion.Maui.Cards/27.2.5": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "27.2.5"
+        },
+        "compile": {
+          "lib/net8.0-maccatalyst16.1/Syncfusion.Maui.Cards.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst16.1/Syncfusion.Maui.Cards.dll": {
             "related": ".xml"
           }
         }
@@ -54019,6 +54355,22 @@
           }
         }
       },
+      "Syncfusion.Maui.Cards/27.2.5": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "27.2.5"
+        },
+        "compile": {
+          "lib/net8.0-maccatalyst16.1/Syncfusion.Maui.Cards.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst16.1/Syncfusion.Maui.Cards.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Syncfusion.Maui.Core/27.2.5": {
         "type": "package",
         "dependencies": {
@@ -56243,6 +56595,22 @@
           }
         }
       },
+      "Syncfusion.Maui.Cards/27.2.5": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "27.2.5"
+        },
+        "compile": {
+          "lib/net8.0-maccatalyst16.1/Syncfusion.Maui.Cards.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst16.1/Syncfusion.Maui.Cards.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Syncfusion.Maui.Core/27.2.5": {
         "type": "package",
         "dependencies": {
@@ -58451,6 +58819,22 @@
         },
         "runtime": {
           "lib/net8.0-maccatalyst16.1/Syncfusion.Maui.Calendar.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Syncfusion.Maui.Cards/27.2.5": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "27.2.5"
+        },
+        "compile": {
+          "lib/net8.0-maccatalyst16.1/Syncfusion.Maui.Cards.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst16.1/Syncfusion.Maui.Cards.dll": {
             "related": ".xml"
           }
         }
@@ -60751,6 +61135,22 @@
         },
         "runtime": {
           "lib/net8.0-windows10.0.19041.0/Syncfusion.Maui.Calendar.dll": {
+            "related": ".deps.json;.xml"
+          }
+        }
+      },
+      "Syncfusion.Maui.Cards/27.2.5": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "27.2.5"
+        },
+        "compile": {
+          "lib/net8.0-windows10.0.19041.0/Syncfusion.Maui.Cards.dll": {
+            "related": ".deps.json;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041.0/Syncfusion.Maui.Cards.dll": {
             "related": ".deps.json;.xml"
           }
         }
@@ -63138,6 +63538,22 @@
           }
         }
       },
+      "Syncfusion.Maui.Cards/27.2.5": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "27.2.5"
+        },
+        "compile": {
+          "lib/net8.0-windows10.0.19041.0/Syncfusion.Maui.Cards.dll": {
+            "related": ".deps.json;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041.0/Syncfusion.Maui.Cards.dll": {
+            "related": ".deps.json;.xml"
+          }
+        }
+      },
       "Syncfusion.Maui.Core/27.2.5": {
         "type": "package",
         "dependencies": {
@@ -65494,6 +65910,22 @@
         },
         "runtime": {
           "lib/net8.0-windows10.0.19041.0/Syncfusion.Maui.Calendar.dll": {
+            "related": ".deps.json;.xml"
+          }
+        }
+      },
+      "Syncfusion.Maui.Cards/27.2.5": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "27.2.5"
+        },
+        "compile": {
+          "lib/net8.0-windows10.0.19041.0/Syncfusion.Maui.Cards.dll": {
+            "related": ".deps.json;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041.0/Syncfusion.Maui.Cards.dll": {
             "related": ".deps.json;.xml"
           }
         }
@@ -67858,6 +68290,22 @@
           }
         }
       },
+      "Syncfusion.Maui.Cards/27.2.5": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "27.2.5"
+        },
+        "compile": {
+          "lib/net8.0-windows10.0.19041.0/Syncfusion.Maui.Cards.dll": {
+            "related": ".deps.json;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041.0/Syncfusion.Maui.Cards.dll": {
+            "related": ".deps.json;.xml"
+          }
+        }
+      },
       "Syncfusion.Maui.Core/27.2.5": {
         "type": "package",
         "dependencies": {
@@ -70214,6 +70662,22 @@
         },
         "runtime": {
           "lib/net8.0-windows10.0.19041.0/Syncfusion.Maui.Calendar.dll": {
+            "related": ".deps.json;.xml"
+          }
+        }
+      },
+      "Syncfusion.Maui.Cards/27.2.5": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "27.2.5"
+        },
+        "compile": {
+          "lib/net8.0-windows10.0.19041.0/Syncfusion.Maui.Cards.dll": {
+            "related": ".deps.json;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041.0/Syncfusion.Maui.Cards.dll": {
             "related": ".deps.json;.xml"
           }
         }
@@ -72578,6 +73042,22 @@
           }
         }
       },
+      "Syncfusion.Maui.Cards/27.2.5": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "27.2.5"
+        },
+        "compile": {
+          "lib/net8.0-windows10.0.19041.0/Syncfusion.Maui.Cards.dll": {
+            "related": ".deps.json;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041.0/Syncfusion.Maui.Cards.dll": {
+            "related": ".deps.json;.xml"
+          }
+        }
+      },
       "Syncfusion.Maui.Core/27.2.5": {
         "type": "package",
         "dependencies": {
@@ -74935,6 +75415,22 @@
           }
         }
       },
+      "Syncfusion.Maui.Cards/27.2.5": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "27.2.5"
+        },
+        "compile": {
+          "lib/net8.0-windows10.0.19041.0/Syncfusion.Maui.Cards.dll": {
+            "related": ".deps.json;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041.0/Syncfusion.Maui.Cards.dll": {
+            "related": ".deps.json;.xml"
+          }
+        }
+      },
       "Syncfusion.Maui.Core/27.2.5": {
         "type": "package",
         "dependencies": {
@@ -77288,6 +77784,22 @@
         },
         "runtime": {
           "lib/net8.0-windows10.0.19041.0/Syncfusion.Maui.Calendar.dll": {
+            "related": ".deps.json;.xml"
+          }
+        }
+      },
+      "Syncfusion.Maui.Cards/27.2.5": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Maui.Core": "27.2.5"
+        },
+        "compile": {
+          "lib/net8.0-windows10.0.19041.0/Syncfusion.Maui.Cards.dll": {
+            "related": ".deps.json;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041.0/Syncfusion.Maui.Cards.dll": {
             "related": ".deps.json;.xml"
           }
         }
@@ -82020,6 +82532,44 @@
         "lib/net9.0/Syncfusion.Maui.Calendar.xml",
         "syncfusion.maui.calendar.27.2.5.nupkg.sha512",
         "syncfusion.maui.calendar.nuspec",
+        "syncfusion_logo.png"
+      ]
+    },
+    "Syncfusion.Maui.Cards/27.2.5": {
+      "sha512": "ef9N3xBnoMSHbqPoTn+OVqmM7DLI+rqDP2C/mfYyTwAFYGcs5Img8ZmJafRJX8PVTzvADpbOsocchQZSw/rtIw==",
+      "type": "package",
+      "path": "syncfusion.maui.cards/27.2.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
+        "lib/net8.0-android34.0/Syncfusion.Maui.Cards.dll",
+        "lib/net8.0-android34.0/Syncfusion.Maui.Cards.xml",
+        "lib/net8.0-ios16.1/Syncfusion.Maui.Cards.dll",
+        "lib/net8.0-ios16.1/Syncfusion.Maui.Cards.xml",
+        "lib/net8.0-maccatalyst16.1/Syncfusion.Maui.Cards.dll",
+        "lib/net8.0-maccatalyst16.1/Syncfusion.Maui.Cards.xml",
+        "lib/net8.0-windows10.0.19041.0/Syncfusion.Maui.Cards.deps.json",
+        "lib/net8.0-windows10.0.19041.0/Syncfusion.Maui.Cards.dll",
+        "lib/net8.0-windows10.0.19041.0/Syncfusion.Maui.Cards.xml",
+        "lib/net8.0/Syncfusion.Maui.Cards.deps.json",
+        "lib/net8.0/Syncfusion.Maui.Cards.dll",
+        "lib/net8.0/Syncfusion.Maui.Cards.xml",
+        "lib/net9.0-android34.0/Syncfusion.Maui.Cards.dll",
+        "lib/net9.0-android34.0/Syncfusion.Maui.Cards.xml",
+        "lib/net9.0-ios16.1/Syncfusion.Maui.Cards.dll",
+        "lib/net9.0-ios16.1/Syncfusion.Maui.Cards.xml",
+        "lib/net9.0-maccatalyst16.1/Syncfusion.Maui.Cards.dll",
+        "lib/net9.0-maccatalyst16.1/Syncfusion.Maui.Cards.xml",
+        "lib/net9.0-windows10.0.19041.0/Syncfusion.Maui.Cards.deps.json",
+        "lib/net9.0-windows10.0.19041.0/Syncfusion.Maui.Cards.dll",
+        "lib/net9.0-windows10.0.19041.0/Syncfusion.Maui.Cards.xml",
+        "lib/net9.0/Syncfusion.Maui.Cards.deps.json",
+        "lib/net9.0/Syncfusion.Maui.Cards.dll",
+        "lib/net9.0/Syncfusion.Maui.Cards.xml",
+        "syncfusion.maui.cards.27.2.5.nupkg.sha512",
+        "syncfusion.maui.cards.nuspec",
         "syncfusion_logo.png"
       ]
     },
@@ -87663,6 +88213,8 @@
       "Moq >= 4.20.72",
       "SkiaSharp >= 2.88.8",
       "Syncfusion.Maui.Calendar >= 27.2.5",
+      "Syncfusion.Maui.Cards >= 27.2.5",
+      "Syncfusion.Maui.Core >= 27.2.5",
       "System.ObjectModel >= 4.3.0",
       "UraniumUI >= 2.10.2",
       "UraniumUI.Material >= 2.10.2",
@@ -87685,6 +88237,8 @@
       "Moq >= 4.20.72",
       "SkiaSharp >= 2.88.8",
       "Syncfusion.Maui.Calendar >= 27.2.5",
+      "Syncfusion.Maui.Cards >= 27.2.5",
+      "Syncfusion.Maui.Core >= 27.2.5",
       "System.ObjectModel >= 4.3.0",
       "UraniumUI >= 2.10.2",
       "UraniumUI.Material >= 2.10.2",
@@ -87707,6 +88261,8 @@
       "Moq >= 4.20.72",
       "SkiaSharp >= 2.88.8",
       "Syncfusion.Maui.Calendar >= 27.2.5",
+      "Syncfusion.Maui.Cards >= 27.2.5",
+      "Syncfusion.Maui.Core >= 27.2.5",
       "System.ObjectModel >= 4.3.0",
       "UraniumUI >= 2.10.2",
       "UraniumUI.Material >= 2.10.2",
@@ -87728,6 +88284,8 @@
       "Moq >= 4.20.72",
       "SkiaSharp >= 2.88.8",
       "Syncfusion.Maui.Calendar >= 27.2.5",
+      "Syncfusion.Maui.Cards >= 27.2.5",
+      "Syncfusion.Maui.Core >= 27.2.5",
       "System.ObjectModel >= 4.3.0",
       "UraniumUI >= 2.10.2",
       "UraniumUI.Material >= 2.10.2",
@@ -87849,6 +88407,14 @@
             "version": "[2.88.8, )"
           },
           "Syncfusion.Maui.Calendar": {
+            "target": "Package",
+            "version": "[27.2.5, )"
+          },
+          "Syncfusion.Maui.Cards": {
+            "target": "Package",
+            "version": "[27.2.5, )"
+          },
+          "Syncfusion.Maui.Core": {
             "target": "Package",
             "version": "[27.2.5, )"
           },
@@ -87983,6 +88549,14 @@
             "target": "Package",
             "version": "[27.2.5, )"
           },
+          "Syncfusion.Maui.Cards": {
+            "target": "Package",
+            "version": "[27.2.5, )"
+          },
+          "Syncfusion.Maui.Core": {
+            "target": "Package",
+            "version": "[27.2.5, )"
+          },
           "System.ObjectModel": {
             "target": "Package",
             "version": "[4.3.0, )"
@@ -88102,6 +88676,14 @@
             "target": "Package",
             "version": "[27.2.5, )"
           },
+          "Syncfusion.Maui.Cards": {
+            "target": "Package",
+            "version": "[27.2.5, )"
+          },
+          "Syncfusion.Maui.Core": {
+            "target": "Package",
+            "version": "[27.2.5, )"
+          },
           "System.ObjectModel": {
             "target": "Package",
             "version": "[4.3.0, )"
@@ -88213,6 +88795,14 @@
             "version": "[2.88.8, )"
           },
           "Syncfusion.Maui.Calendar": {
+            "target": "Package",
+            "version": "[27.2.5, )"
+          },
+          "Syncfusion.Maui.Cards": {
+            "target": "Package",
+            "version": "[27.2.5, )"
+          },
+          "Syncfusion.Maui.Core": {
             "target": "Package",
             "version": "[27.2.5, )"
           },

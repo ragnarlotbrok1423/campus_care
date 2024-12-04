@@ -22,7 +22,12 @@ namespace campusCare.vistasModelos
         [ObservableProperty]
         private ObservableCollection<ReferenciasDTO> referencias = new ObservableCollection<ReferenciasDTO>();
 
+        [ObservableProperty]
+        private ObservableCollection<ReferenciasDTO> referenciasid = new ObservableCollection<ReferenciasDTO>();
+
         public IAsyncRelayCommand LoadReferenciasCommand { get; }
+
+        public IAsyncRelayCommand LoadReferenciasByUserCommand { get; }
 
         public IRelayCommand<ReferenciasDTO> GenerarPdfCommand { get; }
 
@@ -38,9 +43,13 @@ namespace campusCare.vistasModelos
             };
        
             LoadReferenciasCommand = new AsyncRelayCommand(LoadReferenciasAsync);
+            LoadReferenciasByUserCommand = new AsyncRelayCommand(LoadReferenciasByUserAsync);
             GeneratePdfCommand = new AsyncRelayCommand(GeneratePdf);
 
         }
+
+        
+
         private async Task GeneratePdf()
         {
             try
@@ -73,6 +82,32 @@ namespace campusCare.vistasModelos
 
                 var result = await response.Content.ReadFromJsonAsync<ApiResponse<ReferenciasDTO>>();
 
+                if (result != null && result.Values != null)
+                {
+                    referenciasid.Clear();
+                    foreach (var referencia in result.Values)
+                    {
+                        referenciasid.Add(referencia);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine($"Error al cargar las referencias : {ex.Message}");
+                Debug.WriteLine($"Stack Trace: {ex.StackTrace}");
+            }
+        }
+
+
+        public async Task LoadReferenciasByUserAsync()
+        {
+            try
+            {
+                var userId = Preferences.Get("IdUsuario", 0);
+                var response = await _httpClient.GetAsync($"api/Referencias/paciente/{userId}");
+                var jsonString = await response.Content.ReadAsStringAsync();
+                Debug.WriteLine($"Esta es la respuesta de la api para referencias {jsonString}");
+                var result = await response.Content.ReadFromJsonAsync<ApiResponse<ReferenciasDTO>>();
                 if (result != null && result.Values != null)
                 {
                     referencias.Clear();

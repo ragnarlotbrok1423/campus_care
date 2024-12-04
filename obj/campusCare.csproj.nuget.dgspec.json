@@ -113,6 +113,14 @@
               "target": "Package",
               "version": "[27.2.5, )"
             },
+            "Syncfusion.Maui.Cards": {
+              "target": "Package",
+              "version": "[27.2.5, )"
+            },
+            "Syncfusion.Maui.Core": {
+              "target": "Package",
+              "version": "[27.2.5, )"
+            },
             "System.ObjectModel": {
               "target": "Package",
               "version": "[4.3.0, )"
@@ -244,6 +252,14 @@
               "target": "Package",
               "version": "[27.2.5, )"
             },
+            "Syncfusion.Maui.Cards": {
+              "target": "Package",
+              "version": "[27.2.5, )"
+            },
+            "Syncfusion.Maui.Core": {
+              "target": "Package",
+              "version": "[27.2.5, )"
+            },
             "System.ObjectModel": {
               "target": "Package",
               "version": "[4.3.0, )"
@@ -363,6 +379,14 @@
               "target": "Package",
               "version": "[27.2.5, )"
             },
+            "Syncfusion.Maui.Cards": {
+              "target": "Package",
+              "version": "[27.2.5, )"
+            },
+            "Syncfusion.Maui.Core": {
+              "target": "Package",
+              "version": "[27.2.5, )"
+            },
             "System.ObjectModel": {
               "target": "Package",
               "version": "[4.3.0, )"
@@ -474,6 +498,14 @@
               "version": "[2.88.8, )"
             },
             "Syncfusion.Maui.Calendar": {
+              "target": "Package",
+              "version": "[27.2.5, )"
+            },
+            "Syncfusion.Maui.Cards": {
+              "target": "Package",
+              "version": "[27.2.5, )"
+            },
+            "Syncfusion.Maui.Core": {
               "target": "Package",
               "version": "[27.2.5, )"
             },

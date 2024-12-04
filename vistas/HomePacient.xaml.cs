@@ -13,4 +13,9 @@ public partial class HomePacient : ContentPage
     {
         await Shell.Current.GoToAsync("///AgendarCitas");
     }
+
+    private async void References(object sender, EventArgs e)
+    {
+        await Shell.Current.GoToAsync("///ReferenceView");
+    }
 }
