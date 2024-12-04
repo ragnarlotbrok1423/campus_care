@@ -19,6 +19,9 @@
     <MauiXaml Update="vistas\CRUDpacientes.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
+    <MauiXaml Update="vistas\DoctorDashBoard.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
     <MauiXaml Update="vistas\DoctorLogin.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>

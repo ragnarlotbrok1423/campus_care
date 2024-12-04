@@ -2,7 +2,8 @@
 using FFImageLoading.Maui;
 using Microsoft.Extensions.Logging;
 using UraniumUI;
-
+using Syncfusion.Licensing;
+using Syncfusion.Maui.Core.Hosting;
 namespace campusCare
 {
     public static class MauiProgram
@@ -10,6 +11,8 @@ namespace campusCare
         public static MauiApp CreateMauiApp()
         {
             var builder = MauiApp.CreateBuilder();
+            builder.ConfigureSyncfusionCore();
+            SyncfusionLicenseProvider.RegisterLicense("Ngo9BigBOggjHTQxAR8/V1NDaF1cWGhIYVFpR2Nbek5xdV9CZFZRRmY/P1ZhSXxXd0djWn1ddHNRQGVYUkQ=");
             builder
                 .UseUraniumUI()
                 .UseUraniumUIMaterial()

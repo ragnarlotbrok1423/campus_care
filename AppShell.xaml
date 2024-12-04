@@ -14,9 +14,21 @@
         Route="Login" />
 
     <ShellContent
+        Title="DoctorDashBoard"
+        ContentTemplate="{DataTemplate vistas:DoctorDashBoard}"
+        Route="DoctorDashBoard"
+        />
+    <ShellContent
         Title="DonantesView"
         ContentTemplate="{DataTemplate vistas:DonantesView}"
         Route="DonantesView" />
+    
+    <ShellContent
+        Title="descargarPDFTestview"
+        ContentTemplate="{DataTemplate vistas:descargarPDFTestview}"
+        Route="descargarPDFTestview"
+        
+        />
     
     <ShellContent
         Title="ExamenesView"

@@ -14,7 +14,6 @@
         "outputPath": "C:\\Users\\erick\\Downloads\\campusCareRepository\\campus_care\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
-        "UsingMicrosoftNETSdk": false,
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
@@ -31,6 +30,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -60,12 +60,17 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "all"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0-android34.0": {
           "targetAlias": "net8.0-android",
           "dependencies": {
+            "BouncyCastle": {
+              "target": "Package",
+              "version": "[1.8.9, )"
+            },
             "CommunityToolkit.Maui.Markup": {
               "target": "Package",
               "version": "[4.1.0, )"
@@ -104,6 +109,10 @@
               "target": "Package",
               "version": "[2.88.8, )"
             },
+            "Syncfusion.Maui.Calendar": {
+              "target": "Package",
+              "version": "[27.2.5, )"
+            },
             "System.ObjectModel": {
               "target": "Package",
               "version": "[4.3.0, )"
@@ -115,6 +124,22 @@
             "UraniumUI.Material": {
               "target": "Package",
               "version": "[2.10.2, )"
+            },
+            "XCalendar.Maui": {
+              "target": "Package",
+              "version": "[4.6.0, )"
+            },
+            "itext": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "itext.bouncy-castle-fips-adapter": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "itext7": {
+              "target": "Package",
+              "version": "[9.0.0, )"
             },
             "xunit": {
               "target": "Package",
@@ -173,6 +198,10 @@
         "net8.0-ios18.0": {
           "targetAlias": "net8.0-ios",
           "dependencies": {
+            "BouncyCastle": {
+              "target": "Package",
+              "version": "[1.8.9, )"
+            },
             "CommunityToolkit.Maui.Markup": {
               "target": "Package",
               "version": "[4.1.0, )"
@@ -211,6 +240,10 @@
               "target": "Package",
               "version": "[2.88.8, )"
             },
+            "Syncfusion.Maui.Calendar": {
+              "target": "Package",
+              "version": "[27.2.5, )"
+            },
             "System.ObjectModel": {
               "target": "Package",
               "version": "[4.3.0, )"
@@ -222,6 +255,22 @@
             "UraniumUI.Material": {
               "target": "Package",
               "version": "[2.10.2, )"
+            },
+            "XCalendar.Maui": {
+              "target": "Package",
+              "version": "[4.6.0, )"
+            },
+            "itext": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "itext.bouncy-castle-fips-adapter": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "itext7": {
+              "target": "Package",
+              "version": "[9.0.0, )"
             },
             "xunit": {
               "target": "Package",
@@ -268,6 +317,10 @@
         "net8.0-maccatalyst18.0": {
           "targetAlias": "net8.0-maccatalyst",
           "dependencies": {
+            "BouncyCastle": {
+              "target": "Package",
+              "version": "[1.8.9, )"
+            },
             "CommunityToolkit.Maui.Markup": {
               "target": "Package",
               "version": "[4.1.0, )"
@@ -306,6 +359,10 @@
               "target": "Package",
               "version": "[2.88.8, )"
             },
+            "Syncfusion.Maui.Calendar": {
+              "target": "Package",
+              "version": "[27.2.5, )"
+            },
             "System.ObjectModel": {
               "target": "Package",
               "version": "[4.3.0, )"
@@ -317,6 +374,22 @@
             "UraniumUI.Material": {
               "target": "Package",
               "version": "[2.10.2, )"
+            },
+            "XCalendar.Maui": {
+              "target": "Package",
+              "version": "[4.6.0, )"
+            },
+            "itext": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "itext.bouncy-castle-fips-adapter": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "itext7": {
+              "target": "Package",
+              "version": "[9.0.0, )"
             },
             "xunit": {
               "target": "Package",
@@ -364,6 +437,10 @@
         "net8.0-windows10.0.19041": {
           "targetAlias": "net8.0-windows10.0.19041.0",
           "dependencies": {
+            "BouncyCastle": {
+              "target": "Package",
+              "version": "[1.8.9, )"
+            },
             "CommunityToolkit.Maui.Markup": {
               "target": "Package",
               "version": "[4.1.0, )"
@@ -396,6 +473,10 @@
               "target": "Package",
               "version": "[2.88.8, )"
             },
+            "Syncfusion.Maui.Calendar": {
+              "target": "Package",
+              "version": "[27.2.5, )"
+            },
             "System.ObjectModel": {
               "target": "Package",
               "version": "[4.3.0, )"
@@ -407,6 +488,22 @@
             "UraniumUI.Material": {
               "target": "Package",
               "version": "[2.10.2, )"
+            },
+            "XCalendar.Maui": {
+              "target": "Package",
+              "version": "[4.6.0, )"
+            },
+            "itext": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "itext.bouncy-castle-fips-adapter": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "itext7": {
+              "target": "Package",
+              "version": "[9.0.0, )"
             },
             "xunit": {
               "target": "Package",

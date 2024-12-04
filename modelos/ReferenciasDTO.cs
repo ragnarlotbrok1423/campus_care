@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace campusCare.modelos
 {
-    internal class ReferenciasDTO
+    public  class ReferenciasDTO
     {
         public int Idreferencias { get; set; }
 
@@ -21,9 +21,9 @@ namespace campusCare.modelos
         public string Especialidad { get; set; } = null!;
 
         public string Pdf { get; set; } = null!;
-
-        public UserDTO Paciente { get; set; } = null!;
-
+        
         public DoctoresDTO Doctor { get; set; } = null!;
+        
+        public UserDTO Paciente { get; set; } = null!;
     }
 }

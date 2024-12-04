@@ -12,6 +12,9 @@ Microsoft.Maui.Essentials.dll
 Microsoft.Maui.Graphics.dll
 Plainer.Maui.dll
 SkiaSharp.dll
+Syncfusion.Maui.Calendar.dll
+Syncfusion.Maui.Core.dll
+Syncfusion.Maui.Popup.dll
 UraniumUI.dll
 UraniumUI.Material.dll
 Xamarin.Android.Glide.Annotations.dll
@@ -96,6 +99,7 @@ Xamarin.Kotlin.StdLib.Jdk7.dll
 Xamarin.Kotlin.StdLib.Jdk8.dll
 Xamarin.KotlinX.Coroutines.Android.dll
 Xamarin.KotlinX.Coroutines.Core.Jvm.dll
+XCalendar.Maui.dll
 androidx.versionedparcelable.versionedparcelable.aar
 androidx.tracing.tracing.aar
 androidx.startup.startup-runtime.aar

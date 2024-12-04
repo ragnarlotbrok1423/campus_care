@@ -22,7 +22,7 @@ namespace campusCare.vistasModelos
         }
         private async Task ExecuteHistoryViewCommandAsync()
         {
-            await Shell.Current.GoToAsync("///HistoryPacient");
+            await Shell.Current.GoToAsync("///AgendarCitas");
         }
         private async Task ExecuteLogOutCommandAsync()
         {

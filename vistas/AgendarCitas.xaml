@@ -1,99 +1,288 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<ContentPage
-    x:Class="campusCare.vistas.AgendarCitas"
-    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:material="clr-namespace:UraniumUI.Material.Controls;assembly=UraniumUI.Material"
-    xmlns:sys="clr-namespace:System;assembly=netstandard"
-    xmlns:viewModel="clr-namespace:campusCare.vistasModelos"
-    Title="AgendarCitas"
-    Background="White"
-    Shell.NavBarIsVisible="False">
+<ContentPage x:Class="campusCare.vistas.AgendarCitas"
+             xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:material="clr-namespace:UraniumUI.Material.Controls;assembly=UraniumUI.Material"
+             xmlns:sys="clr-namespace:System;assembly=netstandard"
+             xmlns:viewModel="clr-namespace:campusCare.vistasModelos"
+             xmlns:sf="clr-namespace:Syncfusion.Maui.Calendar;assembly=Syncfusion.Maui.Calendar"
+             Title="AgendarCitas"
+             Background="White"
+             Shell.NavBarIsVisible="False">
 
-    <Grid HorizontalOptions="Center">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
-        </Grid.RowDefinitions>
-        <Label
-            Grid.Row="0"
-            Margin="0,24,0,0"
-            FontFamily="Bungee"
-            FontSize="48"
-            HorizontalOptions="Center"
-            Text="Agendar Citas"
-            TextColor="BurlyWood" />
+    <Grid>
+        <!--Version windows-->
+        <Grid IsVisible="{OnPlatform Android=false, WinUI=true}">
 
-        <DatePicker
-            x:Name="datePicker"
-            Grid.Row="1"
-            Background="DarkCyan"
-            Date="{Binding FechaSeleccionada}"
-            HorizontalOptions="Center"
-            VerticalOptions="Center" />
-        <TimePicker
-            Grid.Row="2"
-            Background="DarkCyan"
-            HorizontalOptions="Center"
-            Time="{Binding HoraSeleccionada}"
-            VerticalOptions="Center" />
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <!--SideBar-->
+                <StackLayout Grid.Column="0"
+                             BackgroundColor="#000080"
+                             Padding="20,0,30,0"
+                             WidthRequest="300"
+                             VerticalOptions="FillAndExpand">
+                    <Image Source="logo_for_windows.png"
+                           HeightRequest="142"
+                           Margin="0,30,0,52"
+                           HorizontalOptions="Start" />
 
+                    <StackLayout Spacing="20"
+                                 HorizontalOptions="Start">
+                        <StackLayout Orientation="Horizontal"
+                                     Spacing="20"
+                                     Margin="0,0,0,10">
+                            <Image Source="home.png"
+                                   HeightRequest="40"
+                                   WidthRequest="40"
+                                   VerticalOptions="Center" />
+                            <Button Text="Inicio"
+                                    TextColor="White"
+                                    BackgroundColor="Transparent"
+                                    FontFamily="Ubuntu"
+                                    FontSize="28"
+                                    Padding="0" />
+                        </StackLayout>
 
-        <Picker
-            x:Name="picker"
-            Title="Tipo de Consulta"
-            Grid.Row="3"
-            Background="DarkCyan"
-            HorizontalOptions="Center"
-            ItemDisplayBinding="{Binding TipoConsulta}"
-            ItemsSource="{Binding TiposDeCita}"
-            SelectedItem="{Binding TipoCitaSeleccionado}"
-            TextColor="White"
-            VerticalOptions="Center" />
-        <Grid Grid.Row="4" ColumnSpacing="20">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="Auto" />
-                <ColumnDefinition Width="Auto" />
+                        <StackLayout Orientation="Horizontal"
+                                     Spacing="5"
+                                     Margin="0,0,0,10">
+                            <Image Source="bell.png"
+                                   HeightRequest="40"
+                                   WidthRequest="40"
+                                   VerticalOptions="Center" />
+                            <Button Text="Notificaciones"
+                                    TextColor="White"
+                                    BackgroundColor="Transparent"
+                                    FontFamily="Ubuntu"
+                                    FontSize="28"
+                                    Padding="0" />
+                        </StackLayout>
 
-            </Grid.ColumnDefinitions>
+                        <StackLayout Orientation="Horizontal"
+                                     Spacing="5"
+                                     Margin="0,0,0,10">
+                            <Image Source="pill.png"
+                                   HeightRequest="40"
+                                   WidthRequest="40"
+                                   VerticalOptions="Center" />
+                            <Button Text="Recetas"
+                                    TextColor="White"
+                                    BackgroundColor="Transparent"
+                                    FontFamily="Ubuntu"
+                                    FontSize="28"
+                                    Padding="0" />
+                        </StackLayout>
 
-            <Picker
-                x:Name="picker2"
-                Title="Especialidad"
-                Grid.Column="0"
-                Background="DarkCyan"
-                HorizontalOptions="Center"
-                ItemDisplayBinding="{Binding Especialidad}"
-                ItemsSource="{Binding Especialidades}"
-                SelectedIndexChanged="picker2_SelectedIndexChanged"
-                SelectedItem="{Binding EspecialidadSeleccionada}"
-                TextColor="White"
-                VerticalOptions="Center" />
-            <Picker
-                x:Name="picker3"
-                Title="Doctor"
-                Grid.Column="1"
-                Background="DarkCyan"
-                TextColor="White"
-                HorizontalOptions="Center"
-                ItemDisplayBinding="{Binding NombreCompleto}"
-                ItemsSource="{Binding Doctores}"
-                SelectedItem="{Binding DoctorSeleccionado}"
-                VerticalOptions="Center" />
+                        <StackLayout Orientation="Horizontal"
+                                     Spacing="5"
+                                     Margin="0,0,0,10">
+                            <Image Source="user.png"
+                                   HeightRequest="40"
+                                   WidthRequest="40"
+                                   VerticalOptions="Center" />
+                            <Button Text="Perfil"
+                                    TextColor="White"
+                                    BackgroundColor="Transparent"
+                                    FontFamily="Ubuntu"
+                                    FontSize="28"
+                                    Padding="0" />
+                        </StackLayout>
+
+                    </StackLayout>
+
+                    <Button Text="Volver"
+                            TextColor="#000080"
+                            BackgroundColor="#73FA93"
+                            Margin="0,80,0,10"
+                            FontFamily="Bungee-Regular"
+                            FontSize="28"
+                            Clicked="volver"
+                            HorizontalOptions="Center"
+                            VerticalOptions="EndAndExpand" />
+                </StackLayout>
+
+                <!--Main Content-->
+                <ScrollView  Grid.Column="1">
+                    <Grid HorizontalOptions="CenterAndExpand"
+                          RowSpacing="30">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+                        <Label Grid.Row="0"
+                               Margin="0,24,0,0"
+                               FontFamily="Bungee"
+                               FontSize="48"
+                               HorizontalOptions="Center"
+                               Text="Agendar Citas"
+                               TextColor="#000080" />
+                        <!--DatePicker-->
+                        <sf:SfCalendar x:Name="calendar"
+                                       Grid.Row="1"
+                                       View="Month"
+                                       Background="#139EED"
+                                       Margin="150,0,150,0"
+                                       SelectionMode="Single"
+                                       SelectionBackground="#000080"
+                                       SelectedDate="{Binding FechaSeleccionada, Mode=TwoWay}">
+
+                            <sf:SfCalendar.MonthView>
+                                <sf:CalendarMonthView>
+                                    <sf:CalendarMonthView.HeaderView>
+                                        <sf:CalendarMonthHeaderView>
+                                            <sf:CalendarMonthHeaderView.TextStyle>
+                                            <sf:CalendarTextStyle FontSize="20"
+                                                                  FontFamily="Ubuntu"
+                                                                  TextColor="White" />
+                                            </sf:CalendarMonthHeaderView.TextStyle>
+                                        </sf:CalendarMonthHeaderView>
+                                    </sf:CalendarMonthView.HeaderView>
+                                </sf:CalendarMonthView>
+                            </sf:SfCalendar.MonthView>
+                        </sf:SfCalendar>
+                        <!--TimePicker-->
+                        <TimePicker Grid.Row="2"
+                                    Background="#139EED"
+                                    FontFamily="Ubuntu"
+                                    FontSize="Medium"
+                                    HorizontalOptions="Center"
+                                    Time="{Binding HoraSeleccionada}"
+                                    VerticalOptions="Center" />
+
+                        <Grid Grid.Row="3"
+                              HorizontalOptions="Center"
+                              RowSpacing="20">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="auto" />
+                                <RowDefinition Height="auto" />
+
+                            </Grid.RowDefinitions>
+                            <Label Grid.Row="0"
+                                   Text="Tipo de Cosulta"
+                                   TextColor="#000080"
+                                   FontSize="Medium"
+                                   HorizontalTextAlignment="Center"
+                                   FontFamily="Ubuntu" />
+                            <Border Grid.Row="1"
+                                    HorizontalOptions="Center"
+                                    Stroke="#139EED"
+                                    StrokeThickness="4">
+                                <Border.StrokeShape>
+                                    <RoundRectangle CornerRadius="6" />
+                                </Border.StrokeShape>
+                                <Picker x:Name="picker"
+                                        Background="White"
+                                        ItemDisplayBinding="{Binding TipoConsulta}"
+                                        ItemsSource="{Binding TiposDeCita}"
+                                        SelectedItem="{Binding TipoCitaSeleccionado}"
+                                        TextColor="#139EED"
+                                        FontFamily="Ubuntu"
+                                        FontSize="18"
+                                        VerticalOptions="Center" />
+                            </Border>
+
+                        </Grid>
+                        <!--Pickers para la especialidad y el doctor-->
+                        <Grid Grid.Row="4"
+                              HorizontalOptions="Center"
+                              RowSpacing="20">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="auto" />
+                                <RowDefinition Height="auto" />
+                            </Grid.RowDefinitions>
+
+                            <!--Titulo de los pickers-->
+                            <Label Grid.Row="0"
+                                   Text="Seleccionar Especialidad y Doctor"
+                                   TextColor="#000080"
+                                   FontSize="Medium"
+                                   HorizontalTextAlignment="Center"
+                                   FontFamily="Ubuntu" />
+
+                            <Grid Grid.Row="1"
+                                  ColumnSpacing="20"
+                                  HorizontalOptions="Center">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition Width="Auto" />
+
+                                </Grid.ColumnDefinitions>
+                                <!--picker de la especialidad-->
+                                <Border Grid.Column="0"
+                                        HorizontalOptions="Center"
+                                        Stroke="#139EED"
+                                        StrokeThickness="4">
+                                    <Border.StrokeShape>
+                                        <RoundRectangle CornerRadius="6" />
+                                    </Border.StrokeShape>
+
+                                    <Picker x:Name="picker2"
+                                            Background="White"
+                                            HorizontalOptions="Center"
+                                            ItemDisplayBinding="{Binding Especialidad}"
+                                            ItemsSource="{Binding Especialidades}"
+                                            SelectedIndexChanged="picker2_SelectedIndexChanged"
+                                            SelectedItem="{Binding EspecialidadSeleccionada}"
+                                            TextColor="#139EED"
+                                            FontFamily="Ubuntu"
+                                            FontSize="18"
+                                            VerticalOptions="Center" />
+                                </Border>
+
+                                <!--Picker del doctor-->
+                                <Border Grid.Column="1"
+                                        HorizontalOptions="Center"
+                                        Stroke="#139EED"
+                                        StrokeThickness="4">
+                                    <Border.StrokeShape>
+                                        <RoundRectangle CornerRadius="6" />
+                                    </Border.StrokeShape>
+                                    <Picker x:Name="picker3"
+                                            Background="White"
+                                            TextColor="#139EED"
+                                            HorizontalOptions="Center"
+                                            FontFamily="Ubuntu"
+                                            FontSize="18"
+                                            ItemDisplayBinding="{Binding NombreCompleto}"
+                                            ItemsSource="{Binding Doctores}"
+                                            SelectedItem="{Binding DoctorSeleccionado}"
+                                            VerticalOptions="Center" />
+                                </Border>
+
+                            </Grid>
+                        </Grid>
+
+                        <Button Grid.Row="5"
+                                BackgroundColor="#000080"
+                                Command="{Binding CrearCitaCommand}"
+                                HorizontalOptions="Center"
+                                Text="Agendar Cita"
+                                FontFamily="Bungee"
+                                FontSize="24"
+                                CornerRadius="12"
+                                Margin="0,0,0,20"
+                                Padding="20,0,20,0"
+                                TextColor="#73FA93"
+                                VerticalOptions="CenterAndExpand" />
+
+                    </Grid>
+                </ScrollView>
+
+            </Grid>
         </Grid>
 
+        <!--version android-->
+        <Grid IsVisible="{OnPlatform Android=true, WinUI=false}">
 
-        <Button
-            Grid.Row="5"
-            BackgroundColor="DarkCyan"
-            Command="{Binding CrearCitaCommand}"
-            HorizontalOptions="Center"
-            Text="Agendar"
-            VerticalOptions="Center" />
+        </Grid>
 
     </Grid>
 

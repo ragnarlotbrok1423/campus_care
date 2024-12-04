@@ -70,7 +70,7 @@ namespace campusCare.vistasModelos
                     }
                     if (doctorLoginResponse.IdDoctores == 2)
                     {
-                        await Shell.Current.GoToAsync("///CrearRecetasView");
+                        await Shell.Current.GoToAsync("///DoctorDashBoard");
                     }
                 }
 

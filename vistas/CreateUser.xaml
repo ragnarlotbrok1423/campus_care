@@ -90,10 +90,12 @@
                             Grid.Row="1"
                             Grid.Column="0"
                             FontFamily="Ubuntu"
+                           
+                            
                             Placeholder="Nombre"
                             PlaceholderColor="#7C74FF"
                             Text="{Binding NuevoPaciente.Nombre}"
-                            TextColor="#07016C" />
+                            TextColor="White" />
                     </Frame>
                     <Label
                         Grid.Row="0"
@@ -115,8 +117,9 @@
                             FontFamily="Ubuntu"
                             Placeholder="Apellido"
                             PlaceholderColor="#7C74FF"
+                            TextColor="White"
                             Text="{Binding NuevoPaciente.Apellido}"
-                            TextColor="#07016C" />
+                             />
                     </Frame>
 
 
@@ -144,7 +147,7 @@
                             Placeholder="Correo"
                             PlaceholderColor="#7C74FF"
                             Text="{Binding NuevoPaciente.Correo}"
-                            TextColor="#07016C" />
+                            TextColor="White" />
                     </Frame>
                 </Grid>
                 <Grid Grid.Row="3" Margin="30,0,30,0">
@@ -170,7 +173,7 @@
                             Placeholder="Cédula"
                             PlaceholderColor="#7C74FF"
                             Text="{Binding NuevoPaciente.Cedula}"
-                            TextColor="#07016C" />
+                            TextColor="White" />
                     </Frame>
                 </Grid>
                 <Grid Grid.Row="4" Margin="30,0,30,0">
@@ -196,7 +199,7 @@
                             Placeholder="Nombre de usuario"
                             PlaceholderColor="#7C74FF"
                             Text="{Binding NuevoPaciente.NombreUsuario}"
-                            TextColor="#07016C" />
+                            TextColor="White" />
 
                     </Frame>
                 </Grid>
@@ -225,7 +228,7 @@
                             Placeholder="Contraseña"
                             PlaceholderColor="#7C74FF"
                             Text="{Binding NuevoPaciente.Contraseña}"
-                            TextColor="#07016C" />
+                            TextColor="White" />
                     </Frame>
                 </Grid>
                 <Grid Grid.Row="6" Margin="30,0,30,0">
@@ -251,7 +254,7 @@
                             Placeholder="Alergias"
                             PlaceholderColor="#7C74FF"
                             Text="{Binding NuevoPaciente.Alergia}"
-                            TextColor="#07016C" />
+                            TextColor="White" />
                     </Frame>
                 </Grid>
                 <Grid Grid.Row="7" Margin="30,0,30,0">
@@ -277,7 +280,7 @@
                             Placeholder="Número Secundario"
                             PlaceholderColor="#7C74FF"
                             Text="{Binding NuevoPaciente.NumeroSecundario}"
-                            TextColor="#07016C" />
+                            TextColor="White" />
                     </Frame>
                 </Grid>
 
@@ -292,7 +295,7 @@
                         FontFamily="Ubuntu"
                         FontSize="20"
                         Text="Tipaje"
-                        TextColor="#07016C"
+                       TextColor="White"
                         VerticalOptions="Center" />
                     <Frame
                         Grid.Row="1"
@@ -305,7 +308,7 @@
                             ItemDisplayBinding="{Binding DisplayText}"
                             ItemsSource="{Binding Tipajes}"
                             SelectedItem="{Binding SelectedTipaje}"
-                            TextColor="#07016C" />
+                           TextColor="White" />
 
                     </Frame>
                 </Grid>

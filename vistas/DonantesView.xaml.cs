@@ -18,4 +18,9 @@ public partial class DonantesView : ContentPage
             await viewModel.LoadDonantesCommand.ExecuteAsync(null);
         }
     }
+
+    private async void Button_Clicked(object sender, EventArgs e)
+    {
+        await Shell.Current.GoToAsync("///DoctorMainPage");
+    }
 }

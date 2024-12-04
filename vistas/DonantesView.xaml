@@ -11,10 +11,16 @@
         <Grid IsVisible="{OnPlatform Android=false, WinUI=true}">
 
 
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+            </Grid.RowDefinitions>
+            <Button Text="Regresar" Clicked="Button_Clicked"/>
             <material:DataGrid
                 Margin="30"
                 BackgroundColor="#136AED"
                 HorizontalOptions="Center"
+                Grid.Row="1"
                 ItemsSource="{Binding Donantes}">
 
                 <material:DataGrid.Columns>

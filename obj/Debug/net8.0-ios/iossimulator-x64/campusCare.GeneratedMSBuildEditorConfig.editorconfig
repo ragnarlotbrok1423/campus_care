@@ -72,6 +72,18 @@ build_metadata.AdditionalFiles.ManifestResourceName = campusCare.vistas.CRUDpaci
 build_metadata.AdditionalFiles.TargetPath = vistas\CRUDpacientes.xaml
 build_metadata.AdditionalFiles.RelativePath = vistas\CRUDpacientes.xaml
 
+[C:/Users/erick/Downloads/campusCareRepository/campus_care/vistas/descargarPDFTestview.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = campusCare.vistas.descargarPDFTestview.xaml
+build_metadata.AdditionalFiles.TargetPath = vistas\descargarPDFTestview.xaml
+build_metadata.AdditionalFiles.RelativePath = vistas\descargarPDFTestview.xaml
+
+[C:/Users/erick/Downloads/campusCareRepository/campus_care/vistas/DoctorDashBoard.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = campusCare.vistas.DoctorDashBoard.xaml
+build_metadata.AdditionalFiles.TargetPath = vistas\DoctorDashBoard.xaml
+build_metadata.AdditionalFiles.RelativePath = vistas\DoctorDashBoard.xaml
+
 [C:/Users/erick/Downloads/campusCareRepository/campus_care/vistas/DoctorLogin.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = campusCare.vistas.DoctorLogin.xaml

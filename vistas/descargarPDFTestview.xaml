@@ -2,8 +2,39 @@
 
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:material="http://schemas.enisn-projects.io/dotnet/maui/uraniumui/material"
+             xmlns:vm ="clr-namespace:campusCare.vistasModelos"
              x:Class="campusCare.vistas.descargarPDFTestview">
-    <ContentPage.Content>
-        
-    </ContentPage.Content>
+    <ContentPage.BindingContext>
+        <vm:ReferenciasViewModel />
+    </ContentPage.BindingContext>
+    <StackLayout>
+        <material:DataGrid
+            Margin="30"
+            BackgroundColor="#136AED"
+            HorizontalOptions="Center"
+            ItemsSource="{Binding Referencias}">
+
+            <material:DataGrid.Columns>
+
+                <material:DataGridColumn Title="Id de Donación" ValueBinding="{Binding Idreferencias}" />
+                <material:DataGridColumn Title="Fecha" ValueBinding="{Binding Fecha}" />
+                <material:DataGridColumn Title="Nombre Paciente" ValueBinding="{Binding CondicionMedica}" />
+                <material:DataGridColumn Title="Apellido Paciente" ValueBinding="{Binding Sintomas}" />
+                <material:DataGridColumn Title="Cedula Paciente" ValueBinding="{Binding Diagnostico}" />
+                <material:DataGridColumn Title="Tipo de Sangre" ValueBinding="{Binding Especialidad}" />
+
+
+
+            </material:DataGrid.Columns>
+
+        </material:DataGrid>
+        <Button Text="Generar PDF"
+               Command="{Binding GeneratePdfCommand}"
+               
+                BackgroundColor="#6200EE"
+                TextColor="White"
+                FontAttributes="Bold"
+                CornerRadius="5"/>
+    </StackLayout>
 </ContentPage>
