@@ -17,21 +17,22 @@ namespace campusCare.vistasModelos
     {
         private readonly HttpClient _httpClient;
 
-       
+
 
         [ObservableProperty]
         private ObservableCollection<ReferenciasDTO> referencias = new ObservableCollection<ReferenciasDTO>();
 
-        [ObservableProperty]
-        private ObservableCollection<ReferenciasDTO> referenciasid = new ObservableCollection<ReferenciasDTO>();
+      
 
         public IAsyncRelayCommand LoadReferenciasCommand { get; }
 
         public IAsyncRelayCommand LoadReferenciasByUserCommand { get; }
 
-        public IRelayCommand<ReferenciasDTO> GenerarPdfCommand { get; }
+        // public IRelayCommand<ReferenciasDTO> GenerarPdfCommand { get; }
 
-        public IAsyncRelayCommand GeneratePdfCommand { get; }
+        // public IAsyncRelayCommand GeneratePdfCommand { get; }
+        //public IRelayCommand<int> GenerarPdfByIdCommand { get; }
+        public IRelayCommand<ReferenciasDTO> GenerarPdfCommand { get; }
 
 
         public ReferenciasViewModel()
@@ -41,20 +42,22 @@ namespace campusCare.vistasModelos
             {
                 BaseAddress = new Uri(server.cabecera)
             };
-       
+
             LoadReferenciasCommand = new AsyncRelayCommand(LoadReferenciasAsync);
             LoadReferenciasByUserCommand = new AsyncRelayCommand(LoadReferenciasByUserAsync);
-            GeneratePdfCommand = new AsyncRelayCommand(GeneratePdf);
+            referencias = new ObservableCollection<ReferenciasDTO>();
+            GenerarPdfCommand = new RelayCommand<ReferenciasDTO>(async (referencia) => await GeneratePdfAsync(referencia));
+
 
         }
 
-        
 
-        private async Task GeneratePdf()
+
+        private async Task GeneratePdfAsync(ReferenciasDTO referencia)
         {
             try
             {
-                string filePath = @"C:\Users\erick\Downloads\referencias.pdf";
+                string filePath = $@"C:\Users\erick\Downloads\referencia_{referencia.Idreferencias}.pdf"; // Cambia el nombre del archivo si es necesario
                 string directoryPath = Path.GetDirectoryName(filePath);
 
                 if (!Directory.Exists(directoryPath))
@@ -63,7 +66,7 @@ namespace campusCare.vistasModelos
                     return;
                 }
 
-                await GeneratePdfAsync(filePath);
+                await GeneratePdfAsync(referencia, filePath);
                 Debug.WriteLine("PDF generado exitosamente.");
             }
             catch (Exception ex)
@@ -84,10 +87,10 @@ namespace campusCare.vistasModelos
 
                 if (result != null && result.Values != null)
                 {
-                    referenciasid.Clear();
+                    referencias.Clear();
                     foreach (var referencia in result.Values)
                     {
-                        referenciasid.Add(referencia);
+                        referencias.Add(referencia);
                     }
                 }
             }
@@ -125,48 +128,36 @@ namespace campusCare.vistasModelos
         }
 
 
-        public async Task GeneratePdfAsync(string filePath)
+        public async Task GeneratePdfAsync(ReferenciasDTO referencia, string filePath)
         {
-            // Asegúrate de que tienes datos en `referencias`
-            if (referencias.Count == 0)
-            {
-                Debug.WriteLine("No hay referencias para generar el PDF.");
-                return;
-            }
-
             using (var writer = new PdfWriter(filePath))
             using (var pdf = new PdfDocument(writer))
             {
                 Document document = new Document(pdf);
 
-                foreach (var referencia in referencias)
+                // Agregar título
+                document.Add(new Paragraph($"Referencia ID: {referencia.Idreferencias}").SetFontSize(20));
+                document.Add(new Paragraph($"Fecha: {referencia.Fecha}"));
+                document.Add(new Paragraph($"Condición Médica: {referencia.CondicionMedica}"));
+                document.Add(new Paragraph($"Síntomas: {referencia.Sintomas}"));
+                document.Add(new Paragraph($"Diagnóstico: {referencia.Diagnostico}"));
+                document.Add(new Paragraph($"Especialidad: {referencia.Especialidad}"));
+
+                // Información del Doctor
+                if (referencia.Doctor != null)
                 {
-                    // Agregar título
-                    document.Add(new Paragraph($"Referencia ID: {referencia.Idreferencias}").SetFontSize(20));
-                    document.Add(new Paragraph($"Fecha: {referencia.Fecha}"));
-                    document.Add(new Paragraph($"Condición Médica: {referencia.CondicionMedica}"));
-                    document.Add(new Paragraph($"Síntomas: {referencia.Sintomas}"));
-                    document.Add(new Paragraph($"Diagnóstico: {referencia.Diagnostico}"));
-                    document.Add(new Paragraph($"Especialidad: {referencia.Especialidad}"));
+                    document.Add(new Paragraph("Información del Doctor:"));
+                    document.Add(new Paragraph($"Nombre Completo: {referencia.Doctor.NombreCompleto}"));
+                    document.Add(new Paragraph($"Cédula: {referencia.Doctor.Cedula}"));
+                }
 
-                    // Información del Doctor
-                    if (referencia.Doctor != null)
-                    {
-                        document.Add(new Paragraph("Información del Doctor:"));
-                        document.Add(new Paragraph($"Nombre Completo: {referencia.Doctor.NombreCompleto}"));
-                        document.Add(new Paragraph($"Cédula: {referencia.Doctor.Cedula}"));
-                    }
-
-                    // Información del Paciente
-                    if (referencia.Paciente != null)
-                    {
-                        document.Add(new Paragraph("Información del Paciente:"));
-                        document.Add(new Paragraph($"Nombre: {referencia.Paciente.Nombre}"));
-                        document.Add(new Paragraph($"Apellido: {referencia.Paciente.Apellido}"));
-                        document.Add(new Paragraph($"Cédula: {referencia.Paciente.Cedula}"));
-                    }
-
-                    document.Add(new AreaBreak()); // Nueva página para la siguiente referencia
+                // Información del Paciente
+                if (referencia.Paciente != null)
+                {
+                    document.Add(new Paragraph("Información del Paciente:"));
+                    document.Add(new Paragraph($"Nombre: {referencia.Paciente.Nombre}"));
+                    document.Add(new Paragraph($"Apellido: {referencia.Paciente.Apellido}"));
+                    document.Add(new Paragraph($"Cédula: {referencia.Paciente.Cedula}"));
                 }
 
                 document.Close();
@@ -174,5 +165,7 @@ namespace campusCare.vistasModelos
 
             Debug.WriteLine($"PDF generado en: {filePath}");
         }
+
+
     }
 }
